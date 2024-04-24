@@ -15,7 +15,7 @@ const Footer = () => {
 
       <div className={styles.chest}>
 
-        <Image src={logo} />
+        <Image src={logo} className={styles.image}/>
 
         <div className={styles.navbar}>
           <a href="/" className={styles.links}>
@@ -79,12 +79,12 @@ const Footer = () => {
       <div className={styles.chest3}>
 
         <div className={styles.Box1}>
-          <h2>Un mundo de soluciones</h2>
+          <h3>Un mundo de soluciones</h3>
         </div>
 
         <div className={styles.Box2}>
-          <h4>
-            <FaRegCopyright /> Todos los derechos reservados Kretz Global
+          <h4 className={styles.copyright}>
+            <FaRegCopyright /> Derechos reservados Kretz Global
           </h4>
         </div>
 
