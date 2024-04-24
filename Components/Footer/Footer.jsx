@@ -35,19 +35,19 @@ const Footer = () => {
           </a>
         </div>
 
-        <div>
+        <div className={styles.location}>
         <p>PLANTA INDUSTRIAL</p>
           <p className={styles.text}>
-            Ruta Nacional N°9 km 2762126 / Pueblo <br/> Esther / Santa Fe / Argentina
+            Ruta Nacional N°9 km 2762126 / Pueblo Esther / Santa Fe / Argentina
           </p>
           <p className={styles.text}>Tel: 0054 341 492 7400</p>
-          <p>ventas@kretz.com.ar</p>
+          <a href="mailTo:ventas@kretz.com.ar">ventas@kretz.com.ar</a>
         </div>
 
-        <div>
+        <div className={styles.location}>
           <p>OFICINA MEXICO</p>
           <p className={styles.text}>
-            Calle de la Nebulosa 3033, Jardines del <br/> Bosque 44520 Guadalajara,
+            Calle de la Nebulosa 3033, Jardines del Bosque 44520 Guadalajara,
             Jal., México
           </p>
           <p className={styles.text}>Tel: +52 33 3673 0606</p>
@@ -70,10 +70,10 @@ const Footer = () => {
       </div>
       
       <div className={styles.navbar2}>
-        <p className={styles.text}>Preguntas Frecuentes</p>
-        <p className={styles.text}>Políticas de privacidad</p>
-        <p className={styles.text}>Políticas de devolución</p>
-        <p className={styles.text}> Términos y condiciones </p>
+        <p className={styles.componentNav}>Preguntas Frecuentes</p>
+        <p className={styles.componentNav}>Políticas de privacidad</p>
+        <p className={styles.componentNav}>Políticas de devolución</p>
+        <p className={styles.componentNav}> Términos y condiciones </p>
       </div>
 
       <div className={styles.chest3}>
