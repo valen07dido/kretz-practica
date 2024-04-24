@@ -1,24 +1,53 @@
-.container{
-    background-color: #181a20;
+.container {
+  background-color: #181a20;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
 }
-.chest{
-    display: flex;
+.chest {
+  display: flex;
+  justify-content: space-around;
 }
-.Box1{
-background-color: #0055d8;
+.Box1 {
+  background-color: #0055d8;
 }
-.Box2{
-background-color: #0064ff;
+.Box2 {
+  background-color: #0064ff;
 }
-.navbar{
-    display:flex;
-    flex-direction: column;
+.navbar {
+  display: flex;
+  flex-direction: column;
 }
-.containIcons{
-    display: flex;
-}
+
 .line {
-    flex-grow: 1;
-    height: 1px;
-    background-color: grey; /* Cambia esto al color que desees para la línea */
-  }
+  flex-grow: 1;
+  height: 1px;
+  background-color: grey;
+}
+.navbar2 {
+  display: flex;
+  justify-content: end;
+}
+.chest2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chest3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0064ff;
+  height: 300px;
+}
+.links {
+  color: #cdd3de;
+}
+.icon{
+    font-size: 30px ;
+    margin: 10px;
+    color: #0055d8;
+}
+
+.icons{
+    margin:0 20px 0 80px;
+}
