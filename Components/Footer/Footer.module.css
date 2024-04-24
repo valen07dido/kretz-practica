@@ -1,0 +1,24 @@
+.container{
+    background-color: #181a20;
+}
+.chest{
+    display: flex;
+}
+.Box1{
+background-color: #0055d8;
+}
+.Box2{
+background-color: #0064ff;
+}
+.navbar{
+    display:flex;
+    flex-direction: column;
+}
+.containIcons{
+    display: flex;
+}
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: grey; /* Cambia esto al color que desees para la línea */
+  }
