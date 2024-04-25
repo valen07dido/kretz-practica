@@ -36,22 +36,22 @@ const Footer = () => {
         </div>
 
         <div className={styles.location}>
-        <p>PLANTA INDUSTRIAL</p>
+        <p className={styles.title}>PLANTA INDUSTRIAL</p>
           <p className={styles.text}>
             Ruta Nacional N°9 km 2762126 / Pueblo Esther / Santa Fe / Argentina
           </p>
           <p className={styles.text}>Tel: 0054 341 492 7400</p>
-          <a href="mailTo:ventas@kretz.com.ar">ventas@kretz.com.ar</a>
+          <a href="mailTo:ventas@kretz.com.ar"  className={styles.mail}>ventas@kretz.com.ar</a>
         </div>
 
         <div className={styles.location}>
-          <p>OFICINA MEXICO</p>
+          <p className={styles.title}>OFICINA MEXICO</p>
           <p className={styles.text}>
             Calle de la Nebulosa 3033, Jardines del Bosque 44520 Guadalajara,
             Jal., México
           </p>
           <p className={styles.text}>Tel: +52 33 3673 0606</p>
-          <a href="mailTo:ventas@kretz.com.mx">ventas@kretz.com.mx</a>
+          <a href="mailTo:ventas@kretz.com.mx" className={styles.mail}>ventas@kretz.com.mx</a>
         </div>
 
       </div>

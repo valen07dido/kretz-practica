@@ -1,7 +1,8 @@
 .container {
-  background-color: #181a20;
+  background-color: #181A20;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  height: 423px;
 }
 .chest {
   display: flex;
@@ -12,7 +13,7 @@
   background-color: #0055d8;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 600px;
+  width: 416px;
   text-align: center;
   align-content: center;
 }
@@ -37,6 +38,7 @@
   align-items: center;
   align-content: center;
   text-align: center;
+  margin: 0 190px 30px 0;
 }
 .chest2 {
   display: flex;
@@ -57,9 +59,9 @@
   font-size: 15px;
 }
 .icon {
-  font-size: 20px;
+  font-size: 21.03px;
   margin: 10px;
-  color: #0055d8;
+  color: #0064FF;
 }
 
 .icons {
@@ -77,6 +79,17 @@
   color: #cdd3de;
   margin: 10px 0 10px 0;
 }
-.location{
-    width: 350px;
+.location {
+  width: 350px;
+}
+.title {
+  color: #0064ff;
+}
+.mail {
+  color: #0064ff;
+}
+
+.image{
+    width: 227px;
+    height: 68px;
 }
