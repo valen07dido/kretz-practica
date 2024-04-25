@@ -79,7 +79,7 @@ const Footer = () => {
       <div className={styles.chest3}>
 
         <div className={styles.Box1}>
-          <h3>Un mundo de soluciones</h3>
+          <h3 className={styles.speach}>Un mundo de soluciones</h3>
         </div>
 
         <div className={styles.Box2}>

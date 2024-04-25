@@ -2,12 +2,11 @@
   background-color: #181A20;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  height: 423px;
 }
 .chest {
   display: flex;
+  padding-top: 52px;
   justify-content: space-around;
-  padding: 20px 0 0 0;
 }
 .Box1 {
   background-color: #0055d8;
@@ -38,6 +37,8 @@
   align-items: center;
   align-content: center;
   text-align: center;
+  /* background-color: red; */
+  height: 50px;
   margin: 0 190px 30px 0;
 }
 .chest2 {
@@ -57,11 +58,13 @@
   color: #cdd3de;
   margin: 5px;
   font-size: 15px;
+  text-decoration: none;
 }
 .icon {
   font-size: 21.03px;
   margin: 10px;
   color: #0064FF;
+  cursor: pointer;
 }
 
 .icons {
@@ -70,6 +73,7 @@
 
 .copyright {
   margin: 0 60px 0 0;
+  color: #F2F4F8;
 }
 .componentNav {
   color: #cdd3de;
@@ -81,6 +85,7 @@
 }
 .location {
   width: 350px;
+  margin: -13px;
 }
 .title {
   color: #0064ff;
@@ -92,4 +97,7 @@
 .image{
     width: 227px;
     height: 68px;
+}
+.speach{
+  color: #F2F4F8;
 }
