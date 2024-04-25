@@ -1,0 +1,26 @@
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    
+    height: 55px;
+    
+    background: #0064FF;
+    
+}
+
+.image {
+  width: 119px;
+  height: 19px;
+}
+.bar{
+    width: 467px;
+    display: flex;
+    height: 55px;
+}
+.language{
+    background-color: #3081FE;
+}
