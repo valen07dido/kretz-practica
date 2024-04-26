@@ -38,7 +38,7 @@ const Footer = () => {
         <div className={styles.location}>
         <p className={styles.title}>PLANTA INDUSTRIAL</p>
           <p className={styles.text}>
-            Ruta Nacional N°9 km 2762126 / Pueblo Esther / Santa Fe / Argentina
+            Ruta Nacional N°9 km 276 / 2126 / Pueblo Esther / Santa Fe / Argentina
           </p>
           <p className={styles.text}>Tel: 0054 341 492 7400</p>
           <a href="mailTo:ventas@kretz.com.ar"  className={styles.mail}>ventas@kretz.com.ar</a>

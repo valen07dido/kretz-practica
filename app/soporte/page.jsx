@@ -1,5 +1,5 @@
 import Footer from '@/Components/Footer/Footer'
-import NavBar from '@/Components/NavBar/NavBar'
+import NavBar from '@/Components/NavBar/NavBar.jsx'
 import React from 'react'
 
 const page = () => {

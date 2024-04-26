@@ -37,7 +37,6 @@
   align-items: center;
   align-content: center;
   text-align: center;
-  /* background-color: red; */
   height: 50px;
   margin: 0 190px 30px 0;
 }
@@ -78,6 +77,7 @@
 .componentNav {
   color: #cdd3de;
   margin: 10px;
+  cursor: pointer;
 }
 .text {
   color: #cdd3de;
