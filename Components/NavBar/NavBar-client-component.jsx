@@ -1,21 +1,25 @@
+'use client';
 import Image from "next/image";
 import styles from "@/Components/NavBar/NavBar.module.css";
 import logo from "@/public/logo-header.png";
 import { IoSearchSharp } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import { PiShoppingCart } from "react-icons/pi";
+import { usePathname } from "next/navigation";
 const NavBar = () => {
+  const pathname=usePathname()
+  console.log(pathname)
   return (
     <nav className={styles.container}>
       <Image src={logo} className={styles.image} />
       <div className={styles.bar}>
-        <p className={styles.navigation}>Soluciones</p>
-        <p className={styles.navigation}>Mercado</p>
-        <p className={styles.navigation}>Soporte</p>
-        <p className={styles.navigation}>Distribuidores</p>
-        <p className={styles.navigation}>Nosotros</p>
-        <p className={styles.navigation}>FAQs</p>
-        <p className={styles.navigation}>News</p>
+        <a href="/soluciones" className={pathname=="/soluciones"?styles.navigationActive:styles.navigation}>Soluciones</a>
+        <a href="/mercado" className={pathname=="/mercado"?styles.navigationActive:styles.navigation}>Mercado</a>
+        <a href="/soporte" className={pathname=="/soporte"?styles.navigationActive:styles.navigation}>Soporte</a>
+        <a href="/distribuidores" className={pathname=="/distribuidores"?styles.navigationActive:styles.navigation}>Distribuidores</a>
+        <a href="/nosotros" className={pathname=="/nosotros"?styles.navigationActive:styles.navigation}>Nosotros</a>
+        <a href="/FaQs" className={pathname=="/FaQs"?styles.navigationActive:styles.navigation}>FAQs</a>
+        <a href="/news" className={pathname=="/News"?styles.navigationActive:styles.navigation}>News</a>
         <button className={styles.products}>Productos</button>
       </div>
 

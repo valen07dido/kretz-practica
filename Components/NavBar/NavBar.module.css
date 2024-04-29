@@ -20,6 +20,7 @@
   margin-left: 10px;
   color: #cdd3de;
   font-weight: bold;
+  text-decoration: none;
 }
 .products {
   border-radius: 30px;
@@ -64,4 +65,16 @@
   height: 30px;
   font-size: 15px;
   font-weight: 600;
+}
+.navigationActive{
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #cdd3de;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  border-bottom: solid 5px #cdd3de;
+  height: 50px;
 }

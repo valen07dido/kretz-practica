@@ -1,15 +1,12 @@
-import Footer from '@/Components/Footer/Footer'
-import NavBar from '@/Components/NavBar/NavBar.jsx'
-import React from 'react'
+import NavBar from '@/Components/NavBar/NavBar-client-component.jsx';
+import React from 'react';
 
-const page = () => {
+const Page = () => {
   return (
     <div>
-      <NavBar/>
-        <h1>soy el page</h1>
-        <Footer/>
+      <h1>Soy la página</h1>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
