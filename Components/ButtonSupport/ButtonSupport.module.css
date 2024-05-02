@@ -1,0 +1,22 @@
+.button {
+  background-color: #181a20;
+  width: 380.62px;
+  height: 146px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.img {
+  position: relative;
+  left: 304.91px;
+  top: 25px;
+}
+.text {
+  position: relative;
+  width: 327.42px;
+  left: 30px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #f2f4f8;
+}

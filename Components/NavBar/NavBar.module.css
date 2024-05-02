@@ -13,14 +13,37 @@
 .bar {
   align-items: center;
   display: flex;
+  justify-content: space-evenly;
+  width: 467px;
   height: 55px;
+  gap: 18px;
 }
 .navigation {
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #cdd3de;
-  font-weight: bold;
   text-decoration: none;
+  color: #F2F4F8;
+  font-size: 13px;
+  width: 79px;
+  text-align: center;
+  height: 35px;
+  font-weight: 600;
+  line-height: 15.73px;
+  margin-top: 20px;
+  &:hover{
+  height: 31px;
+  border-bottom:#F2F4F8 4px solid ;
+  }
+}
+.navigationActive {
+  text-decoration: none;
+  color: #F2F4F8;
+  font-size: 13px;
+  width: 79px;
+  height: 31px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 15.73px;
+  margin-top: 20px;
+  border-bottom:#F2F4F8 4px solid ;
 }
 .products {
   border-radius: 30px;
@@ -35,7 +58,6 @@
 .box3 {
   display: flex;
   align-items: center;
-
 }
 .buttons {
   background-color: #0064ff;
@@ -46,35 +68,27 @@
   height: 30px;
 }
 .icon {
-  font-size: 29px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #F2F4F8;
 }
 .containLanguage {
+  height: 30px;
+  width: 106px;
   border-radius: 5px;
   overflow: hidden;
   margin: 10px;
 }
 .language {
-  background-color: #3081fe;
-  color: #cdd3de;
-  flex-grow: 1;
+  font-size: 12px;
+  font-weight: 700;
   margin: 0 1px 0 1px;
-  border-radius: 0;
-  text-align: center;
+  background-color: #3081fe;
   border: none;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.navigationActive{
-  margin-right: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: #cdd3de;
-  align-items: center;
+  line-height: 18.46px;
   text-align: center;
-  align-content: center;
-  font-weight: bold;
-  border-bottom: solid 5px #cdd3de;
-  height: 50px;
+  width: 33px;
+  color: #F2F4F8;
+  height: 30px;
 }

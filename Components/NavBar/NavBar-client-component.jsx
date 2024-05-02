@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/Components/NavBar/NavBar.module.css";
 import logo from "@/public/logo-header.png";
 import { IoSearchSharp } from "react-icons/io5";
-import { FiUser } from "react-icons/fi";
+import { GoMail } from "react-icons/go";
 import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 const NavBar = () => {
@@ -13,14 +13,11 @@ const NavBar = () => {
     <nav className={styles.container}>
       <Image src={logo} className={styles.image} />
       <div className={styles.bar}>
-        <a href="/soluciones" className={pathname=="/soluciones"?styles.navigationActive:styles.navigation}>Soluciones</a>
-        <a href="/mercado" className={pathname=="/mercado"?styles.navigationActive:styles.navigation}>Mercado</a>
+        <a href="/productos" className={pathname=="/productos"?styles.navigationActive:styles.navigation}>Productos</a>
         <a href="/soporte" className={pathname=="/soporte"?styles.navigationActive:styles.navigation}>Soporte</a>
-        <a href="/distribuidores" className={pathname=="/distribuidores"?styles.navigationActive:styles.navigation}>Distribuidores</a>
+        <a href="/socios" className={pathname=="/socios"?styles.navigationActive:styles.navigation}>Socios</a>
         <a href="/nosotros" className={pathname=="/nosotros"?styles.navigationActive:styles.navigation}>Nosotros</a>
-        <a href="/FaQs" className={pathname=="/FaQs"?styles.navigationActive:styles.navigation}>FAQs</a>
-        <a href="/news" className={pathname=="/News"?styles.navigationActive:styles.navigation}>News</a>
-        <button className={styles.products}>Productos</button>
+        <a href="/noticias" className={pathname=="/noticias"?styles.navigationActive:styles.navigation}>Noticias</a>
       </div>
 
       <div className={styles.box3}>
@@ -29,7 +26,7 @@ const NavBar = () => {
             <IoSearchSharp className={styles.icon} />
           </button>
           <button className={styles.buttons}>
-            <FiUser className={styles.icon} />
+            <GoMail className={styles.icon} />
           </button>
           <button className={styles.buttons}>
             <PiShoppingCart className={styles.icon} />
