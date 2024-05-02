@@ -1,11 +1,16 @@
 .container {
-    width: Hug (265px)px;
-    height: Fixed (358px)px;
-    top: 194px;
-    left: 2320px;
-    gap: 10px;
-    border-radius: 24px 0px 0px 0px;
-    opacity: 0px;
+  margin: 10px;
+  width: 265px;
+  height: 358px;
+  top: 194px;
+  left: 2320px;
+  gap: 10px;
+  border-radius: 24px;
+  opacity: 0px;
+  transition: 1s;
+  &:hover {
+    box-shadow: 2px 2px 5px 5px #29B1C9;
+  }
 }
 .image {
   border-radius: 24px;

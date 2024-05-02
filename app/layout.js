@@ -1,6 +1,7 @@
 import NavBar from "@/Components/NavBar/NavBar-client-component";
 import "./globals.css";
 import { inter } from "@/Utils/fonts";
+import Footer from "@/Components/Footer/Footer";
 
 export const metadata = {
   title: "Kretz SA",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} antialiased`}>
         <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
