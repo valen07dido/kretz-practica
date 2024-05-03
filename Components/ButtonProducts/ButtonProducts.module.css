@@ -4,8 +4,12 @@
   height: 146px;
   border-radius: 30px;
   margin: 10px;
+  transition: 0.5s;
+  &:hover{
+    background-color:#0064FF;
+    cursor: pointer;
+  }
 }
-
 .img {
   position: relative;
   left: 304.91px;

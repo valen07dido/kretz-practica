@@ -1,0 +1,12 @@
+.carousel :global(.slick-dots li button:before) {
+    color: #A3C5F7;
+  }
+  
+  .carousel :global(.slick-dots li.slick-active button:before) {
+    color: #0064FF;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

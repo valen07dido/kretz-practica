@@ -4,13 +4,15 @@ import imagePrueba from "@/public/Report-NX-Visor-Bajo.jpg";
 import React from "react";
 import ImagePrueba2 from "@/public/VerMas.png";
 import icon from "@/public/Icon-prueba.png";
-import ButtonSupport from "@/Components/ButtonSupport/ButtonSupport";
+import ButtonSupport from "@/Components/ButtonProducts/ButtonProducts";
+import Carousel from "@/Components/Carousel/Carousel";
 const page = () => {
   return (
     <div>
       <Card img={imagePrueba} title={"Soporte"} />
       <CardVerMas img={ImagePrueba2} title={"no se"} />
       <ButtonSupport icon={icon} text={"Posventa"} />
+
     </div>
   );
 };

@@ -1,0 +1,23 @@
+
+.banner{
+    width: 100%;
+}
+
+.title {
+  width: 1002px;
+  height: 76px;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64.64px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  position: relative;
+  bottom: 400px;
+  left: 10%;
+}
+.carousel{
+  padding: 60px 0 60px 0;
+  margin-top: -170px;
+  background-color: #E9EEF3;  
+}

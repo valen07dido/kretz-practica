@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./ButtonSupport.module.css";
+import styles from "./ButtonProducts.module.css";
 const ButtonSupport = ({ icon, text }) => {
   return (
     <div className={styles.button}>

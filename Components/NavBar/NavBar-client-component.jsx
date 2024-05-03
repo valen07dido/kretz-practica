@@ -8,7 +8,7 @@ import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 const NavBar = () => {
   const pathname=usePathname()
-  console.log(pathname)
+
   return (
     <nav className={styles.container}>
       <Image src={logo} className={styles.image} />
