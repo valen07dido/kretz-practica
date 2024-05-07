@@ -2,7 +2,6 @@ import NavBar from "@/Components/NavBar/NavBar-client-component";
 import "./globals.css";
 import { inter } from "@/Utils/fonts";
 import Footer from "@/Components/Footer/Footer";
-import icon from "../public/logo.ico"
 
 export const metadata = {
   title: "Kretz SA",
@@ -12,12 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="icon"
-          href={icon}
-        />
-      </head>
+
       <body className={`${inter.className} antialiased`}>
         <NavBar />
         {children}

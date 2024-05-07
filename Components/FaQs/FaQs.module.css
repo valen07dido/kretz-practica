@@ -1,0 +1,29 @@
+.container{
+    background-color: #FFFFFF;
+    width: 1111px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 10px 20px;
+}
+.question{
+    font-weight: 700;
+    font-size: 24px;
+    color: #455363;
+}
+.showMore{
+    font-weight: 400;
+    font-size: 40px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #455363;
+}
+.answer{
+    font-size: 19px;
+    color: #455363;
+    font-weight: 400;
+    padding: 0 20px 30px 20px;
+}
