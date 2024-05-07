@@ -8,8 +8,8 @@ import FaQs from "@/Components/FaQs/FaQs";
 const page = () => {
   return (
     <div>
-      <Card img={imagePrueba} title={"Soporte"} />
-      <ButtonSupport icon={icon} text={"Posventa"} />
+      {/* <Card img={imagePrueba} title={"Soporte"} /> */}
+      {/* <ButtonSupport icon={icon} text={"Posventa"} /> */}
     </div>
   );
 };
