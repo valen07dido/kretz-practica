@@ -15,15 +15,11 @@ const NavBar = () => {
   const [name, setName] = useState("");
   const handleHiddentrue = (e) => {
     setName(e);
-    console.log(name);
     setHidden(true);
-    console.log(hidden);
   };
   const handleHiddenfalse = (e) => {
     setName(e);
-    console.log(name);
     setHidden(false);
-    console.log(hidden);
   };
   const handleMouseEnter = (e) => {
     clearTimeout(timeoutId);
@@ -38,7 +34,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className={styles.container}>
-        <Image src={logo} className={styles.image} />
+        <Image src={logo} className={styles.image} alt="logo" />
         <div className={styles.bar}>
           <Link
             href="/productos"
@@ -121,9 +117,9 @@ const NavBar = () => {
         </div>
       </nav>
       <div>
-        {hidden && name === "soporte" ? <h1>soporte</h1> : null}
-        {hidden && name === "productos" ? <h1>productos</h1> : null}
-        {hidden && name === "nosotros" ? <h1>nosotros</h1> : null}
+        {hidden && name === "soporte" ? <div className={styles.hidden}>soporte</div> : null}
+        {hidden && name === "productos" ? <div className={styles.hidden}>productos</div> : null}
+        {hidden && name === "nosotros" ? <div className={styles.hidden}>nosotros</div> : null}
       </div>
     </div>
   );

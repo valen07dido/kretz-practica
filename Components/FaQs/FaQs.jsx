@@ -17,7 +17,7 @@ const FaQs = ({array}) => {
   return (
     <div>
       {array.map((e, index) => (
-        <div className={styles.container}>
+        <div className={styles.container} key={index}>
           <div className={styles.content}>
             <p className={styles.question}>{e.pregunta}</p>
             <button onClick={() => handleActive(index)} className={styles.showMore}>{active[index]?<RiSubtractFill/>:<RiAddFill/>}</button>

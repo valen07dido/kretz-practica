@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className={styles.chest}>
 
-        <Image src={logo} className={styles.image}/>
+        <Image src={logo} className={styles.image} alt="logo" width="227" height="68"/>
 
         <div className={styles.navbar}>
           <Link href="/" className={styles.links}>

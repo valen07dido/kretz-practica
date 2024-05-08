@@ -1,4 +1,4 @@
-import NavBar from '@/Components/NavBar/NavBar-client-component.jsx';
+import NavBar from '@/Components/NavBar/NavBar.jsx';
 import React from 'react';
 
 const Page = () => {

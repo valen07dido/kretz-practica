@@ -33,7 +33,7 @@
 }
 .navbar2 {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   align-content: center;
   text-align: center;
@@ -94,10 +94,6 @@
   color: #0064ff;
 }
 
-.image{
-    width: 227px;
-    height: 68px;
-}
 .speach{
   color: #F2F4F8;
 }
