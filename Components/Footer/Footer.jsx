@@ -2,6 +2,7 @@ import React from "react";
 import logo from "@/public/logo-footer.png";
 import styles from "@/Components/Footer/Footer.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebook,
   FaYoutube,
@@ -18,21 +19,21 @@ const Footer = () => {
         <Image src={logo} className={styles.image}/>
 
         <div className={styles.navbar}>
-          <a href="/" className={styles.links}>
+          <Link href="/" className={styles.links}>
             Home
-          </a>
-          <a href="/soporte" className={styles.links}>
+          </Link>
+          <Link href="/soporte" className={styles.links}>
             Soporte
-          </a>
-          <a href="/nosotros" className={styles.links}>
+          </Link>
+          <Link href="/nosotros" className={styles.links}>
             Nosotros
-          </a>
-          <a href="/contacto" className={styles.links}>
+          </Link>
+          <Link href="/contacto" className={styles.links}>
             Contacto
-          </a>
-          <a href="/micuenta" className={styles.links}>
+          </Link>
+          <Link href="/micuenta" className={styles.links}>
             Mi Cuenta
-          </a>
+          </Link>
         </div>
 
         <div className={styles.location}>
@@ -41,7 +42,7 @@ const Footer = () => {
             Ruta Nacional N°9 km 276 / 2126 / Pueblo Esther / Santa Fe / Argentina
           </p>
           <p className={styles.text}>Tel: 0054 341 492 7400</p>
-          <a href="mailTo:ventas@kretz.com.ar"  className={styles.mail}>ventas@kretz.com.ar</a>
+          <Link href="mailTo:ventas@kretz.com.ar"  className={styles.mail}>ventas@kretz.com.ar</Link>
         </div>
 
         <div className={styles.location}>
@@ -51,7 +52,7 @@ const Footer = () => {
             Jal., México
           </p>
           <p className={styles.text}>Tel: +52 33 3673 0606</p>
-          <a href="mailTo:ventas@kretz.com.mx" className={styles.mail}>ventas@kretz.com.mx</a>
+          <Link href="mailTo:ventas@kretz.com.mx" className={styles.mail}>ventas@kretz.com.mx</Link>
         </div>
 
       </div>

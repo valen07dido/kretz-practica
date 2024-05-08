@@ -6,26 +6,33 @@ import { IoSearchSharp } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
 import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { useState } from "react";
 const NavBar = () => {
   const pathname = usePathname();
   const [timeoutId, setTimeoutId] = useState(null);
   const [hidden, setHidden] = useState(false);
   const [name, setName] = useState("");
-  const handleHidden = (e) => {
+  const handleHiddentrue = (e) => {
     setName(e);
     console.log(name);
-    setHidden(!hidden);
+    setHidden(true);
+    console.log(hidden);
+  };
+  const handleHiddenfalse = (e) => {
+    setName(e);
+    console.log(name);
+    setHidden(false);
     console.log(hidden);
   };
   const handleMouseEnter = (e) => {
     clearTimeout(timeoutId);
-    setTimeoutId(setTimeout(() => handleHidden(e.target.name), 100));
+    setTimeoutId(setTimeout(() => handleHiddentrue(e.target.name), 100));
   };
 
   const handleMouseLeave = (e) => {
     clearTimeout(timeoutId);
-    setTimeoutId(setTimeout(() => handleHidden(e.target.name), 100));
+    setTimeoutId(setTimeout(() => handleHiddenfalse(e.target.name), 100));
   };
 
   return (
@@ -33,7 +40,7 @@ const NavBar = () => {
       <nav className={styles.container}>
         <Image src={logo} className={styles.image} />
         <div className={styles.bar}>
-          <a
+          <Link
             href="/productos"
             name="productos"
             className={
@@ -45,8 +52,8 @@ const NavBar = () => {
             onMouseLeave={handleMouseLeave}
           >
             Productos
-          </a>
-          <a
+          </Link>
+          <Link
             href="/soporte"
             name="soporte"
             className={
@@ -58,8 +65,8 @@ const NavBar = () => {
             onMouseLeave={handleMouseLeave}
           >
             Soporte
-          </a>
-          <a
+          </Link>
+          <Link
             href="/socios"
             className={
               pathname == "/socios"
@@ -68,8 +75,8 @@ const NavBar = () => {
             }
           >
             Socios
-          </a>
-          <a
+          </Link>
+          <Link
             href="/nosotros"
             name="nosotros"
             className={
@@ -81,8 +88,8 @@ const NavBar = () => {
             onMouseLeave={handleMouseLeave}
           >
             Nosotros
-          </a>
-          <a
+          </Link>
+          <Link
             href="/noticias"
             className={
               pathname == "/noticias"
@@ -91,7 +98,7 @@ const NavBar = () => {
             }
           >
             Noticias
-          </a>
+          </Link>
         </div>
 
         <div className={styles.box3}>
