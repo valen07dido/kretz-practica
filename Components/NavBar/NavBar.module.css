@@ -104,5 +104,7 @@
 }
 .hidden{
   position: absolute;
-  background-color:#cdd3de ;
+  background-color:#eceeefd4;
+  display: flex;
+  width: 200%;
 }

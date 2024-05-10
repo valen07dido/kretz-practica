@@ -8,60 +8,96 @@ import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
-const NavBar = () => {
-  const pathname = usePathname();
-  const [timeoutId, setTimeoutId] = useState(null);
+
+const ParentComponent = ({ children, name }) => {
   const [hidden, setHidden] = useState(false);
-  const [name, setName] = useState("");
-  const handleHiddentrue = (e) => {
-    setName(e);
+
+  const handleMouseEnter = () => {
     setHidden(true);
   };
-  const handleHiddenfalse = (e) => {
-    setName(e);
+
+  const handleMouseLeave = () => {
     setHidden(false);
   };
-  const handleMouseEnter = (e) => {
-    clearTimeout(timeoutId);
-    setTimeoutId(setTimeout(() => handleHiddentrue(e.target.name), 100));
-  };
 
-  const handleMouseLeave = (e) => {
-    clearTimeout(timeoutId);
-    setTimeoutId(setTimeout(() => handleHiddenfalse(e.target.name), 100));
-  };
+  return (
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      {children(hidden)}
+    </div>
+  );
+};
+
+const NavBar = () => {
+  const pathname = usePathname();
 
   return (
     <div>
       <nav className={styles.container}>
         <Image src={logo} className={styles.image} alt="logo" />
         <div className={styles.bar}>
-          <Link
-            href="/productos"
-            name="productos"
-            className={
-              pathname == "/productos"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Productos
-          </Link>
-          <Link
-            href="/soporte"
-            name="soporte"
-            className={
-              pathname == "/soporte"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Soporte
-          </Link>
+          <ParentComponent name="productos">
+            {(hidden) => (
+              <>
+                <Link
+                  href="/productos"
+                  name="productos"
+                  className={
+                    pathname == "/productos"
+                      ? styles.navigationActive
+                      : styles.navigation
+                  }
+                >
+                  Productos
+                </Link>
+                {hidden && (
+                  <div className={styles.hidden}>
+                    <h1 className={styles.title}>Soporte</h1>
+                    <div>
+                      <p className={styles.bold}>Atencion al cliente</p>
+                      <p className={styles.bold}>Tutoriales</p>
+                      <p className={styles.bold}>Postventa</p>
+                      <p className={styles.text}>Red de Tecnicos</p>
+                      <p>Repuestos</p>
+                      <p>Certificados</p>
+                      <p className={styles.bold}>Activacion de Garantias</p>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+          </ParentComponent>
+          <ParentComponent name="soporte">
+            {(hidden) => (
+              <>
+                <Link
+                  href="/soporte"
+                  name="soporte"
+                  className={
+                    pathname == "/soporte"
+                      ? styles.navigationActive
+                      : styles.navigation
+                  }
+                >
+                  Soporte
+                </Link>
+                {hidden && (
+                  <div className={styles.hidden}>
+                    <h1 className={styles.title}>Soporte</h1>
+                    <div>
+                      <p className={styles.bold}>Atencion al cliente</p>
+                      <p className={styles.bold}>Tutoriales</p>
+                      <p className={styles.bold}>Postventa</p>
+                      <p className={styles.text}>Red de Tecnicos</p>
+                      <p>Repuestos</p>
+                      <p>Certificados</p>
+                      <p className={styles.bold}>Activacion de Garantias</p>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+          </ParentComponent>
+         
           <Link
             href="/socios"
             className={
@@ -72,19 +108,37 @@ const NavBar = () => {
           >
             Socios
           </Link>
-          <Link
-            href="/nosotros"
-            name="nosotros"
-            className={
-              pathname == "/nosotros"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Nosotros
-          </Link>
+          <ParentComponent name="nosotros">
+            {(hidden) => (
+              <>
+                <Link
+                  href="/nosotros"
+                  name="nosotros"
+                  className={
+                    pathname == "/nosotros"
+                      ? styles.navigationActive
+                      : styles.navigation
+                  }
+                >
+                  Nosotros
+                </Link>
+                {hidden && (
+                  <div className={styles.hidden}>
+                    <h1 className={styles.title}>Soporte</h1>
+                    <div>
+                      <p className={styles.bold}>Atencion al cliente</p>
+                      <p className={styles.bold}>Tutoriales</p>
+                      <p className={styles.bold}>Postventa</p>
+                      <p className={styles.text}>Red de Tecnicos</p>
+                      <p>Repuestos</p>
+                      <p>Certificados</p>
+                      <p className={styles.bold}>Activacion de Garantias</p>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+          </ParentComponent>
           <Link
             href="/noticias"
             className={
@@ -116,11 +170,6 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div>
-        {hidden && name === "soporte" ? <div className={styles.hidden}>soporte</div> : null}
-        {hidden && name === "productos" ? <div className={styles.hidden}>productos</div> : null}
-        {hidden && name === "nosotros" ? <div className={styles.hidden}>nosotros</div> : null}
-      </div>
     </div>
   );
 };
