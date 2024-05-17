@@ -15,6 +15,7 @@ export default function Carousel({array}) {
     swipeToSlide: true,
     autoplay: true,
     speed: 1000,
+    arrows:false,
     autoplaySpeed: 3000,
   };
 

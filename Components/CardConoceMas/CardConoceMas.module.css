@@ -1,0 +1,14 @@
+.container{
+    margin: 10px;
+    background-color: #E9EEF3;
+    width: 1103px;
+    height: 986px;
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
