@@ -8,7 +8,7 @@ const CardConoceMas = () => {
     <div className={styles.container}>
       <Image src={img} width={517} />
       <div className={styles.container2}>
-        <h1>Report</h1>
+        <h1 className={styles.name}>Report</h1>
         <ButtonConoceMas />
       </div>
     </div>

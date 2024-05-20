@@ -11,4 +11,12 @@
 .container2{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.name{
+font-size: 64px;
+font-weight: 600;
+line-height: 57.6px;
+letter-spacing: -0.03em;
+text-align: left;
 }

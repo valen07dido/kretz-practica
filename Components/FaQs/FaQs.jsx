@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./FaQs.module.css";
-import { IoAdd } from "react-icons/io5";
 import { RiSubtractFill } from "react-icons/ri";
 import { RiAddFill } from "react-icons/ri";
 

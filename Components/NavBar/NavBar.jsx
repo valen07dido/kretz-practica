@@ -39,14 +39,26 @@ const NavBar = () => {
             {activePanel === "productos" && (
               <div className={styles.hidden}>
                 <h1 className={styles.title}>Productos</h1>
-                <div>
-                  <p className={styles.bold}>Atencion al cliente</p>
-                  <p className={styles.bold}>Tutoriales</p>
-                  <p className={styles.bold}>Postventa</p>
-                  <p className={styles.text}>Red de Tecnicos</p>
-                  <p>Repuestos</p>
-                  <p>Certificados</p>
-                  <p className={styles.bold}>Activacion de Garantias</p>
+                <div className={styles.menu}>
+                  <div>
+                    <h4 className={styles.text}>Por categoría</h4>
+                    <p className={styles.bold}>Balanzas</p>
+                    <p className={styles.bold}>Cajas registradoras</p>
+                    <p className={styles.bold}>Conector de datos</p>
+                    <p className={styles.bold}>Etiquetas electronicas</p>
+                    <p className={styles.bold}>Impresores</p>
+                    <p className={styles.bold}>Insumos y accesorios</p>
+                    <p className={styles.bold}>Lectores</p>
+                    <p className={styles.bold}>Terminales interactivas</p>
+                    <p className={styles.bold}>Verificadores de precio</p>
+                  </div>
+                  <div>
+                    <h4 className={styles.text}>Por soluciones</h4>
+                    <p className={styles.bold}>Supermercados</p>
+                    <p className={styles.bold}>Comercios</p>
+                    <p className={styles.bold}>Industrias</p>
+                    <p className={styles.bold}>Laboratorios</p>
+                  </div>
                 </div>
               </div>
             )}
@@ -71,8 +83,8 @@ const NavBar = () => {
                   <p className={styles.bold}>Tutoriales</p>
                   <p className={styles.bold}>Postventa</p>
                   <p className={styles.text}>Red de Tecnicos</p>
-                  <p>Repuestos</p>
-                  <p>Certificados</p>
+                  <p className={styles.text}>Repuestos</p>
+                  <p className={styles.text}>Certificados</p>
                   <p className={styles.bold}>Activacion de Garantias</p>
                 </div>
               </div>
@@ -84,10 +96,21 @@ const NavBar = () => {
                 ? styles.navigationActive
                 : styles.navigation
             }
+            onMouseEnter={() => handlePanelToggle("socios")}
+            onMouseLeave={() => handlePanelToggle("socios")}
           >
             <Link className={styles.links} href="/socios">
               Socios
             </Link>
+            {activePanel === "socios" && (
+              <div className={styles.hidden}>
+                <h1 className={styles.title}>Socios</h1>
+                <div>
+                  <p className={styles.bold}>Ingresar</p>
+                  <p className={styles.bold}>Registrarse</p>
+                </div>
+              </div>
+            )}
           </div>
           <div
             className={
@@ -105,13 +128,9 @@ const NavBar = () => {
               <div className={styles.hidden}>
                 <h1 className={styles.title}>Nosotros</h1>
                 <div>
-                  <p className={styles.bold}>Atencion al cliente</p>
-                  <p className={styles.bold}>Tutoriales</p>
-                  <p className={styles.bold}>Postventa</p>
-                  <p className={styles.text}>Red de Tecnicos</p>
-                  <p>Repuestos</p>
-                  <p>Certificados</p>
-                  <p className={styles.bold}>Activacion de Garantias</p>
+                  <p className={styles.bold}>Balance social</p>
+                  <p className={styles.bold}>Compliance</p>
+                  <p className={styles.bold}>Trabajá con nosotros</p>
                 </div>
               </div>
             )}
@@ -123,10 +142,7 @@ const NavBar = () => {
                 : styles.navigation
             }
           >
-            <Link
-              href="/noticias"
-              className={styles.links}
-            >
+            <Link href="/noticias" className={styles.links}>
               Noticias
             </Link>
           </div>
