@@ -15,7 +15,7 @@ export default function Carousel({array}) {
     swipeToSlide: true,
     autoplay: true,
     speed: 1000,
-    arrows:false,
+    arrows: false,
     autoplaySpeed: 3000,
   };
 
@@ -23,7 +23,7 @@ export default function Carousel({array}) {
     <Slider {...settings} className={styles.carousel}>
       {array.map((item, index) => (
         <div key={index} className={styles.cardContainer}>
-          <Card img={item.img} title={item.title}  className={styles.cartas}/>
+          <Card img={item.img} title={item.title} className={styles.cartas} />
         </div>
       ))}
     </Slider>

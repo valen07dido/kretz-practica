@@ -1,16 +1,21 @@
 .container {
   width: 372px;
   height: 505px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 24px;
   transition: 0.5s;
-
+  &:hover {
+    transform: translateY(-6px);
+    -webkit-box-shadow: 0px 18px 28px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 18px 28px 0px rgba(0,0,0,0.65);
+    box-shadow: 0px 18px 28px 0px rgba(0,0,0,0.65);
+  }
 }
 .image {
   border-radius: 24px;
 }
 .content {
- margin: 16px 16px 0 16px;
+  margin: 16px 16px 0 16px;
 }
 .title {
   margin-top: -5px;
