@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["ethic.es"],
+    domains: ["ethic.es","res.cloudinary.com"],
   },
 };
 

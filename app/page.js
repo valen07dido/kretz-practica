@@ -1,7 +1,18 @@
 import CardConoceMas from "@/Components/CardConoceMas/CardConoceMas";
 import styles from "./page.module.css";
 import Carousel from "@/Components/Carousel/Carousel";
+import img1 from "@/public/Balanza-Report-NX.png";
+
 export default function Home() {
+
+  const arr=[{
+    img:img1,
+    text:"Report"
+  },
+{
+  img:"https://res.cloudinary.com/dpa8t14c2/image/upload/v1716421621/Kretz-Practica/v88xnomekrkhcvsnmayx.png",
+  text:"Master"
+}]
   return (
     <main className={styles.main}>
       <div className={styles.banner}>
@@ -30,8 +41,12 @@ export default function Home() {
         />
 
       </div>
-    <div>
-      <CardConoceMas/>
+    <div className={styles.products}>
+    {arr.map((item, index) => (
+        <div key={index} className={styles.cardContainer}>
+          <CardConoceMas img={item.img} text={item.text}/>
+        </div>
+      ))}
     </div>
     </main>
   );
