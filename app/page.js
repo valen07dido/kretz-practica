@@ -2,10 +2,11 @@ import CardConoceMas from "@/Components/CardConoceMas/CardConoceMas";
 import styles from "./page.module.css";
 import Carousel from "@/Components/Carousel/Carousel";
 import img1 from "@/public/Balanza-Report-NX.png";
-import kiosko from "@/public/kiosko.png"
-import itegra from '@/public/itegra.png'
-import empresa from '@/public/empresa.png'
+import kiosko from "@/public/kiosko.png";
+import itegra from "@/public/itegra.png";
+import empresa from "@/public/empresa.png";
 import HorizontalCard from "@/Components/HorizontalCard/HorizontalCard";
+import MapComponent from "@/Components/Map/Map";
 
 export default function Home() {
   const arr = [
@@ -73,11 +74,43 @@ export default function Home() {
         ))}
       </div>
       <div className={styles.products}>
-      {horizontalArr.map((item, index) => (
-          <div key={index} >
-            <HorizontalCard img={item.img} text={item.text} title={item.title} orientation={item.orientation}/>
+        {horizontalArr.map((item, index) => (
+          <div key={index}>
+            <HorizontalCard
+              img={item.img}
+              text={item.text}
+              title={item.title}
+              orientation={item.orientation}
+            />
           </div>
         ))}
+      </div>
+      <div>
+      <div className={styles.carousel}>
+        <div>
+          <h1 className={styles.title2}>Novedades</h1>
+        </div>
+        <Carousel
+          array={[
+            {
+              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              title: "hola",
+            },
+            {
+              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              title: "hola",
+            },
+            {
+              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              title: "hola",
+            },
+          ]}
+          className={styles.carouselcomp}
+        />
+      </div>
+      </div>
+      <div className={styles.products}>
+        <MapComponent />
       </div>
     </main>
   );

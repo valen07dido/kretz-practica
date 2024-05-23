@@ -1,0 +1,46 @@
+.container {
+  background-color: #181a20;
+  width: 1200px;
+  height: 866px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40.54px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  background: linear-gradient(90deg, #00ad9a 21%, #0064ff 122.55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.title2{
+font-size: 20px;
+font-weight: 400;
+line-height: 30.17px;
+text-align: left;
+color: #C3C8CD;
+width: 280px;
+margin:30px;
+}
+.box1 {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.box2{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+.countries{
+font-size: 14px;
+font-weight: 400;
+line-height: 21.12px;
+text-align: left;
+color: #697581;
+}
