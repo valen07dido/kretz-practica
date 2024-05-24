@@ -9,7 +9,7 @@ const HorizontalCard = ({ img, title, text, orientation }) => {
         <p className={styles.text}>{text}</p>
         <h2 className={styles.button}>{"Ver Más >"}</h2>
       </div>
-      <Image src={img} width={500} height={500} />
+      <Image src={img} width={550} height={417} />
     </div>
   );
 };

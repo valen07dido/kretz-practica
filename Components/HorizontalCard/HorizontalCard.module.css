@@ -1,7 +1,7 @@
 .containerD {
   display: flex;
   width: 1100px;
-  justify-content: space-between;
+  justify-content: space-around; /* Modificado */
   align-items: center;
   background-color: #ffffff;
   margin: 32px;
@@ -10,8 +10,9 @@
 }
 .containerI {
   display: flex;
+  height: 416px;
   width: 1100px;
-  justify-content: space-between;
+  justify-content: space-around; /* Modificado */
   align-items: center;
   flex-direction: row-reverse;
   background-color: #ffffff;
@@ -19,9 +20,14 @@
   border-radius: 30px;
   overflow-y: hidden;
 }
-.containerText{
-    width: 410px;
-    
+.containerText {
+  width: 450px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin: 0 50px 0 50px;
 }
 .title {
   font-size: 35px;
@@ -30,7 +36,6 @@
   width: 340px;
   letter-spacing: -0.02em;
   text-align: left;
-  margin: 0 0 50px 50px;
 }
 .text {
   font-size: 20px;
@@ -39,7 +44,6 @@
   letter-spacing: -0.03em;
   color: #455363;
   text-align: left;
-  margin: 0 0 50px 50px;
 }
 .button {
   color: #0064ff;
@@ -48,7 +52,5 @@
   line-height: 30.77px;
   letter-spacing: -0.01em;
   text-align: left;
-  margin: 0 0 50px 50px;
-
   cursor: pointer;
 }
