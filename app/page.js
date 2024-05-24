@@ -44,10 +44,10 @@ export default function Home() {
       <div className={styles.banner}>
         <h1 className={styles.title}>Impulsa tu negocio</h1>
       </div>
-      <div className={styles.carousel}>
         <div>
           <h1 className={styles.title2}>Conocé nuestras soluciones</h1>
         </div>
+      <div className={styles.carousel}>
         <Carousel
           array={[
             {

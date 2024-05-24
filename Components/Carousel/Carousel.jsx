@@ -14,18 +14,19 @@ export default function Carousel({array}) {
     slidesToShow: 3,
     swipeToSlide: true,
     autoplay: true,
-    speed: 1000,
     arrows: false,
     autoplaySpeed: 3000,
   };
 
   return (
-    <Slider {...settings} className={styles.carousel}>
-      {array.map((item, index) => (
-        <div key={index} className={styles.cardContainer}>
-          <Card img={item.img} title={item.title} className={styles.cartas} />
-        </div>
-      ))}
-    </Slider>
+    <div className={styles.carouselContainer}>
+      <Slider {...settings} className={styles.carousel}>
+        {array.map((item, index) => (
+          <div key={index} className={styles.cardContainer}>
+            <Card img={item.img} title={item.title} className={styles.cartas} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }

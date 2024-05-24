@@ -1,3 +1,6 @@
+.main{
+  background-color: #F2F4F8;
+}
 .title {
   height: 76px;
   color: #ffffff;
@@ -5,10 +8,11 @@
   font-weight: 700;
 }
 .carousel {
-  padding: 10px 5px 0 5px;
-  background-color: #e9eef3;
-  height: 720px;
-  }
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .banner {
   background-image: url("../public/image-home.png");
   background-position: center;
