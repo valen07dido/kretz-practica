@@ -86,10 +86,10 @@ export default function Home() {
         ))}
       </div>
       <div>
-      <div className={styles.carousel}>
         <div>
           <h1 className={styles.title2}>Novedades</h1>
         </div>
+      <div className={styles.carousel}>
         <Carousel
           array={[
             {
