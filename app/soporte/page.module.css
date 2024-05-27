@@ -16,3 +16,9 @@
     font-size: 64px;
     font-weight: 700;
   }
+  .buttons{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    
+  }
