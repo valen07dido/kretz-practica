@@ -1,9 +1,11 @@
 .carousel :global(.slick-dots li button:before) {
+  margin-top: -30px;
   color: #a3c5f7;
   font-size: 10px;
 }
 
 .carousel :global(.slick-dots li.slick-active button:before) {
+  margin-top: -30px;
   color: #0064ff;
   font-size: 10px;
 }

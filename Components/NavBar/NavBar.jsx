@@ -40,7 +40,7 @@ const NavBar = () => {
                 <div className={styles.hidden}>
                   <h1 className={styles.title}>Productos</h1>
                   <div className={styles.menu}>
-                    <div>
+                    <div className={styles.boxText}>
                       <h4 className={styles.text}>Por categoría</h4>
                       <p className={styles.bold}>Balanzas</p>
                       <p className={styles.bold}>Cajas registradoras</p>
@@ -52,7 +52,7 @@ const NavBar = () => {
                       <p className={styles.bold}>Terminales interactivas</p>
                       <p className={styles.bold}>Verificadores de precio</p>
                     </div>
-                    <div>
+                    <div className={styles.boxText}>
                       <h4 className={styles.text}>Por soluciones</h4>
                       <p className={styles.bold}>Supermercados</p>
                       <p className={styles.bold}>Comercios</p>
@@ -78,7 +78,7 @@ const NavBar = () => {
               {activePanel === "soporte" && (
                 <div className={styles.hidden}>
                   <h1 className={styles.title}>Soporte</h1>
-                  <div>
+                  <div className={styles.boxText}> 
                     <p className={styles.bold}>Atencion al cliente</p>
                     <p className={styles.bold}>Tutoriales</p>
                     <p className={styles.bold}>Postventa</p>
@@ -127,7 +127,7 @@ const NavBar = () => {
               {activePanel === "nosotros" && (
                 <div className={styles.hidden}>
                   <h1 className={styles.title}>Nosotros</h1>
-                  <div>
+                  <div className={styles.boxText}>
                     <p className={styles.bold}>Balance social</p>
                     <p className={styles.bold}>Compliance</p>
                     <p className={styles.bold}>Trabajá con nosotros</p>
