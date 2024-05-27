@@ -1,5 +1,5 @@
-.main{
-  background-color: #F2F4F8;
+.main {
+  background-color: #f2f4f8;
 }
 .title {
   height: 76px;
@@ -8,7 +8,7 @@
   font-weight: 700;
 }
 .carousel {
-  margin: 0 !important;
+  margin: auto !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   font-weight: 700;
   margin: 30px 0 30px 0;
 }
-.products{
+.products {
   display: flex;
   flex-direction: column;
   justify-content: center;

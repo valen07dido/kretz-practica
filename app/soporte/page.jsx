@@ -1,10 +1,9 @@
-import NavBar from '@/Components/NavBar/NavBar.jsx';
 import React from 'react';
-
+import styles from "./page.module.css"
 const Page = () => {
   return (
-    <div>
-      <h1>Soy la página</h1>
+    <div className={styles.header}>
+      <h1 className={styles.title}>Soporte</h1>
     </div>
   );
 };
