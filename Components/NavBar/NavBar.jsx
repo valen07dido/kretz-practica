@@ -42,22 +42,48 @@ const NavBar = () => {
                 <div className={styles.menu}>
                   <div className={styles.boxText}>
                     <h4 className={styles.text}>Por categoría</h4>
-                    <p className={styles.bold}>Balanzas</p>
-                    <p className={styles.bold}>Cajas registradoras</p>
-                    <p className={styles.bold}>Conector de datos</p>
-                    <p className={styles.bold}>Etiquetas electronicas</p>
-                    <p className={styles.bold}>Impresores</p>
-                    <p className={styles.bold}>Insumos y accesorios</p>
-                    <p className={styles.bold}>Lectores</p>
-                    <p className={styles.bold}>Terminales interactivas</p>
-                    <p className={styles.bold}>Verificadores de precio</p>
+                    <Link href="/" className={styles.bold}>
+                      Balanzas
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Cajas registradoras
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Conector de datos
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Etiquetas electronicas
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Impresores
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Insumos y accesorios
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Lectores
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Terminales interactivas
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Verificadores de precio
+                    </Link>
                   </div>
                   <div className={styles.boxText}>
                     <h4 className={styles.text}>Por soluciones</h4>
-                    <p className={styles.bold}>Supermercados</p>
-                    <p className={styles.bold}>Comercios</p>
-                    <p className={styles.bold}>Industrias</p>
-                    <p className={styles.bold}>Laboratorios</p>
+                    <Link href="/" className={styles.bold}>
+                      Supermercados
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Comercios
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Industrias
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Laboratorios
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -79,13 +105,27 @@ const NavBar = () => {
               <div className={styles.hidden}>
                 <h1 className={styles.title}>Soporte</h1>
                 <div className={styles.boxText}>
-                  <p className={styles.bold}>Atencion al cliente</p>
-                  <Link  href="/soporte/tutoriales" className={styles.bold}>Tutoriales</Link>
-                  <p className={styles.bold}>Postventa</p>
-                  <p className={styles.text}>Red de Tecnicos</p>
-                  <p className={styles.text}>Repuestos</p>
-                  <p className={styles.text}>Certificados</p>
-                  <p className={styles.bold}>Activacion de Garantias</p>
+                  <Link href="/" className={styles.bold}>
+                    Atencion al cliente
+                  </Link>
+                  <Link href="/soporte/tutoriales" className={styles.bold}>
+                    Tutoriales
+                  </Link>
+                  <Link href="/" className={styles.bold}>
+                    Postventa
+                  </Link>
+                  <Link href="/" className={styles.text}>
+                    Red de Tecnicos
+                  </Link>
+                  <Link href="/" className={styles.text}>
+                    Repuestos
+                  </Link>
+                  <Link href="/" className={styles.text}>
+                    Certificados
+                  </Link>
+                  <Link href="/" className={styles.bold}>
+                    Activacion de Garantias
+                  </Link>
                 </div>
               </div>
             )}
@@ -105,9 +145,13 @@ const NavBar = () => {
             {activePanel === "socios" && (
               <div className={styles.hidden}>
                 <h1 className={styles.title}>Socios</h1>
-                <div>
-                  <p className={styles.bold}>Ingresar</p>
-                  <p className={styles.bold}>Registrarse</p>
+                <div className={styles.boxText}>
+                  <Link href="/" className={styles.bold}>
+                    Ingresar
+                  </Link>
+                  <Link href="/" className={styles.bold}>
+                    Registrarse
+                  </Link>
                 </div>
               </div>
             )}
@@ -128,9 +172,9 @@ const NavBar = () => {
               <div className={styles.hidden}>
                 <h1 className={styles.title}>Nosotros</h1>
                 <div className={styles.boxText}>
-                  <p className={styles.bold}>Balance social</p>
-                  <p className={styles.bold}>Compliance</p>
-                  <p className={styles.bold}>Trabajá con nosotros</p>
+                  <Link href="/" className={styles.bold}>Balance social</Link>
+                  <Link href="/" className={styles.bold}>Compliance</Link>
+                  <Link href="/" className={styles.bold}>Trabajá con nosotros</Link>
                 </div>
               </div>
             )}
