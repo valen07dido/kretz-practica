@@ -42,7 +42,7 @@ const page = () => {
         {array.map((item, index) => {
           const path = item.title.split(" ").join("");
           return (
-            <Link href={`/soporte/tutoriales/${path}`} className={styles.links}>
+            <Link href={`/soporte/tutoriales/${path}`} className={styles.links} key={index}>
               <div key={index} className={styles.cardContainer}>
                 <Card
                   img={item.img}
