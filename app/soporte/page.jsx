@@ -27,7 +27,7 @@ const Page = () => {
       </div>
       <div className={styles.buttons}>
         {array.map((item, index) => {
-          return <ButtonSupport icon={item.icon} text={item.text} />;
+          return <ButtonSupport icon={item.icon} text={item.text} key={index}/>;
         })}
       </div>
     </div>
