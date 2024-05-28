@@ -1,4 +1,5 @@
-"use client"
+"Use Client"
+"Use"
 import React from "react";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
