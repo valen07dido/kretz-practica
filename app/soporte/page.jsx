@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "./page.module.css";
-import Postventa from "@/public/Icons_buttons/Posventa.svg";
-import Garantias from "@/public/Icons_buttons/Garantias.svg";
-import AtencionAlCliente from "@/public/Icons_buttons/AtencionAlCliente.svg";
-import Tutoriales from "@/public/Icons_buttons/Tutoriales.svg";
 import ButtonSupport from "@/Components/ButtonSupport/ButtonSupport";
 const Page = () => {
   const array = [

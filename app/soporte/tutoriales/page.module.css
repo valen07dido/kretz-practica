@@ -1,11 +1,11 @@
-.container{
+.containers{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    justify-items: center;
 }
 .header {
+    padding: 20px;
   width: 1192px;
   height: 162px;
   gap: 24px;
@@ -50,4 +50,7 @@ color: #697581;
     text-align: center;
     align-items: center;
 
+}
+.links{
+  text-decoration: none;
 }

@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Card from "@/Components/Card/Card";
 import styles from "./page.module.css";
 import Image from "next/image";
+
 const page = () => {
   const array = [
     {
@@ -15,7 +17,7 @@ const page = () => {
     },
     {
       img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1716837155/Kretz-Practica/products/tvvexugzppwfguu3fd0f.svg",
-      title: "Numa NG",
+      title: "Report NX",
     },
     {
       img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1716837155/Kretz-Practica/products/tvvexugzppwfguu3fd0f.svg",
@@ -30,6 +32,7 @@ const page = () => {
       title: "Numa NG",
     },
   ];
+  const HandleNavigate = (path) => {};
   return (
     <div className={styles.containers}>
       <div className={styles.header}>
@@ -37,7 +40,7 @@ const page = () => {
         <div className={styles.box}>
           <p className={styles.subtitle}>
             <Link href="/soporte/tutoriales/numaNG" className={styles.link}>
-              Video Tutoriales
+              Video tutoriales
             </Link>
             {" > Numa NG"}
           </p>
@@ -51,9 +54,15 @@ const page = () => {
       </div>
       <div className={styles.grid}>
         {array.map((item, index) => (
-          <div key={index} className={styles.cardContainer}>
-            <Card img={item.img} title={item.title} className={styles.cartas} />
-          </div>
+          <Link href={`/soporte/tutoriales/${item.title}`} className={styles.links}>
+            <div key={index} className={styles.cardContainer}>
+              <Card
+                img={item.img}
+                title={item.title}
+                className={styles.cartas}
+              />
+            </div>
+          </Link>
         ))}
       </div>
     </div>
