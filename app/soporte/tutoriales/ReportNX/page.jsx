@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
 import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
-const page = () => {
+const Page = () => {
   const name=usePathname()
   const title=name.split("/").pop()
   return (
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
