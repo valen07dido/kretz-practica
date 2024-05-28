@@ -4,6 +4,7 @@ import React from "react";
 import Card from "@/Components/Card/Card";
 import styles from "./page.module.css";
 import Image from "next/image";
+import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
 
 const page = () => {
   const array = [
@@ -32,38 +33,26 @@ const page = () => {
       title: "Numa NG",
     },
   ];
-  const HandleNavigate = (path) => {};
   return (
     <div className={styles.containers}>
-      <div className={styles.header}>
-        <h1 className={styles.title}>Tutoriales</h1>
-        <div className={styles.box}>
-          <p className={styles.subtitle}>
-            <Link href="/soporte/tutoriales/numaNG" className={styles.link}>
-              Video tutoriales
-            </Link>
-            {" > Numa NG"}
-          </p>
-          <Image
-            src="https://res.cloudinary.com/dpa8t14c2/image/upload/v1716838596/Kretz-Practica/Icons/ps2dgq7dcodoflgz1ugg.svg"
-            alt="camera"
-            width={47}
-            height={31}
-          />
-        </div>
+      <div>
+        <BannerTutorial/>
       </div>
       <div className={styles.grid}>
-        {array.map((item, index) => (
-          <Link href={`/soporte/tutoriales/${item.title}`} className={styles.links}>
-            <div key={index} className={styles.cardContainer}>
-              <Card
-                img={item.img}
-                title={item.title}
-                className={styles.cartas}
-              />
-            </div>
-          </Link>
-        ))}
+        {array.map((item, index) => {
+          const path = item.title.split(" ").join("");
+          return (
+            <Link href={`/soporte/tutoriales/${path}`} className={styles.links}>
+              <div key={index} className={styles.cardContainer}>
+                <Card
+                  img={item.img}
+                  title={item.title}
+                  className={styles.cartas}
+                />
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
