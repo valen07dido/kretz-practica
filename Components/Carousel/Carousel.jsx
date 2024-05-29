@@ -11,14 +11,14 @@ export default function Carousel({array}) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: array.length, // Ajusta esto según tus necesidades
+    slidesToShow: 3, 
     swipeToSlide: true,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 3000,
-    centerMode: true,
   };
   return (
+    <div className={styles.carouselContainer}>
       <Slider {...settings} className={styles.carousel}>
         {array.map((item, index) => (
           <div key={index} className={styles.cardContainer}>
@@ -26,5 +26,6 @@ export default function Carousel({array}) {
           </div>
         ))}
       </Slider>
+    </div>
   );
 }
