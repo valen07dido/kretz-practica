@@ -44,22 +44,22 @@ export default function Home() {
       <div className={styles.banner}>
         <h1 className={styles.title}>Impulsa tu negocio</h1>
       </div>
-        <div>
-          <h1 className={styles.title2}>Conocé nuestras soluciones</h1>
-        </div>
+      <div>
+        <h1 className={styles.title2}>Conocé nuestras soluciones</h1>
+      </div>
       <div className={styles.carousel}>
         <Carousel
           array={[
             {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
               title: "hola",
             },
             {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
               title: "hola",
             },
             {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
               title: "hola",
             },
           ]}
@@ -89,25 +89,25 @@ export default function Home() {
         <div>
           <h1 className={styles.title2}>Novedades</h1>
         </div>
-      <div className={styles.carousel}>
-        <Carousel
-          array={[
-            {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
-              title: "hola",
-            },
-            {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
-              title: "hola",
-            },
-            {
-              img: "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
-              title: "hola",
-            },
-          ]}
-          className={styles.carouselcomp}
-        />
-      </div>
+        <div className={styles.carousel}>
+          <Carousel
+            array={[
+              {
+                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
+                title: "hola",
+              },
+              {
+                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
+                title: "hola",
+              },
+              {
+                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
+                title: "hola",
+              },
+            ]}
+            className={styles.carouselcomp}
+          />
+        </div>
       </div>
       <div className={styles.products}>
         <MapComponent />

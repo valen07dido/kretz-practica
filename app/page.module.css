@@ -7,12 +7,12 @@
   font-size: 64px;
   font-weight: 700;
 }
-.carousel {
-  margin-bottom: 30px;
+/* .carousel {
+  margin: 50px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .banner {
   background-image: url("../public/image-home.png");
   background-position: center;
