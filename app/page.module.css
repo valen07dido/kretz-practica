@@ -1,5 +1,5 @@
-.main{
-  background-color: #F2F4F8;
+.main {
+  background-color: #f2f4f8;
 }
 .title {
   height: 76px;
@@ -7,12 +7,12 @@
   font-size: 64px;
   font-weight: 700;
 }
-.carousel {
-  margin-bottom: 30px;
+/* .carousel {
+  margin: 50px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .banner {
   background-image: url("../public/image-home.png");
   background-position: center;
@@ -30,7 +30,7 @@
   font-weight: 700;
   margin: 30px 0 30px 0;
 }
-.products{
+.products {
   display: flex;
   flex-direction: column;
   justify-content: center;

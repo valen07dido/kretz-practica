@@ -1,24 +1,23 @@
 .button {
   background-color: #181a20;
-  width: 380.62px;
-  height: 146px;
+  width: 280x;
+  height: 201px;
   border-radius: 30px;
   margin: 10px;
   transition: 0.5s;
-  &:hover{
-    background-color:#0064FF;
+  &:hover {
+    background-color: #0064ff;
     cursor: pointer;
   }
 }
 .img {
   position: relative;
-  left: 304.91px;
+  left: 230px;
   top: 25px;
 }
 .text {
-  position: relative;
-  width: 327.42px;
-  left: 30px;
+  width: 270px;
+  margin: 70px 0 0 30px;
   height: 28px;
   font-weight: 700;
   font-size: 24px;
