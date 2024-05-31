@@ -7,212 +7,249 @@ import { GoMail } from "react-icons/go";
 import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const pathname = usePathname();
   const [activePanel, setActivePanel] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handlePanelToggle = (name) => {
     setActivePanel(name === activePanel ? null : name);
   };
+  console.log(isMobile);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-  return (
-    <nav className={styles.containerGlobal}>
-      <div className={styles.container}>
-        <Link href="/">
-          <Image src={logo} className={styles.image} alt="logo" />
-        </Link>
-        <div className={styles.bar}>
-          <div
-            className={
-              pathname == "/productos"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={() => handlePanelToggle("productos")}
-            onMouseLeave={() => handlePanelToggle("productos")}
-          >
-            <Link className={styles.links} href="/productos">
-              Productos
-            </Link>
-            {activePanel === "productos" && (
-              <div className={styles.hidden}>
-                <h1 className={styles.title}>Productos</h1>
-                <div className={styles.menu}>
+  if (!isMobile) {
+    return (
+      <nav className={styles.containerGlobal}>
+        <div className={styles.container}>
+          <Link href="/">
+            <Image src={logo} className={styles.image} alt="logo" />
+          </Link>
+          <div className={styles.bar}>
+            <div
+              className={
+                pathname == "/productos"
+                  ? styles.navigationActive
+                  : styles.navigation
+              }
+              onMouseEnter={() => handlePanelToggle("productos")}
+              onMouseLeave={() => handlePanelToggle("productos")}
+            >
+              <Link className={styles.links} href="/productos">
+                Productos
+              </Link>
+              {activePanel === "productos" && (
+                <div className={styles.hidden}>
+                  <h1 className={styles.title}>Productos</h1>
+                  <div className={styles.menu}>
+                    <div className={styles.boxText}>
+                      <h4 className={styles.text}>Por categoría</h4>
+                      <Link href="/" className={styles.bold}>
+                        Balanzas
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Cajas registradoras
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Conector de datos
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Etiquetas electronicas
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Impresores
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Insumos y accesorios
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Lectores
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Terminales interactivas
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Verificadores de precio
+                      </Link>
+                    </div>
+                    <div className={styles.boxText}>
+                      <h4 className={styles.text}>Por soluciones</h4>
+                      <Link href="/" className={styles.bold}>
+                        Supermercados
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Comercios
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Industrias
+                      </Link>
+                      <Link href="/" className={styles.bold}>
+                        Laboratorios
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div
+              className={
+                pathname == "/soporte"
+                  ? styles.navigationActive
+                  : styles.navigation
+              }
+              onMouseEnter={() => handlePanelToggle("soporte")}
+              onMouseLeave={() => handlePanelToggle("soporte")}
+            >
+              <Link className={styles.links} href="/soporte">
+                Soporte
+              </Link>
+              {activePanel === "soporte" && (
+                <div className={styles.hidden}>
+                  <h1 className={styles.title}>Soporte</h1>
                   <div className={styles.boxText}>
-                    <h4 className={styles.text}>Por categoría</h4>
                     <Link href="/" className={styles.bold}>
-                      Balanzas
+                      Atencion al cliente
+                    </Link>
+                    <Link href="/soporte/tutoriales" className={styles.bold}>
+                      Tutoriales
                     </Link>
                     <Link href="/" className={styles.bold}>
-                      Cajas registradoras
+                      Postventa
+                    </Link>
+                    <Link href="/" className={styles.text}>
+                      Red de Tecnicos
+                    </Link>
+                    <Link href="/" className={styles.text}>
+                      Repuestos
+                    </Link>
+                    <Link href="/" className={styles.text}>
+                      Certificados
                     </Link>
                     <Link href="/" className={styles.bold}>
-                      Conector de datos
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Etiquetas electronicas
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Impresores
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Insumos y accesorios
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Lectores
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Terminales interactivas
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Verificadores de precio
+                      Activacion de Garantias
                     </Link>
                   </div>
+                </div>
+              )}
+            </div>
+            <div
+              className={
+                pathname == "/socios"
+                  ? styles.navigationActive
+                  : styles.navigation
+              }
+              onMouseEnter={() => handlePanelToggle("socios")}
+              onMouseLeave={() => handlePanelToggle("socios")}
+            >
+              <Link className={styles.links} href="/socios">
+                Socios
+              </Link>
+              {activePanel === "socios" && (
+                <div className={styles.hidden}>
+                  <h1 className={styles.title}>Socios</h1>
                   <div className={styles.boxText}>
-                    <h4 className={styles.text}>Por soluciones</h4>
                     <Link href="/" className={styles.bold}>
-                      Supermercados
+                      Ingresar
                     </Link>
                     <Link href="/" className={styles.bold}>
-                      Comercios
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Industrias
-                    </Link>
-                    <Link href="/" className={styles.bold}>
-                      Laboratorios
+                      Registrarse
                     </Link>
                   </div>
                 </div>
-              </div>
-            )}
-          </div>
-          <div
-            className={
-              pathname == "/soporte"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={() => handlePanelToggle("soporte")}
-            onMouseLeave={() => handlePanelToggle("soporte")}
-          >
-            <Link className={styles.links} href="/soporte">
-              Soporte
-            </Link>
-            {activePanel === "soporte" && (
-              <div className={styles.hidden}>
-                <h1 className={styles.title}>Soporte</h1>
-                <div className={styles.boxText}>
-                  <Link href="/" className={styles.bold}>
-                    Atencion al cliente
-                  </Link>
-                  <Link href="/soporte/tutoriales" className={styles.bold}>
-                    Tutoriales
-                  </Link>
-                  <Link href="/" className={styles.bold}>
-                    Postventa
-                  </Link>
-                  <Link href="/" className={styles.text}>
-                    Red de Tecnicos
-                  </Link>
-                  <Link href="/" className={styles.text}>
-                    Repuestos
-                  </Link>
-                  <Link href="/" className={styles.text}>
-                    Certificados
-                  </Link>
-                  <Link href="/" className={styles.bold}>
-                    Activacion de Garantias
-                  </Link>
+              )}
+            </div>
+            <div
+              className={
+                pathname == "/nosotros"
+                  ? styles.navigationActive
+                  : styles.navigation
+              }
+              onMouseEnter={() => handlePanelToggle("nosotros")}
+              onMouseLeave={() => handlePanelToggle("nosotros")}
+            >
+              <Link className={styles.links} href="/nosotros">
+                Nosotros
+              </Link>
+              {activePanel === "nosotros" && (
+                <div className={styles.hidden}>
+                  <h1 className={styles.title}>Nosotros</h1>
+                  <div className={styles.boxText}>
+                    <Link href="/" className={styles.bold}>
+                      Balance social
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Compliance
+                    </Link>
+                    <Link href="/" className={styles.bold}>
+                      Trabajá con nosotros
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
+            <div
+              className={
+                pathname == "/socios"
+                  ? styles.navigationActive
+                  : styles.navigation
+              }
+            >
+              <Link href="/noticias" className={styles.links}>
+                Noticias
+              </Link>
+            </div>
           </div>
-          <div
-            className={
-              pathname == "/socios"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={() => handlePanelToggle("socios")}
-            onMouseLeave={() => handlePanelToggle("socios")}
-          >
-            <Link className={styles.links} href="/socios">
-              Socios
-            </Link>
-            {activePanel === "socios" && (
-              <div className={styles.hidden}>
-                <h1 className={styles.title}>Socios</h1>
-                <div className={styles.boxText}>
-                  <Link href="/" className={styles.bold}>
-                    Ingresar
-                  </Link>
-                  <Link href="/" className={styles.bold}>
-                    Registrarse
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-          <div
-            className={
-              pathname == "/nosotros"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-            onMouseEnter={() => handlePanelToggle("nosotros")}
-            onMouseLeave={() => handlePanelToggle("nosotros")}
-          >
-            <Link className={styles.links} href="/nosotros">
-              Nosotros
-            </Link>
-            {activePanel === "nosotros" && (
-              <div className={styles.hidden}>
-                <h1 className={styles.title}>Nosotros</h1>
-                <div className={styles.boxText}>
-                  <Link href="/" className={styles.bold}>Balance social</Link>
-                  <Link href="/" className={styles.bold}>Compliance</Link>
-                  <Link href="/" className={styles.bold}>Trabajá con nosotros</Link>
-                </div>
-              </div>
-            )}
-          </div>
-          <div
-            className={
-              pathname == "/socios"
-                ? styles.navigationActive
-                : styles.navigation
-            }
-          >
-            <Link href="/noticias" className={styles.links}>
-              Noticias
-            </Link>
+          <div className={styles.box3}>
+            <div>
+              <button className={styles.buttons}>
+                <IoSearchSharp className={styles.icon} />
+              </button>
+              <button className={styles.buttons}>
+                <GoMail className={styles.icon} />
+              </button>
+              <button className={styles.buttons}>
+                <PiShoppingCart className={styles.icon} />
+              </button>
+            </div>
+            <div className={styles.containLanguage}>
+              <button className={styles.language}>ES</button>
+              <button className={styles.language}>EN</button>
+              <button className={styles.language}>PT</button>
+            </div>
           </div>
         </div>
-
-        <div className={styles.box3}>
-          <div>
-            <button className={styles.buttons}>
-              <IoSearchSharp className={styles.icon} />
-            </button>
-            <button className={styles.buttons}>
-              <GoMail className={styles.icon} />
-            </button>
-            <button className={styles.buttons}>
-              <PiShoppingCart className={styles.icon} />
-            </button>
-          </div>
-          <div className={styles.containLanguage}>
-            <button className={styles.language}>ES</button>
-            <button className={styles.language}>EN</button>
-            <button className={styles.language}>PT</button>
-          </div>
+      </nav>
+    );
+  } else {
+    return (
+      <nav className={styles.containerGlobal}>
+        <div className={styles.container}>
+          <Link href="/">
+            <Image src={logo} className={styles.image} alt="logo" />
+          </Link>
         </div>
-      </div>
-    </nav>
-  );
+      </nav>
+    );
+  }
 };
 
 export default NavBar;
