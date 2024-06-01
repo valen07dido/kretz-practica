@@ -6,6 +6,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
 import { PiShoppingCart } from "react-icons/pi";
 import { usePathname } from "next/navigation";
+import { IoIosMenu } from "react-icons/io";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -246,6 +247,14 @@ const NavBar = () => {
           <Link href="/">
             <Image src={logo} className={styles.image} alt="logo" />
           </Link>
+          <div>
+            <button className={styles.buttons}>
+              <IoSearchSharp className={styles.icon} />
+            </button>
+            <button className={styles.buttons}>
+              <IoIosMenu className={styles.icon} />
+            </button>
+          </div>
         </div>
       </nav>
     );
