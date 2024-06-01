@@ -1,0 +1,19 @@
+   <Image src={logo} className={styles.image} alt="logo" width="227" height="68"/>
+
+        <div className={styles.navbar}>
+          <Link href="/" className={styles.links}>
+            Home
+          </Link>
+          <Link href="/soporte" className={styles.links}>
+            Soporte
+          </Link>
+          <Link href="/nosotros" className={styles.links}>
+            Nosotros
+          </Link>
+          <Link href="/contacto" className={styles.links}>
+            Contacto
+          </Link>
+          <Link href="/micuenta" className={styles.links}>
+            Mi Cuenta
+          </Link>
+        </div>

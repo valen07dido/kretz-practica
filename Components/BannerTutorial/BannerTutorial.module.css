@@ -21,6 +21,7 @@
     text-align: left;
   }
   .subtitle {
+    margin: 5px;
     font-size: 24px;
     font-weight: 600;
     line-height: 27.8px;
@@ -28,10 +29,19 @@
     text-align: left;
     color: #697581;
   }
+  .subtitle2 {
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.8px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #697581;
+    text-decoration: none;
+  }
   .box {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
   }
-  
