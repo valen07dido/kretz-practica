@@ -6,16 +6,30 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./Carousel.module.css";
 import Card from "@/Components/Card/Card";
 
-export default function Carousel({array}) {
+export default function Carousel({ array }) {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, 
+    slidesToShow: 3,
     swipeToSlide: true,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
   return (
     <div className={styles.carouselContainer}>

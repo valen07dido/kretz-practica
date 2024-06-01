@@ -1,18 +1,22 @@
 .main {
   background-color: #f2f4f8;
 }
+
 .title {
   height: 76px;
   color: #ffffff;
   font-size: 64px;
   font-weight: 700;
 }
-/* .carousel {
+
+.carousel {
   margin: 50px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  width: 100%; /* Ensures the carousel container takes full width */
+}
+
 .banner {
   background-image: url("../public/image-home.png");
   background-position: center;
@@ -25,11 +29,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .title2 {
   text-align: center;
   font-weight: 700;
   margin: 30px 0 30px 0;
 }
+
 .products {
   display: flex;
   flex-direction: column;
