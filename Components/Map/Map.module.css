@@ -18,29 +18,33 @@
   color: transparent;
 }
 
-.title2{
-font-size: 20px;
-font-weight: 400;
-line-height: 30.17px;
-text-align: left;
-color: #C3C8CD;
-width: 280px;
-margin:30px;
+.title2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.17px;
+  text-align: left;
+  color: #c3c8cd;
+  width: 280px;
+  margin: 30px;
 }
 .box1 {
-    width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.box2{
-    width: 65%;
-    display: flex;
-    justify-content: space-around;
+.box2 {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
 }
-.countries{
-font-size: 14px;
-font-weight: 400;
-line-height: 21.12px;
-text-align: left;
-color: #697581;
+.countries {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.12px;
+  text-align: left;
+  color: #697581;
+}
+.mapa {
+  width: 1228.4px;
+  height: 607.64px;
 }

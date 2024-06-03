@@ -2,11 +2,15 @@ import Image from "next/image";
 import React from "react";
 import map from "@/public/mapa.png";
 import styles from "./Map.module.css";
+import MapChart from "../MapInteractive/MapInteractive";
 const MapComponent = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Nuestros Mercados</h1>
-      <Image src={map} width={1200}/>
+      {/* <Image src={map} width={1200}/> */}
+      <div className={styles.map}>
+      <MapChart />
+      </div>
       <div className={styles.box1}>
         <h3 className={styles.title2}>
           La empresa opera regularmente en los siguientes países:
