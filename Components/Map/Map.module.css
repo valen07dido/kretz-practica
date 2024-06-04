@@ -16,6 +16,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  margin-bottom: -70px;
 }
 
 .title2 {
@@ -29,6 +30,7 @@
 }
 .box1 {
   width: 100%;
+  margin-top: -60px;
   display: flex;
   justify-content: space-between;
 }
@@ -44,7 +46,4 @@
   text-align: left;
   color: #697581;
 }
-.mapa {
-  width: 1228.4px;
-  height: 607.64px;
-}
+
