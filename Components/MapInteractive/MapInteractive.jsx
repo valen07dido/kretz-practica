@@ -6,6 +6,7 @@ import styles from "./MapInteractive.module.css";
 
 const MapChart = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 }); // Agregar estado para la posición del mouse
   const operatingCountries = [
     "Argentina",
     "Brazil",
@@ -30,9 +31,12 @@ const MapChart = () => {
   ];
   const geographies = useMemo(() => WorldMap2, []);
 
+  const handleMouseMove = (event) => {
+    setMousePosition({ x: event.clientX, y: event.clientY });
+  };
+
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{selectedCountry}</h1>
+    <div className={styles.container} onMouseMove={handleMouseMove}> {/* Añadir onMouseMove al div contenedor */}
       <ComposableMap className={styles.map}>
         <Geographies geography={geographies}>
           {({ geographies }) =>
@@ -41,35 +45,40 @@ const MapChart = () => {
                 geo.properties.sovereignt
               );
               return (
-                <svg>
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="125%" y2="0%">
-                    <stop offset="0%" style={{stopColor: "#00ad9a", stopOpacity: 1}} />
-                    <stop offset="125%" style={{stopColor: "#0064ff", stopOpacity: 1}} />
-                  </linearGradient>
-                </defs>
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  onMouseEnter={() => {
-                    const { sovereignt } = geo.properties;
-                    setSelectedCountry(sovereignt);
-                  }}
-                  onMouseLeave={() => {
-                    setSelectedCountry("");
-                  }}
-                  style={{
-                    default: { fill: isOperating ? "url(#gradient)" : "#455363" },
-                    hover: { fill: "#697581" },
-                    pressed: { fill: "#00AD9A" },
-                  }}
-                />
-              </svg>
+                <svg key={geo.rsmKey}>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="125%" y2="0%">
+                      <stop offset="0%" style={{stopColor: "#00ad9a", stopOpacity: 1}} />
+                      <stop offset="125%" style={{stopColor: "#0064ff", stopOpacity: 1}} />
+                    </linearGradient>
+                  </defs>
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => {
+                      const { sovereignt } = geo.properties;
+                      setSelectedCountry(sovereignt);
+                    }}
+                    onMouseLeave={() => {
+                      setSelectedCountry("");
+                    }}
+                    style={{
+                      default: { fill: isOperating ? "url(#gradient)" : "#455363" },
+                      hover: { fill: "#697581" },
+                      pressed: { fill: "#00AD9A" },
+                    }}
+                  />
+                </svg>
               );
             })
           }
         </Geographies>
       </ComposableMap>
+      {selectedCountry && ( // Mostrar texto flotante solo si hay un país seleccionado
+        <div className={styles.tooltip} style={{ left: mousePosition.x, top: mousePosition.y }}>
+          {selectedCountry}
+        </div>
+      )}
     </div>
   );
 };
