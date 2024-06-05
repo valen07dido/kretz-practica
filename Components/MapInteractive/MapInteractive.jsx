@@ -2,7 +2,7 @@
 import WorldMap2 from "@/public/mapa2.geo.json";
 import { useState, useMemo } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import styles from "./mapInteractive.module.css"
+import styles from "./MapInteractive.module.css"
 
 const MapChart = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
