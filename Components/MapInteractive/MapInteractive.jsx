@@ -6,7 +6,7 @@ import styles from "./MapInteractive.module.css";
 
 const MapChart = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 }); // Agregar estado para la posición del mouse
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 }); 
   const operatingCountries = [
     "Argentina",
     "Brazil",
@@ -36,7 +36,7 @@ const MapChart = () => {
   };
 
   return (
-    <div className={styles.container} onMouseMove={handleMouseMove}> {/* Añadir onMouseMove al div contenedor */}
+    <div className={styles.container} onMouseMove={handleMouseMove}> 
       <ComposableMap className={styles.map}>
         <Geographies geography={geographies}>
           {({ geographies }) =>
@@ -74,7 +74,7 @@ const MapChart = () => {
           }
         </Geographies>
       </ComposableMap>
-      {selectedCountry && ( // Mostrar texto flotante solo si hay un país seleccionado
+      {selectedCountry && (
         <div className={styles.tooltip} style={{ left: mousePosition.x, top: mousePosition.y }}>
           {selectedCountry}
         </div>
