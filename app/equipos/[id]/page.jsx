@@ -8,7 +8,7 @@ const Page = () => {
 
   return (
     <div>
-      <h1>Detalles del equipo:{id} </h1>
+      <h1>Detalles del equipo:{id} este es un cambio para probar project idx </h1>
     </div>
   );
 }
