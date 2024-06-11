@@ -46,7 +46,7 @@ const Page = () => {
       <div className={styles.grid}>
         {array.map((item, index) => {
           return (
-            <Link href={`NumaNG/videos/${item.id}`} id={index}>
+            <Link href={`NumaNG/videos/${item.id}`} key={index}>
               <Image src={item.image} width={400} height={200} />
             </Link>
           );
