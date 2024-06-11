@@ -39,14 +39,14 @@ const Page = () => {
     },
   ];
   const name = usePathname();
-  const title = name.split("/").pop();
+  const model = name.split("/").pop();
   return (
     <div className={styles.container}>
-      <BannerTutorial path={title} />
+      <BannerTutorial path={model} />
       <div className={styles.grid}>
         {array.map((item, index) => {
           return (
-            <Link href={`NumaNG/videos/${item.id}`} key={index}>
+            <Link href={`${model}/${item.id}`} key={index}>
               <Image src={item.image} width={400} height={200} />
             </Link>
           );
