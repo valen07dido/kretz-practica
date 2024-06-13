@@ -1,22 +1,18 @@
-"use client";
+"use strict";
 import axios from 'axios';
 import Head from 'next/head';
-import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-const page = () => {
-    const id =usePathname().split("/").pop()
-    console.log(id)
+const Page = () => {
+    const router = useRouter();
+    const id = router.pathname.split("/").pop();
+    console.log(id);
     const [videoUrl, setVideoUrl] = useState('');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (id) {
-            // Simula una llamada a una API para obtener la URL del video
-            // Aquí puedes implementar la lógica para obtener la URL del video desde una API real
-            // Ejemplo: setVideoUrl(`https://example.com/videos/${id}.mp4`);
-
-            // Para este ejemplo, usaremos una URL fija
             const videoUrls = {
                 "1": "https://www.w3schools.com/html/mov_bbb.mp4",
                 "2": "https://www.w3schools.com/html/movie.mp4",
@@ -27,7 +23,6 @@ const page = () => {
             setLoading(false);
         }
     }, [id]);
-
 
     if (loading) {
         return <div>Loading...</div>;
@@ -53,5 +48,4 @@ const page = () => {
     );
 };
 
-
-export default page;
+export default Page;
