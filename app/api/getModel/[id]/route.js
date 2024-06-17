@@ -3,8 +3,6 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
     const id=request.url.split("/").pop()
-    console.log(id)
-
   try {
     if(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)){
       const {rows}=await sql`SELECT * FROM Models Where id=${id}`
