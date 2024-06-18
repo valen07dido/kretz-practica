@@ -1,71 +1,89 @@
-.containers{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header {
-    padding: 20px;
+  padding: 20px;
   width: 1192px;
   height: 162px;
   gap: 24px;
   border-radius: 30px;
-  background-color: #E9EEF3;
+  background-color: #e9eef3;
 }
 .grid {
   margin: 25px 0 10px 0;
   display: grid;
-  grid-template-columns: repeat(1, 1fr); 
+  grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
 }
 
 @media (min-width: 600px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for screens wider than 600px */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columns for screens wider than 600px */
   }
 }
 
 @media (min-width: 1000px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for screens wider than 900px */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 columns for screens wider than 900px */
   }
 }
 
-
-.title{
-font-size: 48px;
-color: #181A20;
-font-weight: 700;
-line-height: 43.2px;
-letter-spacing: -0.02em;
-text-align: left;
-
+.title {
+  font-size: 48px;
+  color: #181a20;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
-.subtitle{
-font-size: 24px;
-font-weight: 600;
-line-height: 27.8px;
-letter-spacing: -0.03em;
-text-align: left;
-color: #697581;
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27.8px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #697581;
 }
-.link{
-font-size: 24px;
-font-weight: 600;
-line-height: 27.8px;
-letter-spacing: -0.03em;
-text-align: left;
-color: #697581;
+.link {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27.8px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #697581;
 }
-.box{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-
+.box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
-.links{
+.links {
   text-decoration: none;
+}
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+.notfoundText {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27.8px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #697581;
 }
