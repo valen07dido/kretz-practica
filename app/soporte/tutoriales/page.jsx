@@ -15,7 +15,7 @@ const Page = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/getModel")
+      .get("http://localhost:3000/api/getModel"||"https://kretz.vercel.app/api/getModel")
       .then((response) => {
         setArray(response.data);
         setLoading(false);
