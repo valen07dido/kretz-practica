@@ -10,12 +10,13 @@ import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
 import axios from "axios";
 
 const Page = () => {
+  const url = process.env.NEXT_PUBLIC_API_URL;
   const [array, setArray] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  console.log(url);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/getModel"||"https://kretz.vercel.app/api/getModel")
+      .get(`${url}/api/getModel`)
       .then((response) => {
         setArray(response.data);
         setLoading(false);
