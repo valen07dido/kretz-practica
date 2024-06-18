@@ -9,27 +9,36 @@ import axios from "axios";
 
 const Page = () => {
   const [array, setArray] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/getModel")
-      .then(response => {
+    axios
+      .get("http://localhost:3000/api/getModel")
+      .then((response) => {
         setArray(response.data);
+        setLoading(false);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error al obtener los datos:", error);
       });
   }, []);
 
-  return (
+  return loading ? (
+    <p>cargando</p>
+  ) : (
     <div className={styles.containers}>
       <div>
-        <BannerTutorial/>
+        <BannerTutorial />
       </div>
       <div className={styles.grid}>
         {array.map((item, index) => {
           const path = item.name.split(" ").join("");
           return (
-            <Link href={`/soporte/tutoriales/${path}`} className={styles.links} key={index}>
+            <Link
+              href={`/soporte/tutoriales/${path}`}
+              className={styles.links}
+              key={index}
+            >
               <div key={index} className={styles.cardContainer}>
                 <Card
                   img={item.image}
