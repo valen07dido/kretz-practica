@@ -5,12 +5,12 @@
     align-items: center;
   }
   .header {
-    padding: 20px;
     width: 1192px;
     height: 162px;
     gap: 24px;
     border-radius: 30px;
     background-color: #e9eef3;
+    border: solid 1px #C3C8CD;
   }
   .title {
     font-size: 48px;
