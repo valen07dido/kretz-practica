@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className={styles.notfound}>
       <Image src={error} width={300} height={300} />
-      <p className={styles.notfoundText}>ERROR NO SE ECUENTRAN DATOS...</p>
+      <p className={styles.notfoundText}>ERROR NO SE ENCUENTRAN DATOS...</p>
     </div>
   );
 };
