@@ -42,7 +42,7 @@ const Page = () => {
   const model = name.split("/").pop();
   return (
     <div className={styles.container}>
-      <BannerTutorial path={model} />
+      <BannerTutorial />
       <div className={styles.grid}>
         {array.map((item, index) => {
           return (

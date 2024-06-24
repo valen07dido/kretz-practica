@@ -1,57 +1,59 @@
 "use client";
-import axios from 'axios';
-import Head from 'next/head';
-import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import Head from "next/head";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import loadingimg from "@/public/loading.svg";
+import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
+import Image from "next/image";
+import NotFound from "@/Components/NotFound/NotFound";
 
 const Page = () => {
-    const id =usePathname().split("/").pop()
-    console.log(id)
-    const [videoUrl, setVideoUrl] = useState('');
-    const [loading, setLoading] = useState(true);
+  const aux = usePathname().split("/")[3];
+  const id = usePathname().split("/").pop();
+  const [videoUrl, setVideoUrl] = useState("");
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        if (id) {
-            // Simula una llamada a una API para obtener la URL del video
-            // Aquí puedes implementar la lógica para obtener la URL del video desde una API real
-            // Ejemplo: setVideoUrl(`https://example.com/videos/${id}.mp4`);
+  useEffect(() => {
+    if (id) {
+      const videoUrls = {
+        1: "https://www.youtube.com/embed/tgbNymZ7vqY",
+        2: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        3: "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+      };
 
-            // Para este ejemplo, usaremos una URL fija
-            const videoUrls = {
-                "1": "https://www.w3schools.com/html/mov_bbb.mp4",
-                "2": "https://www.w3schools.com/html/movie.mp4",
-                "3": "https://vimeo.com/90221441"
-            };
-            
-            setVideoUrl(videoUrls[id]);
-            setLoading(false);
-        }
-    }, [id]);
-
-
-    if (loading) {
-        return <div>Loading...</div>;
+      setVideoUrl(videoUrls[id]);
+      setLoading(false);
     }
+  }, [id]);
 
-    if (!videoUrl) {
-        return <div>Video not found</div>;
-    }
+  if (loading) {
+    return <Image src={loadingimg} width={90} height={90} />;
+  }
 
+  if (!videoUrl) {
     return (
-        <div>
-            <Head>
-                <title>Video {id}</title>
-            </Head>
-            <main>
-                <h1>Video {id}</h1>
-                <video width="600" controls>
-                    <source src={videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </main>
-        </div>
+      <div>
+        <BannerTutorial />
+        <NotFound/>
+      </div>
     );
-};
+  }
 
+  return (
+    <div>
+      <BannerTutorial />
+      <main>
+        <iframe
+          width="888"
+          height="511"
+          src={videoUrl}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </main>
+    </div>
+  );
+};
 
 export default Page;

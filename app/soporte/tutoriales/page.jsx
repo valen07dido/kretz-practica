@@ -4,16 +4,15 @@ import React, { useEffect, useState } from "react";
 import Card from "@/Components/Card/Card";
 import styles from "./page.module.css";
 import loadingimg from "@/public/loading.svg";
-import error from "@/public/error.png";
 import Image from "next/image";
 import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
 import axios from "axios";
+import NotFound from "@/Components/NotFound/NotFound";
 
 const Page = () => {
   const url = process.env.NEXT_PUBLIC_API_URL;
   const [array, setArray] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(url);
   useEffect(() => {
     axios
       .get(`${url}/api/getModel`)
@@ -36,10 +35,7 @@ const Page = () => {
       ) : (
         <>
           {array.length <= 0 ? (
-            <div className={styles.notfound}>
-              <Image src={error} width={300} height={300} />
-              <p className={styles.notfoundText}>Aun no existen datos...</p>
-            </div>
+            <NotFound/>
           ) : (
             <div className={styles.grid}>
               {array.map((item, index) => {

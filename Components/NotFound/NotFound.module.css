@@ -1,0 +1,16 @@
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .notfoundText {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.8px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #697581;
+  }
+  

@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "./BannerTutorial.module.css";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-const BannerTutorial = ({ path }) => {
+
+const BannerTutorial = () => {
+  const pathname = usePathname();
+
+  const pathParts = pathname.split("/").slice(3);
+
+  const tutorialName = pathParts[0] ? pathParts[0].replace(/%20/g, " ") : "";
+  const tutorialStep = pathParts[1] || "";
+
   return (
     <div>
       <div className={styles.header}>
@@ -12,11 +21,17 @@ const BannerTutorial = ({ path }) => {
             <Link href="/soporte/tutoriales" className={styles.subtitle}>
               Videos Tutoriales
             </Link>
-            {path && (
+            {tutorialName && (
               <Link
-                href={`/soporte/tutoriales/${path}`}
+                href={`/soporte/tutoriales/${tutorialName}`}
                 className={styles.subtitle2}
-              >{`>  ${path}`}</Link>
+              >{`>  ${tutorialName}`}</Link>
+            )}
+            {tutorialStep && (
+              <Link
+                href={`/soporte/tutoriales/${tutorialName}/${tutorialStep}`}
+                className={styles.subtitle2}
+              >{`>  ${tutorialStep}`}</Link>
             )}
           </div>
           <Image

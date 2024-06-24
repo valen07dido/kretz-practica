@@ -1,15 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 import ServiceList from "@/Components/ServiceList/ServiceList";
 import Filter from "@/Components/Filter/Filter";
 
-// Cargamos el componente del mapa dinámicamente
-const Map = dynamic(() => import('@/Components/Mapa/Mapa'), {
-  ssr: false
+const Map = dynamic(() => import("@/Components/Mapa/Mapa"), {
+  ssr: false,
 });
 
-// Datos de ejemplo de servicios técnicos
 const services = [
   {
     id: 1,
@@ -46,15 +44,6 @@ const services = [
     latitude: -33.0999755,
     longitude: -60.6122145,
   },
-  {
-    id: 6,
-    name: "Kretz SA",
-    address: "Ruta Nacional 9 Km 276-Pueblo Esther-Santa Fe",
-    latitude: -33.0999755,
-    longitude: -60.6122145,
-  },
-
-  // Agrega más servicios según sea necesario
 ];
 
 const Page = () => {
