@@ -1,14 +1,12 @@
 "use client";
-import Head from "next/head";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import loadingimg from "@/public/loading.svg";
 import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
 import Image from "next/image";
 import NotFound from "@/Components/NotFound/NotFound";
-
+import styles from "./page.module.css"
 const Page = () => {
-  const aux = usePathname().split("/")[3];
   const id = usePathname().split("/").pop();
   const [videoUrl, setVideoUrl] = useState("");
   const [loading, setLoading] = useState(true);
@@ -40,7 +38,7 @@ const Page = () => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <BannerTutorial />
       <main>
         <iframe
@@ -50,6 +48,7 @@ const Page = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          className={styles.player}
         ></iframe>
       </main>
     </div>
