@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ButtonSupport.module.css";
 const ButtonSupport = ({ icon, text }) => {
-  console.log(icon)
   return (
     <div className={styles.button}>
       <Image

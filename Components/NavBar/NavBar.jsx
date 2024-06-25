@@ -33,7 +33,6 @@ const NavBar = () => {
   const handlePanelToggle = (name) => {
     setActivePanel(name === activePanel ? null : name);
   };
-  console.log(isMobile);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
