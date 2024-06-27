@@ -3,7 +3,6 @@
   width: 280x;
   height: 201px;
   border-radius: 30px;
-  margin: 10px;
   transition: 0.5s;
   &:hover {
     background-color: #0064ff;
