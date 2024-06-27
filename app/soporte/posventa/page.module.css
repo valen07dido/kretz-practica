@@ -1,15 +1,36 @@
-.container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.box1{
-    display: flex;
-    background-color: hsl(210, 29%, 93%);
-    justify-content: space-between;
-    align-items: center;
-    width: 1192px;
-    height: 120px;
+.box1 {
+  display: flex;
+  background-color: hsl(210, 29%, 93%);
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 120px;
+  padding-inline: 32px;
+  border-radius: 30px;
+  border: solid 1px #c3c8cd;
+}
+.title1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55.6px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.chest1 {
+  width: 538px;
+  height: 369px;
+
 }

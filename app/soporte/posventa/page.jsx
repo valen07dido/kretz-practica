@@ -12,8 +12,8 @@ const page = () => {
           height={49}
         />
       </div>
-      <div>
-        <>
+      <div className={styles.box2}>
+        <div className={styles.chest1}>
           <h3>
             Hacer productos para que ayuden a las personas es un concepto que
             empieza mucho antes del producto mismo y que no termina.
@@ -31,16 +31,16 @@ const page = () => {
             Para dar respuesta en tiempo y forma, porque la tecnología no es
             perfecta y la idea es brindar soluciones.
           </p>
-        </>
-        <>
+        </div>
+        <div className={styles.chest2}>
           <h1>70</h1>
           <p>Servicios Técnicos en todo el pais</p>
           <p>También disponible en países de exportación</p>
-          <br />
+          <hr/>
           <p>Para mayor información contáctese con nosotros</p>
           <h2>0341 492 7400</h2>
           <p>líneas rotativas</p>
-        </>
+        </div>
       </div>
     </div>
   );
