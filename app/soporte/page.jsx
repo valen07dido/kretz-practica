@@ -33,8 +33,8 @@ const Page = () => {
       <div className={styles.buttons}>
         {array.map((item, index) => {
           return (
-            <Link href={item.path} key={index}>
-            <ButtonSupport icon={item.icon} text={item.text}  />
+            <Link href={item.path} key={index}  className={styles.buttonsSupport}>
+            <ButtonSupport icon={item.icon} text={item.text} />
             </Link>
           );
         })}

@@ -30,7 +30,7 @@ const Page = () => {
 
   if (!videoUrl) {
     return (
-      <div>
+      <div className={styles.container}>
         <BannerTutorial />
         <NotFound/>
       </div>
