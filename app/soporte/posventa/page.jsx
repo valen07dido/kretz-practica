@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 import SelectPosventa from "@/Components/SelectPosventa/SelectPosventa";
 const page = () => {
   return (
@@ -54,7 +55,11 @@ const page = () => {
           </div>
         </div>
       </div>
+      <div className={styles.chest3}>
       <SelectPosventa/>
+      <SelectPosventa/>
+      <Link href="mailto:service1@kretz.com.ar" className={styles.mail}>posventa@kretz.com.ar</Link>
+      </div>
     </div>
   );
 };
