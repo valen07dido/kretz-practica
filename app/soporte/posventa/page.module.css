@@ -1,36 +1,114 @@
 .container {
   margin-top: 50px;
+  height: 699px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .box1 {
   display: flex;
-  background-color: hsl(210, 29%, 93%);
+  background-color: #e9eef3;
   justify-content: space-between;
   align-items: center;
   width: 1160px;
   height: 120px;
-  padding-inline: 32px;
   border-radius: 30px;
   border: solid 1px #c3c8cd;
 }
 .title1 {
+  margin: 0 0 0 16px;
   font-size: 48px;
   font-weight: 700;
   line-height: 55.6px;
   letter-spacing: -0.03em;
   text-align: left;
 }
+.img {
+  margin: 0 16px 0 0;
+}
 .box2 {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1160px;
+
+  height: 417px;
+  gap: 0px;
+  opacity: 0px;
 }
 .chest1 {
-  width: 538px;
+  width: 580px;
   height: 369px;
-
+  margin-right: 10px;
+}
+.line {
+  width: 452px;
+  color: #697581;
+}
+.chest2 {
+  width: 584px;
+  height: 417px;
+  background-color: #e9eef3;
+  border-radius: 35px;
+  border: solid 1px #c3c8cd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textBold {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28.16px;
+  letter-spacing: -0.02em;
+  color: #455363;
+  width: 536px;
+}
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.16px;
+  letter-spacing: -0.02em;
+  color: #455363;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceNumber {
+  color: #455363;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.09em;
+}
+.serviceText {
+  color: #455363;
+  width: 200px;
+  margin-left: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.text2 {
+  width: 200px;
+  color: #697581;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.number {
+  color: #455363;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
