@@ -1,15 +1,23 @@
-"use client"
+"use client";
 
-import { useState } from 'react';
-
+import { useState } from "react";
+import styles from "./SelectPosventa.module.css";
 const provinciasServicios = {
-  "Buenos Aires": ["Servicio Técnico A", "Servicio Técnico B", "Servicio Técnico C"],
-  "Córdoba": ["Servicio Técnico D", "Servicio Técnico E"],
-  "Santa Fe": ["Servicio Técnico F", "Servicio Técnico G", "Servicio Técnico H"],
+  "Buenos Aires": [
+    "Servicio Técnico A",
+    "Servicio Técnico B",
+    "Servicio Técnico C",
+  ],
+  Córdoba: ["Servicio Técnico D", "Servicio Técnico E"],
+  "Santa Fe": [
+    "Servicio Técnico F",
+    "Servicio Técnico G",
+    "Servicio Técnico H",
+  ],
 };
 
 export default function SelectPosventa() {
-  const [provincia, setProvincia] = useState('');
+  const [provincia, setProvincia] = useState("");
   const [servicios, setServicios] = useState([]);
 
   const handleProvinciaChange = (event) => {
@@ -20,13 +28,16 @@ export default function SelectPosventa() {
 
   return (
     <div>
-      <h1>Selector de Provincias Argentinas</h1>
-      <label htmlFor="provincias">Selecciona una provincia:</label>
-      <select id="provincias" value={provincia} onChange={handleProvinciaChange}>
-        <option value="">--Selecciona una provincia--</option>
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Córdoba">Córdoba</option>
-        <option value="Santa Fe">Santa Fe</option>
+      <select
+        id="provincias"
+        value={provincia}
+        onChange={handleProvinciaChange}
+        className={styles.select}
+      >
+        <option value="" className={styles.options}>Posventa Argentina</option>
+        <option value="Buenos Aires" className={styles.options}>Buenos Aires</option>
+        <option value="Córdoba" className={styles.options}>Córdoba</option>
+        <option value="Santa Fe" className={styles.options}>Santa Fe</option>
       </select>
 
       {servicios.length > 0 && (

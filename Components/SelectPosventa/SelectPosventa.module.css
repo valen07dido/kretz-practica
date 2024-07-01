@@ -1,0 +1,16 @@
+.select {
+  width: 380.62px;
+  height: 58px;
+  gap: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  border-radius: 5px;
+}
+.options {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
