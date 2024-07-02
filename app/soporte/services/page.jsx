@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import ServiceList from "@/Components/ServiceList/ServiceList";
 import Filter from "@/Components/Filter/Filter";
+import styles from './Page.module.css';
 
 const Map = dynamic(() => import("@/Components/Mapa/Mapa"), {
   ssr: false,
@@ -88,15 +89,15 @@ const Page = () => {
   }, [filteredServices]);
 
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ width: "30%", padding: "10px" }}>
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
         <Filter onFilterChange={handleFilterChange} />
         <ServiceList
           services={filteredServices}
           onSelectService={handleSelectService}
         />
       </div>
-      <div style={{ width: "70%", height: "100vh" }}>
+      <div className={styles.map}>
         <Map services={filteredServices} center={center} />
       </div>
     </div>

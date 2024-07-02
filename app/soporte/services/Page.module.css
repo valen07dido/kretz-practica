@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .map {
+    width: 70%;
+    height: 100vh;
+  }
+  
