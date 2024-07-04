@@ -1,6 +1,7 @@
 .container {
   margin-top: 50px;
   background-color: red;
+  z-index: 6;
   height: 699px;
   width: 100%;
   display: flex;
