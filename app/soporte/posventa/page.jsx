@@ -55,11 +55,11 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className={styles.chest3}>
+      {/* <div className={styles.chest3}>
       <SelectPosventa/>
       <SelectPosventa/>
       <Link href="mailto:service1@kretz.com.ar" className={styles.mail}>posventa@kretz.com.ar</Link>
-      </div>
+      </div> */}
     </div>
   );
 };
