@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
@@ -9,7 +9,6 @@ const Page = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Simula una carga de datos o cualquier otro efecto secundario necesario.
     setIsLoaded(true);
   }, []);
 
@@ -29,12 +28,12 @@ const Page = () => {
           <div className={styles.box2}>
             <div className={styles.chest1}>
               <h3 className={styles.textBold}>
-                Hacer productos para que ayuden a las personas es un concepto que
-                empieza mucho antes del producto mismo y que no termina.
+                Hacer productos para que ayuden a las personas es un concepto
+                que empieza mucho antes del producto mismo y que no termina.
               </h3>
               <p className={styles.text}>
-                Entender este pensamiento es prioritario a la hora de definir los
-                alcances del compromiso con la gente.
+                Entender este pensamiento es prioritario a la hora de definir
+                los alcances del compromiso con la gente.
               </p>
               <p className={styles.text}>
                 En ese sentido, Kretz desarrolló un servicio de posventa que
@@ -66,6 +65,13 @@ const Page = () => {
           </div>
         </div>
       )}
+      <div className={styles.chest3}>
+        <SelectPosventa />
+        <SelectPosventa />
+        <Link href="mailto:service1@kretz.com.ar" className={styles.mail}>
+          posventa@kretz.com.ar
+        </Link>
+      </div>
     </div>
   );
 };
