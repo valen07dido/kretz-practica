@@ -27,13 +27,13 @@ export default function SelectPosventa() {
   };
 
   return (
-    <div>
-      <select
-        id="provincias"
-        value={provincia}
-        onChange={handleProvinciaChange}
-        className={styles.select}
-      >
+  <div>
+    <select
+    id="provincias"
+    value={provincia}
+    onChange={handleProvinciaChange}
+    className={`${styles.select} ${styles.customSelect}`} // Agrega la clase personalizada aquí
+  >
         <option value="" className={styles.options}>Posventa Argentina</option>
         <option value="Buenos Aires" className={styles.options}>Buenos Aires</option>
         <option value="Córdoba" className={styles.options}>Córdoba</option>

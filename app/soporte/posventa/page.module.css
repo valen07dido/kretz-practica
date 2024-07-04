@@ -1,6 +1,5 @@
 .container {
   margin-top: 50px;
-  background-color: red;
   height: 699px;
   width: 100%;
   display: flex;
@@ -35,7 +34,7 @@
   width: 1160px;
   height: 417px;
   gap: 0px;
-  opacity: 1; /* Cambiado de 0px a 1 */
+  opacity: 1; 
 }
 .chest1 {
   width: 580px;
@@ -114,6 +113,8 @@
 }
 .chest3 {
   display: flex;
+  margin: 0 0 50px 0;
+  justify-content: space-around;
 }
 .mail {
   display: flex;
@@ -132,5 +133,5 @@
   gap: 0px;
   border-radius: 29px;
   background-color: #0064ff;
-  opacity: 1; /* Cambiado de 0px a 1 */
+  opacity: 1; 
 }
