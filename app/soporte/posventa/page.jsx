@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
@@ -50,7 +50,7 @@ const Page = () => {
               <div className={styles.services}>
                 <h1 className={styles.serviceNumber}>70</h1>
                 <p className={styles.serviceText}>
-                  Servicios Técnicos en todo el pais
+                  Servicios Técnicos en todo el país
                 </p>
               </div>
               <p className={styles.text2}>

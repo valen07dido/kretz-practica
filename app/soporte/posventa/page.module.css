@@ -33,10 +33,9 @@
   display: flex;
   justify-content: center;
   width: 1160px;
-
   height: 417px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1; /* Cambiado de 0px a 1 */
 }
 .chest1 {
   width: 580px;
@@ -133,5 +132,5 @@
   gap: 0px;
   border-radius: 29px;
   background-color: #0064ff;
-  opacity: 0px;
+  opacity: 1; /* Cambiado de 0px a 1 */
 }
