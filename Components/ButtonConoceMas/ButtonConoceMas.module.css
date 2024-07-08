@@ -3,13 +3,14 @@
   height: 87px;
   border-radius: 49px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #c3c8cd;
   cursor: pointer;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+  padding:0 8.5px 0 8.5px;
   color: #455363;
   transition: 1s;
   &:hover{

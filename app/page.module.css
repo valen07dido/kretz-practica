@@ -18,11 +18,11 @@
 }
 
 .banner {
-  background-image: url("../public/image-home.png");
+  background-image: url("../public/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
   height: 500px;
   display: flex;

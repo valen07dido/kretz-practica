@@ -4,7 +4,7 @@ import Carousel from "@/Components/Carousel/Carousel";
 import img1 from "@/public/Balanza-Report-NX.png";
 import kiosko from "@/public/kiosko.png";
 import itegra from "@/public/itegra.png";
-import empresa from "@/public/empresa.png";
+import empresa from "../public/empresa.png";
 import HorizontalCard from "@/Components/HorizontalCard/HorizontalCard";
 import MapComponent from "@/Components/Map/Map";
 
@@ -51,16 +51,16 @@ export default function Home() {
         <Carousel
           array={[
             {
-              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-              title: "hola",
+              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1720442018/Kretz-Practica/products/vkegpel3ezwabsqqaseh.jpg",
+              title: "Gala",
             },
             {
               img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-              title: "hola",
+              title: "Report NX Visor Bajo",
             },
             {
-              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-              title: "hola",
+              img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1720442354/Kretz-Practica/products/rfvtmy4sp1k1ytokzpwg.jpg",
+              title: "Cenit",
             },
           ]}
           className={styles.carouselcomp}
@@ -93,16 +93,16 @@ export default function Home() {
           <Carousel
             array={[
               {
-                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-                title: "hola",
+                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1720442018/Kretz-Practica/products/vkegpel3ezwabsqqaseh.jpg",
+                title: "Gala",
               },
               {
                 img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-                title: "hola",
+                title: "Report NX Visor Bajo",
               },
               {
-                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
-                title: "hola",
+                img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1720442354/Kretz-Practica/products/rfvtmy4sp1k1ytokzpwg.jpg",
+                title: "Cenit",
               },
             ]}
             className={styles.carouselcomp}

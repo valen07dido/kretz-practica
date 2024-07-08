@@ -1,6 +1,6 @@
 const nextConfig = {
   images: {
-    domains: ["ethic.es", "res.cloudinary.com"],
+    domains: ["ethic.es", "res.cloudinary.com","www.kretz.com.ar"],
   },
   webpack: (config, { isServer }) => {
 
