@@ -13,9 +13,9 @@ const Page = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {isLoaded && (
-        <div className={styles.container}>
+        <div className={styles.container2}>
           <div className={styles.box1}>
             <h1 className={styles.title1}>Posventa</h1>
             <Image
