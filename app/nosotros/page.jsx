@@ -47,10 +47,7 @@ const page = () => {
       img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
       title: "Report NX Visor Bajo",
     },
-    {
-      img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1720442354/Kretz-Practica/products/rfvtmy4sp1k1ytokzpwg.jpg",
-      title: "Cenit",
-    },
+
   ];
   return (
     <div className={styles.container}>
@@ -60,7 +57,7 @@ const page = () => {
         <input type="text" className={styles.input}/>
         <button>Enviar</button>
       </div>
-      <div>
+      <div className={styles.grid}>
         {array.map((element, index)=>{
             return(
                 <Card img={element.img} title={element.title} key={index}/>
