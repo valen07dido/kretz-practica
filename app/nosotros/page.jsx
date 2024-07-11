@@ -1,6 +1,6 @@
 import Card from "@/Components/Card/Card";
 import React from "react";
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 const page = () => {
   const array = [
     {
@@ -47,24 +47,23 @@ const page = () => {
       img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
       title: "Report NX Visor Bajo",
     },
-
   ];
   return (
     <div className={styles.container}>
-      <h1>Todas las novedades a tu alcance</h1>
-      <div>
-        <p>Enterate primero, suscríbete a nuestro newsletter</p>
-        <input type="text" className={styles.input}/>
-        <button>Enviar</button>
+      <h1 className={styles.title}>Todas las novedades a tu alcance</h1>
+      <div className={styles.containinput}>
+        <p className={styles.text}>
+          Enterate primero, suscríbete a nuestro newsletter
+        </p>
+        <div className={styles.containinput2}>
+          <input type="text" className={styles.input} placeholder="E-mail*" />
+          <button className={styles.button}>Enviar</button>
+        </div>
       </div>
       <div className={styles.grid}>
-        {array.map((element, index)=>{
-            return(
-                <Card img={element.img} title={element.title} key={index}/>
-            )
-        })
-
-        }
+        {array.map((element, index) => {
+          return <Card img={element.img} title={element.title} key={index} className={styles.cards}/>;
+        })}
       </div>
     </div>
   );
