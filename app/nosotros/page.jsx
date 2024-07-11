@@ -1,6 +1,7 @@
 import Card from "@/Components/Card/Card";
 import React from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 const page = () => {
   const array = [
     {
@@ -62,7 +63,17 @@ const page = () => {
       </div>
       <div className={styles.grid}>
         {array.map((element, index) => {
-          return <Card img={element.img} title={element.title} key={index} className={styles.cards}/>;
+          return (
+            <Link href={`/nosotros/${element.title}`}>
+              <Card
+                img={element.img}
+                title={element.title}
+                key={index}
+                className={styles.cards}
+              />
+              ;
+            </Link>
+          );
         })}
       </div>
     </div>
