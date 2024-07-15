@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./page.module.css"; // Asegúrate de crear el archivo CSS correspondiente
+import Image from "next/image";
 const array = [
   {
     id: 1,
@@ -61,32 +62,51 @@ const array = [
 ];
 const page = () => {
   const router = usePathname();
-  const title = parseInt(router.split("/").pop()); // Convierte el título a número
+  const id = parseInt(router.split("/").pop());
 
-  // Encuentra el producto actual basado en el título
-  const product = array.find((product) => product.id === title);
+  const product = array.find((product) => product.id === id);
 
-  // Encuentra el producto anterior y siguiente
-  const prevProduct = array.find((product) => product.id === title - 1) || null;
-  const nextProduct = array.find((product) => product.id === title + 1) || null;
+  const prevProduct = array.find((product) => product.id === id - 1) || null;
+  const nextProduct = array.find((product) => product.id === id + 1) || null;
 
   if (!product) return <p>Producto no encontrado</p>;
 
   return (
     <div className={styles.container}>
-      <img src={product.img} alt={product.title} className={styles.image} />
       <h1 className={styles.title}>{product.title}</h1>
-      <p className={styles.description}>Descripción del producto...</p>
+      <Image
+        src={product.img}
+        alt={product.title}
+        className={styles.image}
+        width={1192}
+        height={389}
+      />
+      <div className={styles.descriptionCont}>
+        <p className={styles.description}>
+          A lo largo de todos estos años hemos preservado los mismos valores que
+          nos impulsaron en el comienzo, una filosofía de trabajo sustentada en
+          el entusiasmo por el trabajo en equipo, la devoción por la excelencia,
+          el compromiso con el cliente, el respeto por el medio ambiente y la
+          pasión por el desarrollo de nuevas soluciones.
+        </p>
 
+        <p className={styles.description}>
+          A lo largo de todos estos años hemos preservado los mismos valores que
+          nos impulsaron en el comienzo, una filosofía de trabajo sustentada en
+          el entusiasmo por el trabajo en equipo, la devoción por la excelencia,
+          el compromiso con el cliente, el respeto por el medio ambiente y la
+          pasión por el desarrollo de nuevas soluciones.
+        </p>
+      </div>
       <div className={styles.navigation}>
         {prevProduct && (
-          <Link href={`/nosotros/${prevProduct.id}`}>
-            <p className={styles.navButton}>Anterior: {prevProduct.title}</p>
+          <Link href={`/nosotros/${prevProduct.id}`} className={styles.link}>
+            <p className={styles.navButton}>{` < ${prevProduct.title}`}</p>
           </Link>
         )}
         {nextProduct && (
-          <Link href={`/nosotros/${nextProduct.id}`}>
-            <p className={styles.navButton}>Siguiente: {nextProduct.title}</p>
+          <Link href={`/nosotros/${nextProduct.id}`} className={styles.link}>
+            <p className={styles.navButton}>{`${nextProduct.title} >`}</p>
           </Link>
         )}
       </div>
