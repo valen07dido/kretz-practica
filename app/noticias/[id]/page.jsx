@@ -100,12 +100,12 @@ const page = () => {
       </div>
       <div className={styles.navigation}>
         {prevProduct && (
-          <Link href={`/nosotros/${prevProduct.id}`} className={styles.link}>
+          <Link href={`/noticias/${prevProduct.id}`} className={styles.link}>
             <p className={styles.navButton}>{` < ${prevProduct.title}`}</p>
           </Link>
         )}
         {nextProduct && (
-          <Link href={`/nosotros/${nextProduct.id}`} className={styles.link}>
+          <Link href={`/noticias/${nextProduct.id}`} className={styles.link}>
             <p className={styles.navButton}>{`${nextProduct.title} >`}</p>
           </Link>
         )}

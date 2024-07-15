@@ -75,7 +75,7 @@ const page = () => {
       <div className={styles.grid}>
         {array.map((element, index) => {
           return (
-            <Link href={`/nosotros/${element.id}`}>
+            <Link href={`/noticias/${element.id}`}>
               <Card
                 img={element.img}
                 title={element.title}
