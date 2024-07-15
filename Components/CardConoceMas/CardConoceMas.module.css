@@ -1,22 +1,21 @@
-.container{
-    margin: 10px;
-    background-color: #E9EEF3;
-    width: 1103px;
-    height: 986px;
-    border-radius: 60px;
-    align-items: center;
-    text-align: center;
-
+.container {
+  margin: 10px;
+  background-color: #e9eef3;
+  width: 800px;
+  height: 70%;
+  border-radius: 60px;
+  align-items: center;
+  text-align: center;
 }
-.container2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.name{
-font-size: 64px;
-font-weight: 600;
-line-height: 57.6px;
-letter-spacing: -0.03em;
-text-align: left;
+.name {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 57.6px;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
