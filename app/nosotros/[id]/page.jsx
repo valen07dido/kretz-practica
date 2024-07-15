@@ -1,7 +1,7 @@
-"use client"
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import styles from './page.module.css'; // Asegúrate de crear el archivo CSS correspondiente
+"use client";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import styles from "./page.module.css"; // Asegúrate de crear el archivo CSS correspondiente
 const array = [
   {
     id: 1,
@@ -61,14 +61,14 @@ const array = [
 ];
 const page = () => {
   const router = usePathname();
-  const title= router.split("/").pop()
+  const title = parseInt(router.split("/").pop()); // Convierte el título a número
+
   // Encuentra el producto actual basado en el título
-  const currentProductIndex = array.findIndex((product) => product.title === title);
-  const product = array[currentProductIndex];
+  const product = array.find((product) => product.id === title);
 
   // Encuentra el producto anterior y siguiente
-  const prevProduct = array[currentProductIndex - 1] || null;
-  const nextProduct = array[currentProductIndex + 1] || null;
+  const prevProduct = array.find((product) => product.id === title - 1) || null;
+  const nextProduct = array.find((product) => product.id === title + 1) || null;
 
   if (!product) return <p>Producto no encontrado</p>;
 
@@ -77,16 +77,16 @@ const page = () => {
       <img src={product.img} alt={product.title} className={styles.image} />
       <h1 className={styles.title}>{product.title}</h1>
       <p className={styles.description}>Descripción del producto...</p>
-      
+
       <div className={styles.navigation}>
         {prevProduct && (
-          <Link href={`/nosotros/${prevProduct.title}`}>
-            <a className={styles.navButton}>Anterior: {prevProduct.title}</a>
+          <Link href={`/nosotros/${prevProduct.id}`}>
+            <p className={styles.navButton}>Anterior: {prevProduct.title}</p>
           </Link>
         )}
         {nextProduct && (
-          <Link href={`/nosotros/${nextProduct.title}`}>
-            <a className={styles.navButton}>Siguiente: {nextProduct.title}</a>
+          <Link href={`/nosotros/${nextProduct.id}`}>
+            <p className={styles.navButton}>Siguiente: {nextProduct.title}</p>
           </Link>
         )}
       </div>
