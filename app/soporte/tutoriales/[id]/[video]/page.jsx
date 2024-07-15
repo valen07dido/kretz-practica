@@ -25,7 +25,7 @@ const Page = () => {
   }, [id]);
 
   if (loading) {
-    return <Image src={loadingimg} width={90} height={90} />;
+    return <Image src={loadingimg} width={90} height={90} alt="loading"/>;
   }
 
   if (!videoUrl) {

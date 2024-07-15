@@ -22,6 +22,7 @@ const Page = () => {
               src="https://res.cloudinary.com/dpa8t14c2/image/upload/v1716833891/Kretz-Practica/Icons/ctuajnfrw4sgijgwhpoc.svg"
               width={46}
               height={49}
+              alt="loading"
               className={styles.img}
             />
           </div>

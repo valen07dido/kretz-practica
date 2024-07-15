@@ -23,7 +23,7 @@ const Page = () => {
       .catch((error) => {
         console.error("Error al obtener los datos:", error);
       });
-  }, []);
+  }, [url]); 
 
   return (
     <div className={styles.containers}>
@@ -31,7 +31,7 @@ const Page = () => {
         <BannerTutorial />
       </div>
       {loading ? (
-        <Image src={loadingimg} width={90} height={90} />
+        <Image src={loadingimg} width={90} height={90} alt="loading"/>
       ) : (
         <>
           {array.length <= 0 ? (

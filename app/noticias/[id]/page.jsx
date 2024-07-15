@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import styles from "./page.module.css"; // Asegúrate de crear el archivo CSS correspondiente
+import styles from "./page.module.css"; 
 import Image from "next/image";
 const array = [
   {
@@ -60,7 +60,7 @@ const array = [
     title: "Report NX Visor Bajo",
   },
 ];
-const page = () => {
+const Page = () => {
   const router = usePathname();
   const id = parseInt(router.split("/").pop());
 
@@ -114,4 +114,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
