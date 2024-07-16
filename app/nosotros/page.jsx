@@ -2,7 +2,7 @@ import MapComponent from "@/Components/Map/Map";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 const page = () => {
   return (
     <div className={styles.container}>
@@ -31,38 +31,42 @@ const page = () => {
           Ser reconocidos internacionalmente por diseñar soluciones tecnológicas
           innovadoras sustentadas en la excelencia de nuestra gente.
         </p>
-        <hr className={styles.line}  />
+        <hr className={styles.line} />
         <h2 className={styles.subtitles}>Valores</h2>
         <p className={styles.subtext}>Integridad y Protagonismo.</p>
       </div>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <h1 className={styles.title}>Mas de 60 años de experiencia</h1>
       <Image
         src="https://res.cloudinary.com/dpa8t14c2/image/upload/v1721085486/Kretz-Practica/logos/rrg5tao1lji9r4kgvsvy.svg"
-        height={400}
-        width={1000}
+        height={494}
+        width={1100}
       />
-      <div className={styles.box3} >
+      <div className={styles.box3}>
         <div className={styles.chest1}>
-          <h2 className={styles.subtitles2}>Una empresa Lider</h2>
-          <p>
-            Posicionadonos como la empresa líder en el desarrollo y
-            comercialización de balanzas electrónicas de la Argentina.
-          </p>
-          <p>
-            En los últimos años diversificamos la oferta de productos con el
-            desarrollo de controladores fiscales y soluciones para el punto de
-            venta.
-          </p>
+          <div className={styles.subchest}>
+            <h2 className={styles.subtitles2}>Una empresa Lider</h2>
+            <p className={styles.text2}>
+              Posicionadonos como la empresa líder en el desarrollo y
+              comercialización de balanzas electrónicas de la Argentina.
+            </p>
+            <p className={styles.text2}>
+              En los últimos años diversificamos la oferta de productos con el
+              desarrollo de controladores fiscales y soluciones para el punto de
+              venta.
+            </p>
+          </div>
         </div>
         <div className={styles.chest2}>
-          <h2 className={styles.subtitles2}>El festejo también fue Global</h2>
-          <Link href="/nosotros">MIralo acá</Link>
+          <div className={styles.subchest}>
+            <h2 className={styles.subtitles3}>El festejo también fue Global</h2>
+            <Link href="/nosotros" className={styles.button1}>MIralo acá</Link>
+          </div>
         </div>
       </div>
-      <h1>Tenemos un pacto y es global</h1>
-      <div>
+      <h1 className={styles.title}>Tenemos un pacto y es global</h1>
+      <div className={styles.containImg}>
         <Image
           src="https://res.cloudinary.com/dpa8t14c2/image/upload/v1721085868/Kretz-Practica/additional/oenhxasu7gu0crftndgs.svg"
           width={800}
@@ -70,8 +74,8 @@ const page = () => {
           alt="United Nations Global Compact"
         />
       </div>
-      <div>
-        <div>
+      <div className={styles.box3}>
+        <div className={styles.chest1}>
           <h2>Adherimos desde 2007 al Pacto Global de Naciones Unidas.</h2>
           <p>
             Fuimos elegidos por el PNUD como caso de estudio en la primera
@@ -79,7 +83,7 @@ const page = () => {
             Argentina”.
           </p>
         </div>
-        <div>
+        <div className={styles.chest3}>
           <h2>Balance Social 2023</h2>
           <button>Descargar</button>
         </div>
@@ -154,7 +158,7 @@ const page = () => {
           />
         </div>
       </div>
-      {/* <MapComponent/> */}
+      <MapComponent/>
     </div>
   );
 };
