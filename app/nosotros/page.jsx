@@ -61,7 +61,9 @@ const page = () => {
         <div className={styles.chest2}>
           <div className={styles.subchest}>
             <h2 className={styles.subtitles3}>El festejo también fue Global</h2>
-            <Link href="/nosotros" className={styles.button1}>MIralo acá</Link>
+            <Link href="/nosotros" className={styles.button1}>
+              MIralo acá
+            </Link>
           </div>
         </div>
       </div>
@@ -76,16 +78,20 @@ const page = () => {
       </div>
       <div className={styles.box3}>
         <div className={styles.chest1}>
-          <h2>Adherimos desde 2007 al Pacto Global de Naciones Unidas.</h2>
-          <p>
-            Fuimos elegidos por el PNUD como caso de estudio en la primera
-            edición de la publicación “Aportes para el Desarrollo Humano en
-            Argentina”.
-          </p>
+          <div className={styles.containerNations}>
+            <h2 className={styles.NationsTitle}>
+              Adherimos desde 2007 al Pacto Global de Naciones Unidas.
+            </h2>
+            <p className={styles.text2}>
+              Fuimos elegidos por el PNUD como caso de estudio en la primera
+              edición de la publicación “Aportes para el Desarrollo Humano en
+              Argentina”.
+            </p>
+          </div>
         </div>
         <div className={styles.chest3}>
-          <h2>Balance Social 2023</h2>
-          <button>Descargar</button>
+          <h2 className={styles.balance}>Balance Social 2023</h2>
+          <button className={styles.buttonDownload}>Descargar</button>
         </div>
       </div>
       <Image
@@ -158,7 +164,7 @@ const page = () => {
           />
         </div>
       </div>
-      <MapComponent/>
+      <MapComponent />
     </div>
   );
 };

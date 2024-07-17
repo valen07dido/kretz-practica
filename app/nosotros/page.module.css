@@ -98,6 +98,7 @@
   color: #455363;
   font-size: 24px;
   font-weight: 600;
+  width: 410px;
   line-height: 31.2px;
   letter-spacing: -0.02em;
 }
@@ -118,8 +119,8 @@
   line-height: 24px;
   text-decoration: none;
 }
-.containImg{
-  background-color: #E9EEF3;
+.containImg {
+  background-color: #e9eef3;
   width: 1100px;
   height: 494px;
   display: flex;
@@ -127,14 +128,55 @@
   align-items: center;
   border-radius: 30px;
 }
-.chest3{
-    width: 532px;
-    height: 543px;
-    border-radius: 30px;
-    background-color: #181A20;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.chest3 {
+  width: 532px;
+  height: 543px;
+  border-radius: 30px;
+  background-color: #181a20;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.NationsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  width: 410px;
+  color: #181a20;
+}
+.containerNations {
+  display: flex;
+  height: 544px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.balance {
+  font-size: 32px;
+  font-weight: 700;
+  width: 200px;
+  margin: -150px 0 -150px -200px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #f2f4f8;
+}
+.buttonDownload {
+  width: 244px;
+  height: 65px;
+  border-radius: 97px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #f2f4f8;
+  background-color: #0064ff;
+  cursor: pointer;
+  transition: 1s;
+}
+.buttonDownload:hover {
+  color: #0064ff;
+  background-color: #E9EEF3;
 }
