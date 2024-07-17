@@ -100,7 +100,9 @@ const page = () => {
         height={900}
         alt="showroom"
       />
-      <h1 className={styles.titlePosventa}>Calidad de Producto y Soporte Posventa</h1>
+      <h1 className={styles.titlePosventa}>
+        Calidad de Producto y Soporte Posventa
+      </h1>
       <div className={styles.containerPosventa}>
         <h3 className={styles.posventaSubtitle}>
           Los pilares de Calidad de Producto y Soporte Post Venta de excelencia
@@ -113,33 +115,43 @@ const page = () => {
           en los países donde exportamos nuestros productos.
         </p>
       </div>
-      <div>
-        <div>
+      <div className={styles.container2}>
+        <div className={styles.box4}>
           <h2>Estamos Comprometidos</h2>
-          <p>
-            Defender y promover los Derechos Humanos considerándolos en toda
-            toma de decisiones.
-            <br />
-            Generar un ambiente de trabajo donde la integridad, el protagonismo
-            y la alegría faciliten el desarrollo individual, empresarial y
-            social en un proceso de mejora continua.
-            <br />
-            Impulsar una cultura de seguridad y salud ocupacional.
-            <br /> Preservar de daños físicos al personal tomando como punto de
+          <p className={styles.cultureText}>
+            <b>Defender y promover los Derechos Humanos</b> considerándolos en
+            toda toma de decisiones.
+          </p>
+          <p className={styles.cultureText}>
+            <b>Generar un ambiente de trabajo</b> donde la integridad, el
+            protagonismo y la alegría faciliten el desarrollo individual,
+            empresarial y social en un proceso de mejora continua.
+          </p>
+          <p className={styles.cultureText}>
+            <b>Impulsar una cultura de seguridad y salud ocupacional.</b>
+          </p>
+          <p className={styles.cultureText}>
+            <b>Preservar de daños físicos al personal</b> tomando como punto de
             partida el cumplimiento legal, y dentro de las posibilidades de la
             empresa, promover el cuidado de la salud.
-            <br /> Actualizar el conocimiento y cumplimiento de toda
+          </p>
+          <p className={styles.cultureText}>
+            <b>Actualizar el conocimiento y cumplimiento</b> de toda
             legislación, reglamentos, derechos, normativas aplicables incluyendo
             los Derechos Laborales y Medioambientales.
-            <br />
-            Promover mediante acciones concretas la toma de conciencia y
-            participación activa en el cuidado y protección del medio ambiente,
+          </p>
+          <p className={styles.cultureText}>
+            <b>Promover mediante acciones concretas</b> la toma de conciencia y
+            participación activa en el{" "}
+            <b>cuidado y protección del medio ambiente,</b>
             previniendo la contaminación.
-            <br /> Sensibilizar interna y externamente sobre la Responsabilidad
-            Social y Acciones Anticorrupción.
+          </p>
+          <p className={styles.cultureText}>
+            Sensibilizar interna y externamente sobre la
+            <b>Responsabilidad Social y Acciones Anticorrupción.</b>
           </p>
         </div>
-        <div>
+        <div className={styles.box5}>
           <div>
             <h2>Política</h2>
             <p>

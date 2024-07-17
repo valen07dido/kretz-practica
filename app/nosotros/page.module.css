@@ -212,3 +212,32 @@
   color: #455363;
   width: 862px;
 }
+.container2 {
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+}
+.box4 {
+  width: 544px;
+  border-radius: 30px;
+  background-color: #e9eef3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.box5 {
+  width: 532px;
+  height: 1278px;
+}
+.chest4 {
+  height: 100%;
+}
+.cultureText {
+  width: 402px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #455363;
+}
