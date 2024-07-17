@@ -178,5 +178,37 @@
 }
 .buttonDownload:hover {
   color: #0064ff;
-  background-color: #E9EEF3;
+  background-color: #e9eef3;
+}
+.posventaSubtitle {
+  width: 862px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.containerPosventa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titlePosventa {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  width: 450px;
+}
+.textPosventa {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.88px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #455363;
+  width: 862px;
 }

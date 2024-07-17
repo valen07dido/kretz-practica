@@ -96,18 +96,18 @@ const page = () => {
       </div>
       <Image
         src="https://res.cloudinary.com/dpa8t14c2/image/upload/v1721086142/Kretz-Practica/additional/qlkxg535oqkvnrqozhma.svg"
-        width={1000}
-        height={800}
+        width={1100}
+        height={900}
         alt="showroom"
       />
-      <h1>Calidad de Producto y Soporte Posventa</h1>
-      <div>
-        <h3>
+      <h1 className={styles.titlePosventa}>Calidad de Producto y Soporte Posventa</h1>
+      <div className={styles.containerPosventa}>
+        <h3 className={styles.posventaSubtitle}>
           Los pilares de Calidad de Producto y Soporte Post Venta de excelencia
           siguen siendo las directrices de la empresa en relación con nuestros
           clientes.
         </h3>
-        <p>
+        <p className={styles.textPosventa}>
           En ese sentido, desarrollamos una red de postventa que abarca más de
           setenta servicios técnicos en todo el país, y otro importante número
           en los países donde exportamos nuestros productos.
