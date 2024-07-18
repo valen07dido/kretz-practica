@@ -1,9 +1,10 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 const page = () => {
   return (
     <div>
-      hola
+      <Link href={"/productos/prueba"}/>
     </div>
   );
 };
