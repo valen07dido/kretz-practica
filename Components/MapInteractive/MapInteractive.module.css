@@ -1,6 +1,7 @@
 .map{
     width:1100px;
-    height: 750px;   
+    margin-bottom: -40px;
+    margin-top: -20px;
 }
 .tooltip {
     position: fixed;

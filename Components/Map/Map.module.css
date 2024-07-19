@@ -1,9 +1,8 @@
 .container {
   background-color: #181a20;
-  width: 1200px;
+  width: 1100px;
   height: 866px;
   border-radius: 30px;
-  margin-bottom: 30px;
 }
 .title {
   font-size: 35px;
