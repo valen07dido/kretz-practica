@@ -1,17 +1,16 @@
-/* HorizontalCard.module.css */
 .containerD,
 .containerI {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1100px; /* Limita el ancho máximo */
+  max-width: 1100px;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  margin: 32px auto; /* Centro en la página */
+  margin: 32px auto;
   border-radius: 30px;
   overflow: hidden;
-  padding: 20px; /* Añade padding */
+  padding: 20px; 
   box-sizing: border-box;
 }
 
@@ -21,17 +20,17 @@
 
 .containerText {
   width: 100%;
-  max-width: 450px; /* Limita el ancho máximo */
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0 20px; /* Reduce el margen */
+  margin: 0 20px; 
   box-sizing: border-box;
 }
 
 .title {
-  font-size: 2rem; /* Tamaño de fuente relativo */
+  font-size: 2rem; 
   font-weight: 700;
   line-height: 1.2;
   width: 100%;
@@ -40,7 +39,7 @@
 }
 
 .text {
-  font-size: 1rem; /* Tamaño de fuente relativo */
+  font-size: 1rem; 
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -50,7 +49,7 @@
 
 .button {
   color: #0064ff;
-  font-size: 1rem; /* Tamaño de fuente relativo */
+  font-size: 1rem; 
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -58,26 +57,25 @@
   cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 999px) {
   .containerD,
   .containerI {
-    flex-direction: column; /* Apila los elementos verticalmente */
-    width: 50%; /* Reduce el ancho */
-    padding: 10px; /* Reduce el padding */
+    flex-direction: column; 
+    width: 50%; 
+    padding: 10px; 
   }
 
   .containerText {
     width: 100%;
-    margin: 10px 0; /* Reduce el margen */
+    margin: 10px 0; 
   }
 
   .title {
-    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    font-size: 1.5rem; 
   }
 
   .text,
   .button {
-    font-size: 0.875rem; /* Reduce el tamaño de la fuente */
+    font-size: 0.875rem; 
   }
 }

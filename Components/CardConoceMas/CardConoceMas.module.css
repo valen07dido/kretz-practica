@@ -1,12 +1,11 @@
-/* CardConoceMas.module.css */
 .container {
   margin: 10px;
   background-color: #e9eef3;
   width: 100%;
-  max-width: 800px; /* Asegura que no sea más ancho de 800px */
+  max-width: 800px; 
   border-radius: 60px;
   display: flex;
-  flex-direction: column; /* Alinea contenido en columna */
+  flex-direction: column; 
   align-items: center;
   text-align: center;
   padding: 20px;
@@ -14,14 +13,14 @@
 }
 
 .container img {
-  width: 100%; /* Ajusta la imagen al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; 
+  height: auto; 
   border-radius: 20px;
 }
 
 .container2 {
   display: flex;
-  flex-direction: column; /* Coloca elementos en columna */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -41,16 +40,15 @@
   text-decoration: none;
 }
 
-/* Mobile Styles */
 @media (max-width: 999px) {
   .container {
-    max-width: 90%; /* Asegura que el contenedor no ocupe todo el ancho en dispositivos más pequeños */
+    max-width: 90%; 
     padding: 10px;
   border-radius: 30px;
 
   }
 
   .name {
-    font-size: 1.5rem; /* Reduce el tamaño del texto */
+    font-size: 1.5rem;
   }
 }

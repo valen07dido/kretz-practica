@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensures the carousel container takes full width */
+  width: 100%; 
 }
 
 .banner {
