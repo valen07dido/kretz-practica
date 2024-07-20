@@ -1,56 +1,83 @@
-.containerD {
-  display: flex;
-  width: 1100px;
-  justify-content: space-around; /* Modificado */
-  align-items: center;
-  background-color: #ffffff;
-  margin: 32px;
-  border-radius: 30px;
-  overflow-y: hidden;
-}
+/* HorizontalCard.module.css */
+.containerD,
 .containerI {
   display: flex;
-  height: 416px;
-  width: 1100px;
-  justify-content: space-around; /* Modificado */
+  flex-direction: row;
+  width: 100%;
+  max-width: 1100px; /* Limita el ancho máximo */
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
   background-color: #ffffff;
-  margin: 32px;
+  margin: 32px auto; /* Centro en la página */
   border-radius: 30px;
-  overflow-y: hidden;
+  overflow: hidden;
+  padding: 20px; /* Añade padding */
+  box-sizing: border-box;
 }
+
+.containerI {
+  flex-direction: row-reverse;
+}
+
 .containerText {
-  width: 450px;
-  height: 400px;
+  width: 100%;
+  max-width: 450px; /* Limita el ancho máximo */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0 50px 0 50px;
+  margin: 0 20px; /* Reduce el margen */
+  box-sizing: border-box;
 }
+
 .title {
-  font-size: 35px;
+  font-size: 2rem; /* Tamaño de fuente relativo */
   font-weight: 700;
-  line-height: 35px;
-  width: 340px;
+  line-height: 1.2;
+  width: 100%;
   letter-spacing: -0.02em;
   text-align: left;
 }
+
 .text {
-  font-size: 20px;
+  font-size: 1rem; /* Tamaño de fuente relativo */
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: -0.03em;
   color: #455363;
   text-align: left;
 }
+
 .button {
   color: #0064ff;
-  font-size: 20px;
+  font-size: 1rem; /* Tamaño de fuente relativo */
   font-weight: 500;
-  line-height: 30.77px;
+  line-height: 1.5;
   letter-spacing: -0.01em;
   text-align: left;
   cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 999px) {
+  .containerD,
+  .containerI {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    width: 50%; /* Reduce el ancho */
+    padding: 10px; /* Reduce el padding */
+  }
+
+  .containerText {
+    width: 100%;
+    margin: 10px 0; /* Reduce el margen */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .text,
+  .button {
+    font-size: 0.875rem; /* Reduce el tamaño de la fuente */
+  }
 }
