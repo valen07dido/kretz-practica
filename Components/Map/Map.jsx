@@ -7,7 +7,6 @@ const MapComponent = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Nuestros Mercados</h1>
-      {/* <Image src={map} width={1200}/> */}
       <div className={styles.map}>
       <MapChart />
       </div>

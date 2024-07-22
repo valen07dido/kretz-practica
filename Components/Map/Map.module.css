@@ -45,3 +45,14 @@
   color: #697581;
 }
 
+@media (max-width: 900px) {
+  .box1 {
+    display: none;
+  }
+  .title{
+    font-size: medium;
+  }
+  .container{
+    min-height: 250px;
+  }
+}
