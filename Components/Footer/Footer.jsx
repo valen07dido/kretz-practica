@@ -38,7 +38,7 @@ const Footer = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {isMobile ? (
         <div>
           <button id="Company" onClick={handleOpen}>
