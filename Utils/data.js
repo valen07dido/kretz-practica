@@ -1,20 +1,32 @@
 const models = [
   {
     name: "Report NX Visor Alto",
-    description: "Nuestra balanza para supermercados Report NX viene preparada para atender todas las exigencias de cualquier negocio. La línea de Balanzas Report de Kretz, te ofrece cada vez más opciones de conexión para mejora las soluciones que tu negocio necesita.",
-    images: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1721925262/Kretz-Practica/products/Report%20NX/hbxgismprafp01n3juid.png",
-    categories: [""],
-    solutions: [""],
-    characteristics: [""],
+    description:
+      "Nuestra balanza para supermercados Report NX viene preparada para atender todas las exigencias de cualquier negocio. La línea de Balanzas Report de Kretz, te ofrece cada vez más opciones de conexión para mejora las soluciones que tu negocio necesita.",
+    images:
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1721925262/Kretz-Practica/products/Report%20NX/hbxgismprafp01n3juid.png",
+    categories: "Balanzas",
+    solutions: "Supermercados",
+    characteristics: [
+      "impresion de ticket, copia de ticket y talon de ticket",
+      "50km de vida util de impresion",
+      "30kg o 15kg multirango",
+    ],
     carrousel: true,
   },
   {
-    name: "",
-    description: "",
-    images: [""],
-    categories: [""],
-    solutions: [""],
-    characteristics: [""],
+    name: "Report NX Visor Bajo",
+    description:
+      "La balanza Report NX se conecta con el software de gestión iTegra de KRETZ para la administración eficiente de tu negocio mediante funcionalidades intuitivas y adaptadas a tus necesidades. iTegra simplifica las operaciones diarias ayudándote a aumentar las ventas, reducir costos y tomar decisiones.",
+    images:
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
+    categories: "Balanzas",
+    solutions: "Supermercados",
+    characteristics: [
+      "impresion de ticket, copia de ticket y talon de ticket",
+      "50km de vida util de impresion",
+      "30kg o 15kg multirango",
+    ],
     carrousel: true,
   },
   {
