@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { usePathname } from 'next/navigation'
-const page = () => {
+const Page = () => {
   const model=usePathname().split('/').pop()
   return (
     <div>
@@ -10,4 +10,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
