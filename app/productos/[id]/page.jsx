@@ -6,6 +6,8 @@ const Page = () => {
   return (
     <div>
       {model}
+
+      <h1>Este es el modelo que selecciono</h1>
     </div>
   )
 }
