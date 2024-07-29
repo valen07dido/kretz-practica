@@ -15,6 +15,7 @@ const models = [
       "conexion WIFI, TCP o USB",
     ],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "Report NX Visor Bajo",
@@ -32,6 +33,7 @@ const models = [
       "conexion WIFI o TCP",
     ],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "Numa NG",
@@ -55,6 +57,7 @@ const models = [
       "Impresión de código QR",
     ],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "Report de colgar",
@@ -74,6 +77,7 @@ const models = [
       "Disponible version Ethernet",
     ],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "Report LT Visor Bajo",
@@ -96,6 +100,7 @@ const models = [
       "Función Pre-empaque. Totalizador de pre empaque",
     ],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "",
@@ -105,6 +110,7 @@ const models = [
     solutions: [""],
     characteristics: [""],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "",
@@ -114,6 +120,7 @@ const models = [
     solutions: [""],
     characteristics: [""],
     carrousel: true,
+    videos: [],
   },
   {
     ModelName: "",
@@ -123,5 +130,6 @@ const models = [
     solutions: [""],
     characteristics: [""],
     carrousel: true,
+    videos: [],
   },
 ];
