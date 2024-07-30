@@ -17,23 +17,28 @@ export async function POST(request) {
       throw new Error("Faltan datos");
     }
 
-    const existingModels = await sql`SELECT * FROM Models WHERE Name = ${ModelName};`;
-    if (existingModels.rows.length > 0) {
+    console.log(ModelImage);  // Depuración
+
+    const existingModels = await sql`SELECT * FROM "Models" WHERE "name" = ${ModelName};`;
+    if (existingModels.rowCount > 0) {
       return NextResponse.json(
         { error: "El modelo ya existe" },
         { status: 400 }
       );
     }
 
+    const imageArray = `{${ModelImage.map(img => `"${img.replace(/"/g, '""')}"`).join(',')}}`;
+    const characteristicsArray = `{${characteristics.map(char => `"${char.replace(/"/g, '""')}"`).join(',')}}`;
+console.log(imageArray)
     await sql`
-      INSERT INTO Models (Name, Description, Image, Categories, Solutions, Characteristics, Carrousel)
+      INSERT INTO "Models" (name, description, image, categories, solutions, characteristics, carrousel)
       VALUES (
         ${ModelName},
         ${ModelDescription},
-        ${ModelImage}, -- Asumimos que ModelImage es un array de URLs
+        ${imageArray}, 
         ${categories},
         ${solutions},
-        ${characteristics}, -- Asumimos que characteristics es un array de strings
+        ${characteristicsArray}, 
         ${carrousel}
       );
     `;

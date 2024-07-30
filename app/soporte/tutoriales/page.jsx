@@ -24,7 +24,6 @@ const Page = () => {
         console.error("Error al obtener los datos:", error);
       });
   }, [url]); 
-
   return (
     <div className={styles.containers}>
       <div>
@@ -40,6 +39,7 @@ const Page = () => {
             <div className={styles.grid}>
               {array.map((item, index) => {
                 const path = item.name.split(" ").join("");
+                console.log(item.image[0])
                 return (
                   <Link
                     href={`/soporte/tutoriales/${path}`}
@@ -48,7 +48,7 @@ const Page = () => {
                   >
                     <div key={index} className={styles.cardContainer}>
                       <Card
-                        img={item.image}
+                        img={item.image[0]}
                         title={item.name}
                         className={styles.cartas}
                       />
