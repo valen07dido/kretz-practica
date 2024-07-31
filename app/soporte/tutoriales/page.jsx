@@ -39,7 +39,6 @@ const Page = () => {
             <div className={styles.grid}>
               {array.map((item, index) => {
                 const path = item.name.split(" ").join("");
-                console.log(item.image[0])
                 return (
                   <Link
                     href={`/soporte/tutoriales/${path}`}

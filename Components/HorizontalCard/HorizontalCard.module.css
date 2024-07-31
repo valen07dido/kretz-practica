@@ -10,7 +10,6 @@
   margin: 32px auto;
   border-radius: 30px;
   overflow: hidden;
-  padding: 20px; 
   box-sizing: border-box;
 }
 
@@ -81,5 +80,6 @@
   .image{
     width: 100%;
     height: auto;
+    border-radius: 30px;
   }
 }

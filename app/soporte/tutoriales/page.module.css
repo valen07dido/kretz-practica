@@ -66,6 +66,7 @@
 }
 .links {
   text-decoration: none;
+  color: #181a20;
 }
 .notfound {
   display: flex;
