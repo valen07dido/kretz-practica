@@ -1,0 +1,16 @@
+.title{
+    background-image: url("../../public/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 64px;
+    margin-top: 0;
+    font-weight: 700;
+}
