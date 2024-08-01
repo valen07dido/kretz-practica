@@ -1,9 +1,9 @@
 const models = [
   {
-    ModelName: "Report NX Visor Alto",
-    ModelDescription:
+    name: "Report NX Visor Alto",
+    description:
       "Nuestra balanza para supermercados Report NX viene preparada para atender todas las exigencias de cualquier negocio. La línea de Balanzas Report de Kretz, te ofrece cada vez más opciones de conexión para mejora las soluciones que tu negocio necesita.",
-    ModelImage: [
+    image: [
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1721925262/Kretz-Practica/products/Report%20NX/hbxgismprafp01n3juid.png",
     ],
     categories: "Balanzas",
@@ -18,10 +18,10 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "Report NX Visor Bajo",
-    ModelDescription:
+    name: "Report NX Visor Bajo",
+    description:
       "La balanza Report NX se conecta con el software de gestión iTegra de KRETZ para la administración eficiente de tu negocio mediante funcionalidades intuitivas y adaptadas a tus necesidades. iTegra simplifica las operaciones diarias ayudándote a aumentar las ventas, reducir costos y tomar decisiones.",
-    ModelImage: [
+    image: [
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
     ],
     categories: "Balanzas",
@@ -36,10 +36,10 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "Numa NG",
-    ModelDescription:
+    name: "Numa NG",
+    description:
       "Segunda generación de Cajas Registradoras KRETZ A su facilidad de uso y adaptabilidad a diferentes tipos de negocios se le agrega una nueva tecnología de impresión y de almacenamiento digital brindando una solución a los nuevos requerimientos fiscales.",
-    ModelImage: [
+    image: [
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722010568/Kretz-Practica/products/numa%20ng/numa%202.png",
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722010568/Kretz-Practica/products/numa%20ng/numa%201.png",
     ],
@@ -60,10 +60,10 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "Report de colgar",
-    ModelDescription:
+    name: "Report de colgar",
+    description:
       "Ideal para ventas de mayoreo y control de procesos. Totalmente construido en acero inoxidable.",
-    ModelImage: [
+    image: [
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011072/Kretz-Practica/products/Report%20de%20colgar/qxspvsqwyhreq8iufher.png",
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011070/Kretz-Practica/products/Report%20de%20colgar/savryjnt1ugnuan2jhcw.png",
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011070/Kretz-Practica/products/Report%20de%20colgar/ulosoz0suit7dugtvbvi.png",
@@ -80,10 +80,10 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "Report LT Visor Bajo",
-    ModelDescription:
+    name: "Report LT Visor Bajo",
+    description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis similique amet cum ad tempore commodi. Voluptatibus neque voluptatem pariatur consequatur ut labore! Amet quo quasi quae porro aut fugit. Fuga!",
-    ModelImage: [
+    image: [
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/xaazx8y4kjkt3r4j0ihw.png",
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/p8trnwp1labvfqxujuu0.png",
       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/zdpoujpfvqxuk5vhtyvc.png",
@@ -103,9 +103,9 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "",
-    ModelDescription: "",
-    ModelImage: [""],
+    name: "",
+    description: "",
+    image: [""],
     categories: [""],
     solutions: [""],
     characteristics: [""],
@@ -113,9 +113,9 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "",
-    ModelDescription: "",
-    ModelImage: [""],
+    name: "",
+    description: "",
+    image: [""],
     categories: [""],
     solutions: [""],
     characteristics: [""],
@@ -123,9 +123,9 @@ const models = [
     videos: [],
   },
   {
-    ModelName: "",
-    ModelDescription: "",
-    ModelImage: [""],
+    name: "",
+    description: "",
+    image: [""],
     categories: [""],
     solutions: [""],
     characteristics: [""],
