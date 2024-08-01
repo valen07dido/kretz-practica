@@ -44,7 +44,6 @@ export async function POST(request) {
         return { success: `Modelo ${name} creado exitosamente` };
       }));
 
-      // Filtrar y devolver los errores si existen.
       const errors = results.filter(result => result.error);
       if (errors.length > 0) {
         return NextResponse.json(errors, { status: 400 });
@@ -52,7 +51,6 @@ export async function POST(request) {
 
       return NextResponse.json(results, { status: 200 });
     } else {
-      // Procesar un solo objeto si no es un array.
       const {
         name,
         description,
