@@ -5,7 +5,6 @@ export async function PUT(request) {
     const url = new URL(request.url);
     const pathname = url.pathname;
     const id = pathname.split("/").pop();
-    console.log(`Updating model with ID: ${id}`);
 
     try {
         const {

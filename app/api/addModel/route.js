@@ -17,7 +17,6 @@ export async function POST(request) {
       throw new Error("Faltan datos");
     }
 
-    console.log(ModelImage);  // Depuración
 
     const existingModels = await sql`SELECT * FROM "Models" WHERE "name" = ${ModelName};`;
     if (existingModels.rowCount > 0) {
@@ -29,7 +28,6 @@ export async function POST(request) {
 
     const imageArray = `{${ModelImage.map(img => `"${img.replace(/"/g, '""')}"`).join(',')}}`;
     const characteristicsArray = `{${characteristics.map(char => `"${char.replace(/"/g, '""')}"`).join(',')}}`;
-console.log(imageArray)
     await sql`
       INSERT INTO "Models" (name, description, image, categories, solutions, characteristics, carrousel)
       VALUES (
