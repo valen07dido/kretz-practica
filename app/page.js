@@ -2,7 +2,6 @@ import CardConoceMas from "@/Components/CardConoceMas/CardConoceMas";
 import styles from "./page.module.css";
 import Carousel from "@/Components/Carousel/Carousel";
 import img1 from "@/public/Balanza-Report-NX.png";
-import kiosko from "@/public/kiosko.png";
 import itegra from "@/public/itegra.png";
 import empresa from "../public/empresa.png";
 import HorizontalCard from "@/Components/HorizontalCard/HorizontalCard";
@@ -21,7 +20,7 @@ export default function Home() {
   ];
   const horizontalArr = [
     {
-      img: kiosko,
+      img: "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602500/Kretz-Practica/products/Pantallas/voiw1ujy4j2fnfmdjxbm.png",
       title: "Kioskos interactivos",
       text: "Contamos con terminales interactivas a la altura de cualquier necesidad: pantalla touch, lector de código de barras, impresora, posnet, etc.",
       orientation: "D",
