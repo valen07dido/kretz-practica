@@ -15,7 +15,7 @@ const Page = () => {
 
   return (
     <div className={styles.container}>
-      <h1>¿Querés ser distribuidor Kretz?</h1>
+      <h1 className={styles.title}>¿Querés ser distribuidor Kretz?</h1>
       <h3>Completa el siguiente formulario</h3>
       <form action="" className={styles.form}>
         <div className={styles.inputContainer}>

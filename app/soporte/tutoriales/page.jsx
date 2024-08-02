@@ -41,7 +41,7 @@ const Page = () => {
 
   return (
     <div className={styles.containers}>
-      <div>
+      <div className={styles.banner}>
         <BannerTutorial />
       </div>
       {loading ? (

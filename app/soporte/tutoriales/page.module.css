@@ -1,9 +1,11 @@
 .containers {
   display: flex;
-  margin-top: 55px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.banner{
+  margin: 80px;
 }
 
 .grid {

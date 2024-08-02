@@ -1,11 +1,12 @@
 .container {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
+.banner{
+  margin-top: 80px;
+}
 .player {
   margin-top: 72px;
   border-radius: 16px;

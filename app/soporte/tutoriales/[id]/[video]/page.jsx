@@ -5,7 +5,7 @@ import loadingimg from "@/public/loading.svg";
 import BannerTutorial from "@/Components/BannerTutorial/BannerTutorial";
 import Image from "next/image";
 import NotFound from "@/Components/NotFound/NotFound";
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 const Page = () => {
   const id = usePathname().split("/").pop();
   const [videoUrl, setVideoUrl] = useState("");
@@ -25,21 +25,25 @@ const Page = () => {
   }, [id]);
 
   if (loading) {
-    return <Image src={loadingimg} width={90} height={90} alt="loading"/>;
+    return <Image src={loadingimg} width={90} height={90} alt="loading" />;
   }
 
   if (!videoUrl) {
     return (
       <div className={styles.container}>
-        <BannerTutorial />
-        <NotFound/>
+        <div className={styles.banner}>
+          <BannerTutorial />
+        </div>
+        <NotFound />
       </div>
     );
   }
 
   return (
     <div className={styles.container}>
-      <BannerTutorial />
+      <div className={styles.banner}>
+        <BannerTutorial />
+      </div>
       <main>
         <iframe
           width="888"

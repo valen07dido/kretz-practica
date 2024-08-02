@@ -42,12 +42,14 @@ const Page = () => {
   const model = name.split("/").pop();
   return (
     <div className={styles.container}>
-      <BannerTutorial />
+      <div className={styles.banner}>
+        <BannerTutorial />
+      </div>
       <div className={styles.grid}>
         {array.map((item, index) => {
           return (
             <Link href={`${model}/${item.id}`} key={index}>
-              <Image src={item.image} width={400} height={200} alt={item.id}/>
+              <Image src={item.image} width={400} height={200} alt={item.id} />
             </Link>
           );
         })}
