@@ -4,7 +4,10 @@ const models = [
     description:
       "Nuestra balanza para supermercados Report NX viene preparada para atender todas las exigencias de cualquier negocio. La línea de Balanzas Report de Kretz, te ofrece cada vez más opciones de conexión para mejora las soluciones que tu negocio necesita.",
     image: [
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1721925262/Kretz-Practica/products/Report%20NX/hbxgismprafp01n3juid.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602500/Kretz-Practica/products/NX%20visor%20alto/huwlslq4atuvw1hndnmw.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602498/Kretz-Practica/products/NX%20visor%20alto/pbe5py5krzcjrdicdt6e.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602498/Kretz-Practica/products/NX%20visor%20alto/aotjdy7m9sef9u4ugk24.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602498/Kretz-Practica/products/NX%20visor%20alto/e8mwvyhn7vmjyctntuao.png",
     ],
     categories: "Balanzas",
     solutions: "Supermercados",
@@ -22,7 +25,7 @@ const models = [
     description:
       "La balanza Report NX se conecta con el software de gestión iTegra de KRETZ para la administración eficiente de tu negocio mediante funcionalidades intuitivas y adaptadas a tus necesidades. iTegra simplifica las operaciones diarias ayudándote a aumentar las ventas, reducir costos y tomar decisiones.",
     image: [
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1717002108/Kretz-Practica/products/g59t8c0c0l2041anhwzi.jpg",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602499/Kretz-Practica/products/NX%20visor%20bajo/jlpyurw6aekyy7mkpajm.png",
     ],
     categories: "Balanzas",
     solutions: "Supermercados",
@@ -40,8 +43,8 @@ const models = [
     description:
       "Segunda generación de Cajas Registradoras KRETZ A su facilidad de uso y adaptabilidad a diferentes tipos de negocios se le agrega una nueva tecnología de impresión y de almacenamiento digital brindando una solución a los nuevos requerimientos fiscales.",
     image: [
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722010568/Kretz-Practica/products/numa%20ng/numa%202.png",
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722010568/Kretz-Practica/products/numa%20ng/numa%201.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602498/Kretz-Practica/products/numa/f4rtch7cyzvrswdonjfb.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602498/Kretz-Practica/products/numa/sh4ngztcll98hpdzk1s9.png",
     ],
     categories: ["Fiscal"],
     solutions: ["Comercios"],
@@ -64,9 +67,7 @@ const models = [
     description:
       "Ideal para ventas de mayoreo y control de procesos. Totalmente construido en acero inoxidable.",
     image: [
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011072/Kretz-Practica/products/Report%20de%20colgar/qxspvsqwyhreq8iufher.png",
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011070/Kretz-Practica/products/Report%20de%20colgar/savryjnt1ugnuan2jhcw.png",
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011070/Kretz-Practica/products/Report%20de%20colgar/ulosoz0suit7dugtvbvi.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602502/Kretz-Practica/products/report%20de%20colgar/mfedumyl46fg7xs4hsoy.png",
     ],
     categories: ["Balanzas"],
     solutions: ["Supermercados"],
@@ -84,9 +85,7 @@ const models = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis similique amet cum ad tempore commodi. Voluptatibus neque voluptatem pariatur consequatur ut labore! Amet quo quasi quae porro aut fugit. Fuga!",
     image: [
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/xaazx8y4kjkt3r4j0ihw.png",
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/p8trnwp1labvfqxujuu0.png",
-      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722011984/Kretz-Practica/products/report%20lt%20visor%20bajo/zdpoujpfvqxuk5vhtyvc.png",
+      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602496/Kretz-Practica/products/LT%20visor%20bajo/bspbbgy6xxecuggdupr9.png",
     ],
     categories: ["Balanzas"],
     solutions: ["Supermercados"],
