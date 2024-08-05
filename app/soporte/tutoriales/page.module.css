@@ -4,10 +4,13 @@
   justify-content: center;
   align-items: center;
   width: 100vw;  
-  overflow: auto;
 }
 .container2{
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .cardContainer {
   width: 100%;
