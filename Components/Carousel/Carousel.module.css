@@ -1,6 +1,6 @@
 .carouselContainer {
-  width: 100%;
   overflow: hidden; 
+  max-width: 1300px;
 }
 
 .carousel :global(.slick-dots li button:before) {
@@ -16,7 +16,6 @@
 }
 
 .carousel {
-  width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +29,7 @@
   justify-items: center;
   height: 555px;
   margin-top: 30px;
+}
+.cartas{
+  width: 300px;
 }
