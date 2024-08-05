@@ -16,15 +16,18 @@ const Page = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${url}/api/getModel?t=${new Date().getTime()}`, {
-          method: 'GET',
-          headers: {
-            'Cache-Control': 'no-cache', // Aunque esto no garantiza que el servidor no cacheará, lo intentamos.
-          },
-        });
-        
+        const response = await fetch(
+          `${url}/api/getModel?t=${new Date().getTime()}`,
+          {
+            method: "GET",
+            headers: {
+              "Cache-Control": "no-cache", // Aunque esto no garantiza que el servidor no cacheará, lo intentamos.
+            },
+          }
+        );
+
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
 
         const data = await response.json();
@@ -41,39 +44,41 @@ const Page = () => {
 
   return (
     <div className={styles.containers}>
-      <div className={styles.banner}>
-        <BannerTutorial />
+      <div className={styles.container2}>
+        <div className={styles.banner}>
+          <BannerTutorial />
+        </div>
+        {loading ? (
+          <Image src={loadingimg} width={90} height={90} alt="loading" />
+        ) : (
+          <>
+            {array.length === 0 ? (
+              <NotFound />
+            ) : (
+              <div className={styles.grid}>
+                {array.map((item, index) => {
+                  const path = item.name.split(" ").join("");
+                  return (
+                    <Link
+                      href={`/soporte/tutoriales/${path}`}
+                      className={styles.links}
+                      key={index}
+                    >
+                      <div className={styles.cardContainer}>
+                        <Card
+                          img={item.image[0]}
+                          title={item.name}
+                          className={styles.cartas}
+                        />
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </>
+        )}
       </div>
-      {loading ? (
-        <Image src={loadingimg} width={90} height={90} alt="loading" />
-      ) : (
-        <>
-          {array.length === 0 ? (
-            <NotFound />
-          ) : (
-            <div className={styles.grid}>
-              {array.map((item, index) => {
-                const path = item.name.split(" ").join("");
-                return (
-                  <Link
-                    href={`/soporte/tutoriales/${path}`}
-                    className={styles.links}
-                    key={index}
-                  >
-                    <div className={styles.cardContainer}>
-                      <Card
-                        img={item.image[0]}
-                        title={item.name}
-                        className={styles.cartas}
-                      />
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-        </>
-      )}
     </div>
   );
 };
