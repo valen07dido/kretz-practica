@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import ServiceList from "@/Components/ServiceList/ServiceList";
 import Filter from "@/Components/Filter/Filter";
 import styles from './Page.module.css';
-
+import { distributor } from "@/Utils/distributor";
 const Map = dynamic(() => import("@/Components/Mapa/Mapa"), {
   ssr: false,
 });
@@ -48,15 +48,15 @@ const services = [
 ];
 
 const Page = () => {
-  const [filteredServices, setFilteredServices] = useState(services);
-  const [center, setCenter] = useState([0, 0]);
+  const [filteredServices, setFilteredServices] = useState(distributor);
+  const [center, setCenter] = useState([]);
 
   const handleFilterChange = (filter) => {
     const lowercasedFilter = filter.toLowerCase();
-    const filteredData = services.filter(
-      (service) =>
-        service.name.toLowerCase().includes(lowercasedFilter) ||
-        service.address.toLowerCase().includes(lowercasedFilter)
+    const filteredData = distributor.filter(
+      (distributor) =>
+        distributor.name.toLowerCase().includes(lowercasedFilter) ||
+        distributor.address.toLowerCase().includes(lowercasedFilter)
     );
 
     setFilteredServices(filteredData);
@@ -72,17 +72,17 @@ const Page = () => {
     }
   };
 
-  const handleSelectService = (service) => {
-    setCenter([service.latitude, service.longitude]);
+  const handleSelectService = (distributor) => {
+    setCenter([distributor.latitude, distributor.longitude]);
   };
 
   useEffect(() => {
     if (filteredServices.length > 0) {
       const avgLat =
-        filteredServices.reduce((sum, service) => sum + service.latitude, 0) /
+        filteredServices.reduce((sum, distributor) => sum + distributor.latitude, 0) /
         filteredServices.length;
       const avgLng =
-        filteredServices.reduce((sum, service) => sum + service.longitude, 0) /
+        filteredServices.reduce((sum, distributor) => sum + distributor.longitude, 0) /
         filteredServices.length;
       setCenter([avgLat, avgLng]);
     }
@@ -98,7 +98,7 @@ const Page = () => {
         />
       </div>
       <div className={styles.map}>
-        <Map services={filteredServices} center={center} />
+        <Map services={filteredServices} center={[-33.0999755, -60.6122145,12]} />
       </div>
     </div>
   );

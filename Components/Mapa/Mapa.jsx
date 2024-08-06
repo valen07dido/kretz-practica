@@ -22,7 +22,7 @@ const ChangeView = ({ center }) => {
 
 const Map = ({ services, center }) => {
   return (
-    <MapContainer center={center} zoom={15} style={{ height: '100%', width: '100%' }}>
+    <MapContainer center={center} zoom={15} style={{ height: '90%', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
