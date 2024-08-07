@@ -1,8 +1,10 @@
-.item{
-font-size: 25px;
-font-weight: 600;
-line-height: 35.2px;
-letter-spacing: -0.02em;
-text-align: center;
-color: GREY;
+.item {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 35.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: GREY;
+  margin-left: -10px;
+  cursor: pointer;
 }

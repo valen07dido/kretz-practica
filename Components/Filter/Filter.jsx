@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-
+import styles from "./Filter.module.css"
 const Filter = ({ onFilterChange }) => {
   const [search, setSearch] = useState('');
 
@@ -15,7 +15,8 @@ const Filter = ({ onFilterChange }) => {
       type="text" 
       value={search} 
       onChange={handleInputChange} 
-      placeholder="Buscar servicio técnico"
+      placeholder="Buscar tu servicio técnico 🛠"
+      className={styles.input}
     />
   );
 };
