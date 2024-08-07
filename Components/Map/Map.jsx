@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import map from "@/public/mapa.png";
 import styles from "./Map.module.css";
 import MapChart from "../MapInteractive/MapInteractive";
 const MapComponent = () => {

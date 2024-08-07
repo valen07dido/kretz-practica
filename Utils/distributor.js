@@ -8,7 +8,7 @@ export const distributor = [
         province:"Santa Fe",
         latitude: -33.0999755,
         longitude: -60.612214512,
-    },
+},
   {
     name: "Conecta Patagonia",
     address: "Sarmiento 491",
