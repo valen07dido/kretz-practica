@@ -617,8 +617,8 @@ export const distributor = [
     Email: "srcfiscales@gmail.com",
     city: "Neuquen",
     province: "Neuquen",
-    latitude: -38.9555972,
-    longitude: 68.0718883,
+    latitude: -38.95554330163691, 
+    longitude: -68.07174400456213,
   },
   {
     name: "Regimac ",
