@@ -5,22 +5,22 @@
   justify-items: center;
   align-items: start;
 }
-.links{
-    text-decoration: none;
+.links {
+  text-decoration: none;
   color: #181a20;
 }
-.cardContainer{
-    margin-top: 0px;
-}
-.globalContainer{
+.cardContainer {
   margin-top: 0px;
-  padding-top: 0px;
+}
+.globalContainer {
+  margin-top: 0px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.title{
+.title {
   font-size: 48px;
   color: #181a20;
   font-weight: 700;

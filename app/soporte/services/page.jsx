@@ -20,12 +20,12 @@ const Page = () => {
     const filteredData = distributor.filter(
       (d) =>
         d.name.toLowerCase().includes(lowercasedFilter) ||
-        d.province.toLowerCase().includes(lowercasedFilter)
+        d.province.toLowerCase().includes(lowercasedFilter)||
+        d.city.toLowerCase().includes(lowercasedFilter)
     );
 
     setFilteredServices(filteredData);
 
-    // Verifica si se ha aplicado un filtro
     if (filteredData.length === distributor.length) {
       setCenter(defaultCenter);
     } else if (filteredData.length > 0) {
@@ -46,7 +46,6 @@ const Page = () => {
   };
 
   useEffect(() => {
-    // Verifica si se ha aplicado un filtro
     if (filteredServices.length === distributor.length) {
       setCenter(defaultCenter);
     } else if (filteredServices.length > 0) {
