@@ -4,12 +4,27 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: start;
-  gap: 10px;
 }
 .links{
     text-decoration: none;
   color: #181a20;
 }
 .cardContainer{
-    margin-top: 80px;
+    margin-top: 0px;
+}
+.globalContainer{
+  margin-top: 0px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  font-size: 48px;
+  color: #181a20;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
