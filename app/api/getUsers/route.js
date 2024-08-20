@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const result = await sql`SELECT id, email, name, rol, created_at FROM "Users"`;
     
-    console.log(result.rows); // Esto te ayudará a ver cuántos registros estás recibiendo
+    console.log(result.rows); 
     
     const response = NextResponse.json(result.rows, { status: 200 });
 
