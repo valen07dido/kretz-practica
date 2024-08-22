@@ -8,14 +8,14 @@ import loadingimg from "@/public/loading.svg";
 import Image from "next/image";
 
 const Page = () => {
-  const url = process.env.NEXT_PUBLIC_API_URL || ""; // Valor predeterminado si no está definido
-  const [array, setArray] = useState([]); // Array para los datos de productos
-  const [loading, setLoading] = useState(true); // Estado de carga
-  const [error, setError] = useState(null); // Estado de error
-  const [currentPage, setCurrentPage] = useState(1); // Página actual
-  const [totalPages, setTotalPages] = useState(1); // Total de páginas
-  const [totalItems, setTotalItems] = useState(0); // Total de elementos
-  const itemsPerPage = 6; // Número de items por página
+  const url = process.env.NEXT_PUBLIC_API_URL || "";
+  const [array, setArray] = useState([]); 
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
+  const [currentPage, setCurrentPage] = useState(1); 
+  const [totalPages, setTotalPages] = useState(1); 
+  const [totalItems, setTotalItems] = useState(0); 
+  const itemsPerPage = 6; 
 
   const fetchData = async (page) => {
     try {
@@ -35,9 +35,9 @@ const Page = () => {
 
       const data = await response.json();
       console.log(data);
-      setArray(data || []); // Asegúrate de que `data.items` sea un array
-      setTotalItems(data.length || 0); // Total de elementos
-      setTotalPages(Math.ceil(data.length / itemsPerPage)); // Calcula el total de páginas
+      setArray(data || []); 
+      setTotalItems(data.length || 0); 
+      setTotalPages(Math.ceil(data.length / itemsPerPage)); 
     } catch (error) {
       setError("Error al obtener los datos. Inténtalo de nuevo más tarde.");
       console.error("Error al obtener los datos:", error);
@@ -51,7 +51,7 @@ const Page = () => {
   }, [currentPage, url]);
 
   const handlePageChange = (page) => {
-    if (page < 1 || page > totalPages) return; // No cambiar si la página está fuera de los límites
+    if (page < 1 || page > totalPages) return; 
     setCurrentPage(page);
     setLoading(true);
   };
@@ -72,7 +72,7 @@ const Page = () => {
               <Link
                 href={`/productos/${item.id}`}
                 className={styles.links}
-                key={item.id} // Usando item.id como clave
+                key={item.id} 
               >
                 <div className={styles.cardContainer}>
                   <Card
