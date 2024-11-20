@@ -22,7 +22,7 @@ const ChangeView = ({ center, zoom }) => {
 };
 
 const Map = ({ services, center }) => {
-  const zoom = services.length === distributor.length ? 10 : Math.max(15 - Math.floor(services.length / 1.5), 1);
+  const zoom = services.length === distributor.length ? 10 : Math.max(15 - Math.floor(services.length / 2.5), 1);
   
   return (
     <MapContainer center={center} zoom={zoom} className={styles.container}>

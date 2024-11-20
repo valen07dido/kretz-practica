@@ -131,4 +131,71 @@ const models = [
     carrousel: true,
     videos: [],
   },
+//   {
+//     "name": "Cenit",
+//     "description":
+//       "Es una balanza PPI (Peso, Precio, Importe), con características físicas de una balanza de colgar. Ideal para aquellos negocios sin espacio en mostrador y/o para rubros tales como verdulería, carnicería y pescadería.",
+//  "image": [      "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602491/Kretz-Practica/products/Cenit/sf8nodbpfaydjvyk1can.png"
+//     ],
+//     "categories": "Balanzas",
+//     "solutions": "Comercial",
+//     "characteristics": [
+//       "Dos visores, uno para el operador y otro para el cliente.",
+//       "Plato de acero inoxidable de 390 mm.",
+//       "Se utiliza con control remoto infrarrojo (sin cables).",
+//       "Posee sistema antishock de protección ante impactos o sobrecargas."
+//     ],
+//     "carrousel": false
+//   },
+//   {
+//     "name": "Aura Eco 2",
+//     "description":
+//       "Única Balanza de uso comercial con impresor y batería incorporada. El impresor sigue funcionando aún bajo prolongados cortes de energía eléctrica. Ideal para uso en cualquier tipo de negocio que busque sumar una impresión de un comprobante a la operación",
+//     "image": [ "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602478/Kretz-Practica/products/Aura/nbeznzqq44vt1mi0d55s.png"
+//     ],
+//     "categories": "Balanzas",
+//     "solutions": "Comercial",
+//     "characteristics": [
+//       "Multirango: (0 a 15kg x 5g) y (15 a 30kg x 10g).",
+//       "Funciones: Contadora, Verificadora, Pre-empaque.",
+//       "Copia y talón ticket",
+//       "Batería con 100hs de autonomía."
+//     ],
+//     "carrousel": true
+//   },
+//   {
+//     "name": "Delta Eco 2",
+//     "description":
+//       "La evolución tecnológica de la popular Balanza Delta, también alfanumérica. Posee una alta precisión que le permite ofrecer una medición con 2g de división. Única con autonomía de 100 horas de funcionamiento ante cortes de energía.",
+//    "image": [
+//       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602491/Kretz-Practica/products/Delta/p8akjcvrt1ibujovhjif.png",
+//       "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602491/Kretz-Practica/products/Delta/cvghmt0faxeixdrwgatj.png"
+//     ],
+//     "categories": "Balanzas",
+//     "solutions": "Comercial",
+//     "characteristics": [
+//       "Multirango: (0 a 6kg x 2g) y (6 a 15kg x 5g)",
+//       "Función Contadora.",	
+//       "450 PLU para productos – precios.",
+//       "Calculo de vuelto."
+//     ],
+//     "carrousel": false
+//   },
+//   {
+//     "name": "Elite eco 2",
+//     "description":
+//       "La Balanza más usada por el Retail para el control de peso en caja, de diseño robusto. Nuevo display LCD de alto contraste. Permite ahorrar tiempo y personal llevando el peso de ciertos productos a la línea de caja (ejemplo: Verdulería).",
+//     "image": [
+//     "https://res.cloudinary.com/dpa8t14c2/image/upload/v1722602493/Kretz-Practica/products/Elite/i2933ze0ihpeaeu1watr.png"
+//     ],
+//     "categories": "Balanzas",
+//     "solutions": "Supermercados",
+//     "characteristics": [
+//       "Bandeja de acero inoxidable de 340 Mm. x 230 mm.",
+//       "Visor LCD elevado/giratorio.",
+//       "Teclas cero y tara.",
+//       "Transmisión de peso en forma continua o a pedido."
+//     ],
+//     "carrousel": true
+//   }
 ];

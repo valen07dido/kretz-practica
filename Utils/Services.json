@@ -1,0 +1,727 @@
+[
+ {
+  "Nombre": "WALTER DESTEFANO",
+  "Dirección": "Tucumán 1002 ",
+  "Teléfono": "02317-15460636 \/ 02317-460635 ",
+  "Email": "wdestefano@gmail.com ",
+  "Ciudad": "9 de Julio",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "EMILIANO MANCINELLI",
+  "Dirección": "Juan Molina 1187 ",
+  "Teléfono": "0291-4502984 ",
+  "Email": "mancinellibalanzas@yahoo.com.ar ",
+  "Ciudad": "Bahía Blanca",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "UNICORNIO",
+  "Dirección": "Uriarte 316 ",
+  "Teléfono": "011-42024163 \/ 011 42029723 ",
+  "Email": "balanzasunicornio@yahoo.com.ar ",
+  "Ciudad": "Banfield",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "SURMAQ",
+  "Dirección": "Terrero 1380 ",
+  "Teléfono": "011-2006-6726 ",
+  "Email": "surmaqbalanzas@gmail.com",
+  "Ciudad": "Burzaco",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "LOPEZ RAUL",
+  "Dirección": "Av. Alsina 225 ",
+  "Teléfono": "02352-426661 ",
+  "Email": "raullopez_chacabuco@yahoo.com.ar ",
+  "Ciudad": "Chacabuco",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "POSTECH SA",
+  "Dirección": "Dr. Gelpi 871",
+  "Teléfono": "011 6102-7958",
+  "Email": "info@postech.com.ar ",
+  "Ciudad": "Ituzaingo",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "MAPA EQUIPAMIENTOS SRL",
+  "Dirección": "Malvinas Argentinas 509 ",
+  "Teléfono": "0236-4440534 \/ 0236-4458076 \/ 0236-154454060 ",
+  "Email": "serviciotecnico@mapaequipamientos.com.ar",
+  "Ciudad": "Junín",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "SERVICENTER",
+  "Dirección": "Calle 26 n.º 1413 ",
+  "Teléfono": "0221-4518341 ",
+  "Email": "leonardo.matrangolo@gmail.com ",
+  "Ciudad": "La Plata",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "POSVENT SOLUCIONES S.R.L",
+  "Dirección": "José Garibaldi 1025",
+  "Teléfono": "011 - 5263-8444",
+  "Email": "info@posventar.com ",
+  "Ciudad": "Lomas de Zamora",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "LUJÁN LUIS ARNOLDO",
+  "Dirección": "Emilio Zola 1961 ",
+  "Teléfono": "011-1560939443 ",
+  "Email": "luis1balanza@hotmail.com ",
+  "Ciudad": "Los Polvorines",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "INFOMDP S.A.",
+  "Dirección": "20 De Septiembre 2946 ",
+  "Teléfono": "0223-4760438 - 223 595-6371",
+  "Email": "juan@informaticamdp.com.ar ",
+  "Ciudad": "Mar del Plata",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "SEC LABORATORIO ELECTRONICO S.R.L.",
+  "Dirección": "Córdoba 3279 y Roca",
+  "Teléfono": "0223-4930345",
+  "Email": "fgarcia.seclab@gmail.com",
+  "Ciudad": "Mar del Plata",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "TIRANTI ALFREDO ANGEL",
+  "Dirección": "Avda. 58  N° 3317",
+  "Teléfono": "02262-429383",
+  "Email": " tirantifiscales@hotmail.com",
+  "Ciudad": "Necochea",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "VIDAL MARCELO",
+  "Dirección": "Av Trabajadores 2902",
+  "Teléfono": "02284-430447\/430446",
+  "Email": "info@amoblamientosvidal.com.ar",
+  "Ciudad": "Olavarría",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "L y L Soluciones Informáticas",
+  "Dirección": "Rawson 1080",
+  "Teléfono": 2254589013,
+  "Email": "delgadomatias@outlook.com",
+  "Ciudad": "Pinamar",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "BELVISOTTI",
+  "Dirección": "Av. Antártida Argentina 565",
+  "Teléfono": "011-42313588 \/ 011-42317699 ",
+  "Email": "info@balanzasbelvisotti.com.ar ",
+  "Ciudad": "Turdera",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "KELVER COMPUTACION",
+  "Dirección": "Av. Fondo de la Legua 2949 ",
+  "Teléfono": "011-47666890 ",
+  "Email": "info@kelver.com.ar ",
+  "Ciudad": "Villa Adelina",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "KYASERV SA - REPARADOR AUDITADO",
+  "Dirección": "Caxaraville 6825",
+  "Teléfono": "011-4220-5419 \/ 011-5430-8673 ",
+  "Email": "info@kyaserv.com.ar ",
+  "Ciudad": "Wilde",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "SERBALCOM",
+  "Dirección": "Av. Mitre 6433 1ºC",
+  "Teléfono": "11-45776544",
+  "Email": "serbalservicios@hotmail.com ",
+  "Ciudad": "Wilde",
+  "Provincia": "Buenos Aires"
+ },
+ {
+  "Nombre": "ALTOMARE MAURO ALBERTO",
+  "Dirección": "Pasaje Mandisobi 2922\/26 ",
+  "Teléfono": "011-43015887",
+  "Email": "info@altomaremauro.com.ar ",
+  "Ciudad": "Capital Federal",
+  "Provincia": "Capital Federal"
+ },
+ {
+  "Nombre": "GRUPO TK",
+  "Dirección": "Corrientes 4006 2do piso Of. 13 ",
+  "Teléfono": "011-48671674 ",
+  "Email": "grupotk@gmail.com ",
+  "Ciudad": "Capital Federal",
+  "Provincia": "Capital Federal"
+ },
+ {
+  "Nombre": "ELECTRONICA INTEGRAL",
+  "Dirección": "Caseros 66",
+  "Teléfono": "0383 4422040 ",
+  "Email": "solcat@infovia.com.ar ",
+  "Ciudad": "San Fernando del Valle",
+  "Provincia": "Catamarca"
+ },
+ {
+  "Nombre": "Acevedo, José Luis",
+  "Dirección": "Pasaje Franklin 3012",
+  "Teléfono": "0362-44488212 \/\/ 3624522016",
+  "Email": "acevedo_equipamientos@hotmail.com",
+  "Ciudad": "Resistencia",
+  "Provincia": "Chaco"
+ },
+ {
+  "Nombre": "INFORHARD SERVICIOS",
+  "Dirección": "Santa Fe 197",
+  "Teléfono": "0362 443-1644",
+  "Email": "info@inforhard.com.ar ",
+  "Ciudad": "Resistencia",
+  "Provincia": "Chaco"
+ },
+ {
+  "Nombre": "SERVICE DEL NEA",
+  "Dirección": "Gral. Obligado 598 ",
+  "Teléfono": "0362 443-7561",
+  "Email": "service_nea@hotmail.com",
+  "Ciudad": "Resistencia",
+  "Provincia": "Chaco"
+ },
+ {
+  "Nombre": "Almacen de Carniceros",
+  "Dirección": "Calle 35 N° 84 ",
+  "Teléfono": "0364-15404057",
+  "Email": "elalmacendelcarnicero@hotmail.com",
+  "Ciudad": "Roque Saenz Peña",
+  "Provincia": "Chaco"
+ },
+ {
+  "Nombre": "W INSTALACIONES",
+  "Dirección": "Dorrego 1324 ",
+  "Teléfono": "0297-4471394",
+  "Email": "winstalaciones@yahoo.com.ar",
+  "Ciudad": "Comodoro Rivadavia",
+  "Provincia": "Chubut"
+ },
+ {
+  "Nombre": "YORDANOV DIMITROV",
+  "Dirección": "Pje Salta 450 ",
+  "Teléfono": "0280-437536 ",
+  "Email": "plamenidbg@yahoo.com.ar ",
+  "Ciudad": "Trelew",
+  "Provincia": "Chubut"
+ },
+ {
+  "Nombre": "Baiocchi (ByB Soluciones)",
+  "Dirección": "Tucumán 234",
+  "Teléfono": "03537-425112",
+  "Email": "info@baiocchi.com.ar ",
+  "Ciudad": "Bell Ville",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "IMPORTADORA LA SRL",
+  "Dirección": "Olga Orozco 2855 - PA ",
+  "Teléfono": "0351-4857268 ",
+  "Email": "info@importadorala.com.ar ",
+  "Ciudad": "Córdoba",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "Ariel LLanos",
+  "Dirección": "Soldado Romero 852",
+  "Teléfono": "0354 -9430305",
+  "Email": "ariel961@hotmail.com",
+  "Ciudad": "Cruz del Eje",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "Gustavo Nagel",
+  "Dirección": "Calle Italia N°835",
+  "Teléfono": "03525-425399 - 3515291469",
+  "Email": "gus_cgtec@yahoo.com.ar",
+  "Ciudad": "Jesús María",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "Komarofky Equipamientos",
+  "Dirección": "Dean Funes 608",
+  "Teléfono": "0358-4629665",
+  "Email": "koma@arnetbiz.com.ar",
+  "Ciudad": "Rio Cuarto",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "FABRICIO MASSEI",
+  "Dirección": "Ing. Dinkeldein 1012 ",
+  "Teléfono": "0358-464 7041 \/ 0358-463964 ",
+  "Email": "casamassei@hotmail.com ",
+  "Ciudad": "Río Cuarto",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "RAUL GERLERO",
+  "Dirección": "Fuerza Aérea 40",
+  "Teléfono": "03571-15609636 ",
+  "Email": "raulgerlero@hotmail.com ",
+  "Ciudad": "Río Tercero",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "ELECTRONICA CARLOS PAZ",
+  "Dirección": "Rawson 152",
+  "Teléfono": "03541 15562566",
+  "Ciudad": "Villa Carlos Paz",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "Baiocchi (ByB Soluciones)",
+  "Dirección": "Tucumán 1134",
+  "Teléfono": "0353-4546820",
+  "Email": "infovm@baiocchi.com.ar ",
+  "Ciudad": "Villa María",
+  "Provincia": "Córdoba"
+ },
+ {
+  "Nombre": "ASCONA ORLANDO",
+  "Dirección": "Corrientes 891",
+  "Teléfono": "03777-420569 \/ 03777-15504068",
+  "Email": "oascona@goyanet.com.ar",
+  "Ciudad": "Goya",
+  "Provincia": "Corrientes"
+ },
+ {
+  "Nombre": "AG SERVICIOS",
+  "Dirección": "9 De Julio 1069 ",
+  "Teléfono": "03442-422613 ",
+  "Email": "agsertec@hotmail.com ",
+  "Ciudad": "Concepción del Uruguay",
+  "Provincia": "Entre Ríos"
+ },
+ {
+  "Nombre": "RADIO MECANO S.A.",
+  "Dirección": "Galarza 902 ",
+  "Teléfono": "03442-425781 ",
+  "Email": "ventas@radiomecano.com.ar ",
+  "Ciudad": "Concepción del Uruguay",
+  "Provincia": "Entre Ríos"
+ },
+ {
+  "Nombre": "OFIMAR",
+  "Dirección": "Brown 888",
+  "Teléfono": "0345-4212246\/0345-154039021 ",
+  "Email": "ofimar_2009@hotmail.com ",
+  "Ciudad": "Concordia",
+  "Provincia": "Entre Ríos"
+ },
+ {
+  "Nombre": "Labriola",
+  "Dirección": "Rivadavia 657",
+  "Teléfono": "3446 41 7262 - 3446 35 0497",
+  "Email": "labriola.balanzas@gmail.com",
+  "Ciudad": "Gualeguaychú",
+  "Provincia": "Entre Ríos"
+ },
+ {
+  "Nombre": "DESARTEC",
+  "Dirección": "Avenida Ramirez 3303 ",
+  "Teléfono": "0343-4079001 \/\/ 3434298869",
+  "Email": "desartecsrl@gmail.com",
+  "Ciudad": "Paraná",
+  "Provincia": "Entre Ríos"
+ },
+ {
+  "Nombre": "INFORHARD SERVICIOS",
+  "Dirección": "Rafael Obligado 598",
+  "Teléfono": "0372-2437561 ",
+  "Email": "info@inforhard.com.ar ",
+  "Ciudad": "Formosa",
+  "Provincia": "Formosa"
+ },
+ {
+  "Nombre": "SYSTEM FSA S.A",
+  "Dirección": "Santa Fe 197 ",
+  "Teléfono": "0362-4431644 ",
+  "Email": "system_fsa@arnet.com.ar ",
+  "Ciudad": "Formosa",
+  "Provincia": "Formosa"
+ },
+ {
+  "Nombre": "ROBERTO BEJAR",
+  "Dirección": "Gobernador Tello 514",
+  "Teléfono": "03888-420478",
+  "Email": "rbequipamientos@hotmail.com",
+  "Ciudad": "San Pedro de Jujuy",
+  "Provincia": "Jujuy"
+ },
+ {
+  "Nombre": "SORUCO JORGE",
+  "Dirección": "San Martín 1279",
+  "Teléfono": "0388-4228750",
+  "Email": "jorge_soruco820@hotmail.com",
+  "Ciudad": "San Salvador de Jujuy",
+  "Provincia": "Jujuy"
+ },
+ {
+  "Nombre": "SERVICE ORTIZ",
+  "Dirección": "Roque Saenz Peña 956",
+  "Teléfono": "02954-421182 ",
+  "Email": "serviceortiz@gmail.com",
+  "Ciudad": "Santa Rosa",
+  "Provincia": "La Pampa"
+ },
+ {
+  "Nombre": "ANZALAZ FERNANDO ALEJANDRO",
+  "Dirección": "San Martín 16",
+  "Teléfono": "03825-15405913 ",
+  "Email": "faanzalaz@yahoo.com ",
+  "Ciudad": "Chilecito",
+  "Provincia": "La Rioja"
+ },
+ {
+  "Nombre": "PANDA INFORMATICA",
+  "Dirección": "Cerro Bonete nro. 85. PB",
+  "Teléfono": "0380-4438614 \/\/ 380 154367268  ",
+  "Email": "casaicuero@gmail.com",
+  "Ciudad": "La Rioja",
+  "Provincia": "La Rioja"
+ },
+ {
+  "Nombre": "CONTAMEN S.R.L.",
+  "Dirección": "Hipolito Hirigoyen 380 ",
+  "Teléfono": "0261-4243348 ",
+  "Email": "info@contamen.com.ar ",
+  "Ciudad": "Godoy Cruz",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "ARIZA Y GRANDINETTI SRL",
+  "Dirección": "SOBREMONTE 741",
+  "Teléfono": "0261 – 4200505 ",
+  "Email": "administracion@arizaygrandinetti.com.ar",
+  "Ciudad": "Mendoza",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "GRUPO GASPARI",
+  "Dirección": "Alverdi 448 ",
+  "Teléfono": "0261-4234836 ",
+  "Email": "admin@grupogaspari.com.ar ",
+  "Ciudad": "Mendoza",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "TOGNION RAUL BENJAMIN",
+  "Dirección": "JUAN GUALBERTO GODOY 1056",
+  "Teléfono": "0261 4311506 \/ 155850914",
+  "Email": "servicetognion@yahoo.com.ar",
+  "Ciudad": "Mendoza",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "CONTRERAS ARNALDO",
+  "Dirección": "ALEM 101 ",
+  "Teléfono": "02634-421541 ",
+  "Email": "acontreras_6@yahoo.com.ar ",
+  "Ciudad": "San Martín",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "San Rafael Maquinas",
+  "Dirección": "3 de febrero 693",
+  "Teléfono": "2604279646 - 2604692206",
+  "Email": "acostacarlosmarcelo@gmail.com",
+  "Ciudad": "San Rafael",
+  "Provincia": "Mendoza"
+ },
+ {
+  "Nombre": "RF SERVICIOS",
+  "Dirección": "SURUBI 1580",
+  "Teléfono": "3755 438579",
+  "Email": " roberfra82@hotmail.com",
+  "Ciudad": "Oberá",
+  "Provincia": "Misiones"
+ },
+ {
+  "Nombre": "VERESCHUK OSCAR",
+  "Dirección": "9 De Julio 1138 ",
+  "Teléfono": "03755-420430 ",
+  "Email": "rov_repres@yahoo.com.ar",
+  "Ciudad": "Oberá",
+  "Provincia": "Misiones"
+ },
+ {
+  "Nombre": "SICON",
+  "Dirección": "Av. Ituzaingo 5394",
+  "Teléfono": "0376 -4593575 ",
+  "Email": "enevoran@sicon-pss.com.ar ",
+  "Ciudad": "Posadas",
+  "Provincia": "Misiones"
+ },
+ {
+  "Nombre": "PUNTOS DE VENTAS BIANCHI",
+  "Dirección": "RUTA NACIONAL 14 - KM 976 ",
+  "Teléfono": "3755 23-8773",
+  "Email": "bianchi.rodrigo.ariel@gmail.com",
+  "Ciudad": "San Vicente",
+  "Provincia": "Misiones"
+ },
+ {
+  "Nombre": "Control CAB",
+  "Dirección": "San Martín 1095",
+  "Teléfono": "0299 - 4484600 \/\/ 299 5 169248",
+  "Email": "controlcab.toro@gmail.com",
+  "Ciudad": "Neuquén",
+  "Provincia": "Neuquen"
+ },
+ {
+  "Nombre": "Zona Informática",
+  "Dirección": "Curruhuinca 779 Loc. 7",
+  "Teléfono": "02972-412200",
+  "Email": "infolazona@smandes.com.ar",
+  "Ciudad": "San Martín de los Andres",
+  "Provincia": "Neuquen"
+ },
+ {
+  "Nombre": "QOS Informática",
+  "Dirección": "Las Fucsias 331 - Local 1",
+  "Teléfono": "0294-4494434",
+  "Ciudad": "Villa La Angostura",
+  "Provincia": "Neuquen"
+ },
+ {
+  "Nombre": "REGIMAQ SRL",
+  "Dirección": "Sarmiento 37",
+  "Teléfono": "0299-4774088 ",
+  "Email": "regimaqservicios@jetband.com.ar",
+  "Ciudad": "Cipolletti",
+  "Provincia": "Río Negro"
+ },
+ {
+  "Nombre": "REFRIGERACION PICO S.R.L.",
+  "Dirección": "H.IRIGOYEN 883",
+  "Teléfono": "0298-4432916",
+  "Email": "picoroca@jetband.com.ar",
+  "Ciudad": "General Roca",
+  "Provincia": "Río Negro"
+ },
+ {
+  "Nombre": "PANCHO SERVICE",
+  "Dirección": "San Juan 2982",
+  "Teléfono": "02941-427648 ",
+  "Email": "panchocervice@infovia.com.ar ",
+  "Ciudad": "General Roca",
+  "Provincia": "Río Negro"
+ },
+ {
+  "Nombre": "Conecta Patagonia SRL",
+  "Dirección": "Sarmiento 491 - Local 1",
+  "Teléfono": "0294-4436218 \/\/ 2944579556",
+  "Email": "conectapatagonia@speedy.com.ar",
+  "Ciudad": "San Carlos de Bariloche",
+  "Provincia": "Río Negro"
+ },
+ {
+  "Nombre": "INFORMATICA LLAO",
+  "Dirección": "Balcarce 306",
+  "Teléfono": "0387-4318295 ",
+  "Email": "taller@miguelllao.com.ar ",
+  "Ciudad": "Salta",
+  "Provincia": "Salta"
+ },
+ {
+  "Nombre": "MIGUEL ANGEL DEFAZIO",
+  "Dirección": "Pueyrredon 160 (Sur)",
+  "Teléfono": "0264-4274743 ",
+  "Email": "servicio_06@hotmail.com ",
+  "Ciudad": "San Juan",
+  "Provincia": "San Juan"
+ },
+ {
+  "Nombre": "ORELLANO PEDRO MARIO",
+  "Dirección": "Juan de Videla 173 ",
+  "Teléfono": "(02664) 15551537 ",
+  "Email": "fimaq546@hotmail.com ",
+  "Ciudad": "Merlo",
+  "Provincia": "San Luis"
+ },
+ {
+  "Nombre": "FRANCISCO ANELLO",
+  "Dirección": "Balcarce 1227 ",
+  "Teléfono": "02652-428518 \/\/ 02652-15571324 ",
+  "Email": "francisanello@yahoo.com.ar",
+  "Ciudad": "San Luis",
+  "Provincia": "San Luis"
+ },
+ {
+  "Nombre": "JORGE EDUARDO SANDOVAL NAIF",
+  "Dirección": "Pasteur 104",
+  "Teléfono": "02966-432070 \/\/ 02966-15623996 ",
+  "Email": "jorgesandoval@speedy.com.ar ",
+  "Ciudad": "Rio Gallegos",
+  "Provincia": "Santa Cruz"
+ },
+ {
+  "Nombre": "Servicio Tecnico Basiglio S.A.",
+  "Dirección": "FEDERICO SPHUR 48",
+  "Teléfono": "(02966) 440417",
+  "Ciudad": "Rio Gallegos",
+  "Provincia": "Santa Cruz"
+ },
+ {
+  "Nombre": "FEDERICO NONINO",
+  "Dirección": "BV. SAN MARTIN 283 ",
+  "Teléfono": "03467-15447753 ",
+  "Email": "serviciosenpesaje@gmail.com ",
+  "Ciudad": "Arteaga",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "DYA SERVICIOS",
+  "Dirección": "Hipolito Yrigoyen 1346",
+  "Teléfono": "03464-420715 ",
+  "Email": "dya_servicios@arnet.com.ar ",
+  "Ciudad": "Casilda",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "DANIEL GARBE",
+  "Dirección": "AV.CORDOBA 2011",
+  "Teléfono": "03496-421582",
+  "Email": "ventas@dlgarbe.com.ar",
+  "Ciudad": "Esperanza",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "MAROVELLI FRANCO",
+  "Dirección": "Pedro Pablo Ceci 1198",
+  "Teléfono": "03404-434369 \/ 03404-15437709",
+  "Email": "francomarovelli@hotmail.com",
+  "Ciudad": "Gálvez",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "FDC Soluciones",
+  "Dirección": "Av. Italia 618",
+  "Teléfono": "03492-506571\/503571",
+  "Email": "ventas@fdcsolucionessrl.com",
+  "Ciudad": "Rafaela",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "GRUPO INBIO",
+  "Dirección": "Rivadavia 370 ",
+  "Teléfono": "03492-570670 \/\/ 570775 ",
+  "Email": "alfredo@inbio.com.ar ",
+  "Ciudad": "Rafaela",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "PRIETO FABIAN",
+  "Dirección": "Avenida Pietropaolo 1968 ",
+  "Teléfono": "03482-423969 \/\/ 03482-15512594 ",
+  "Email": "fabianhpietro@gmail.com",
+  "Ciudad": "Reconquista",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "MANESI",
+  "Dirección": "Pasco 1236",
+  "Teléfono": "0341-4823893 ",
+  "Email": "ventas@balanmaq.com",
+  "Ciudad": "Rosario",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "SOLINTEG",
+  "Dirección": "Bv Avellaneda 2415",
+  "Teléfono": "0341-156053600 ",
+  "Email": "martinoariel@hotmail.com ",
+  "Ciudad": "Rosario",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "Miguel Medina",
+  "Dirección": "Mitre 1371",
+  "Teléfono": "03406-440956",
+  "Email": "sastrecomercial@hotmail.com",
+  "Ciudad": "San Jorge",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "Alan Touma",
+  "Dirección": "Roca 278",
+  "Teléfono": "03462-431099 – 3462 -551373",
+  "Email": "alan.touma@outlook.com",
+  "Ciudad": "Venado Tuerto",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "BALANZAS VENADO - REPARADOR AUDITADO",
+  "Dirección": "Av. Dr. Luis Chapuis 2763 ",
+  "Teléfono": "03462-427854 ",
+  "Email": "info@balanzasvenado.com.ar",
+  "Ciudad": "Venado Tuerto",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "ELIZALDE MARIO",
+  "Dirección": "San Juan 5865",
+  "Teléfono": "0342-4885532",
+  "Email": "elizaldemario@hotmail.com",
+  "Ciudad": "Santa Fe",
+  "Provincia": "Santa Fe"
+ },
+ {
+  "Nombre": "ELECTRONICA DIGITAL",
+  "Dirección": "Peru 1240 ",
+  "Teléfono": "0385-4222795 ",
+  "Email": "digitalsantiago@arnet.com.ar ",
+  "Ciudad": "Santiago del Estero",
+  "Provincia": "Santiago del Estero"
+ },
+ {
+  "Nombre": "Epsilon Electrónica",
+  "Dirección": "Ushuaia 491",
+  "Teléfono": "(02964) - 422288",
+  "Email": "epsilonelectronica@speedy.com.ar",
+  "Ciudad": "Rio Grande",
+  "Provincia": "Tierra del Fuego"
+ },
+ {
+  "Nombre": "Edigital - García, Manuel Antonio",
+  "Dirección": "AV.Saenz Peña 565 ",
+  "Teléfono": "0381 - 4248125",
+  "Email": "edigital@edigitaltucuman.com.ar",
+  "Ciudad": "San Miguel de Tucumán",
+  "Provincia": "Tucumán"
+ },
+ {
+  "Nombre": "ERNESTO CURIA",
+  "Dirección": "La Rioja 828 ",
+  "Teléfono": "0381-154043112 \/\/ 0381-4245550 ",
+  "Email": "ernestocuria@arnet.com.ar ",
+  "Ciudad": "San Miguel de Tucumán",
+  "Provincia": "Tucumán"
+ },
+ {
+  "Nombre": "MESSINA",
+  "Dirección": "La Rioja 15",
+  "Teléfono": "0381-4214620 ",
+  "Email": "messina.mys@gmail.com ",
+  "Ciudad": "San Miguel de Tucumán",
+  "Provincia": "Tucumán"
+ }
+]
